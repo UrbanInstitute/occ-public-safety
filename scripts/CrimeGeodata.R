@@ -47,3 +47,17 @@ clusters <-
 clusters<-spread(clusters,offense,p.sum)
 clusters<-rename(clusters,robbery=Robbery,homicide=Homicide,aggassault=ADW)
 write.csv(clusters, file="data/clusterdata.csv", row.names=F,na="0")
+
+require(ggplot2)
+require(extrafont)
+require(scales)
+
+linechart <- ggplot(clusters, aes(x=year, y=aggassault, group=cluster)) +
+  geom_line() +
+  theme(panel.grid.minor=element_blank(), 
+        panel.grid.major.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.title.x=element_text(size=12,family="Arial",face="bold"),
+        axis.text = element_text(size=6, family="Arial", color="#444444"),
+        plot.title = element_text(size=16, family="Arial"))
+linechart

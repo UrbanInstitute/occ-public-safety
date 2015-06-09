@@ -1,4 +1,5 @@
 geo/
+data/old/
 *.Rproj
 *.Rproj.user
 *.Rhistory
