@@ -1,6 +1,8 @@
 #HR, 06-08-15
 #Our Changing Cities crime data
 require(dplyr)
+require(doBy)
+require(tidyr)
 
 crimes<-read.csv("data/dccrime2000-2014_cleaned.csv",header=T)
 
@@ -10,8 +12,8 @@ occ$point_y<-round(occ$point_y)
 occs<-select(occ,reportdate,year,offense,address,point_x,point_y,id_ui)
 write.csv(occs, file="data/occ_crimes.csv", row.names=FALSE)
 
-#Add lat-long in ArcMap - originally projected in ESPG 26985
-occg<-read.csv("data/occ_crimesgeo_all.csv",header=T, stringsAsFactors=F)
+#Add lat-long & neighborhood cluster in ArcMap - originally projected in ESPG 26985
+occg<-read.csv("data/occ_crimesgeomatch_all.csv",header=T, stringsAsFactors=F)
 occm<-filter(occg,Latitude !=0)
 occm<-select(occm,offense,year,Latitude,Longitude)
 write.csv(occm, file="data/occ_crimes_min.csv", row.names=FALSE)
@@ -35,3 +37,13 @@ files <- paste('data/robbery/robbery', 2000:2014, '.csv', sep = '')
 mapply(write.csv, split(robberies, robberies$year), file = files,
        MoreArgs = list(quote = FALSE, row.names = FALSE)) 
 write.csv(robberies, file="data/robbery/robberies.csv", row.names=FALSE)
+
+#Neighborhood analysis - by cluster, # of each crime by year
+table(occg$cluster)
+occg<-mutate(occg, p = 1)
+clusters <-
+  summaryBy(p ~ cluster + cluster_name + year + offense, FUN = c(sum), data =
+              occg)
+clusters<-spread(clusters,offense,p.sum)
+clusters<-rename(clusters,robbery=Robbery,homicide=Homicide,aggassault=ADW)
+write.csv(clusters, file="data/clusterdata.csv", row.names=F,na="0")

@@ -1,0 +1,587 @@
+"cluster","cluster_name","year","aggassault","homicide","robbery"
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2000,56,3,84
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2001,56,2,129
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2002,65,1,162
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2003,56,0,139
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2004,56,1,159
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2005,56,1,133
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2006,44,2,128
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2007,55,2,149
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2008,43,1,149
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2009,38,0,134
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2010,35,2,110
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2011,37,2,122
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2012,37,0,120
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2013,26,3,104
+1,"Kalorama Heights, Adams Morgan, Lanier Heights",2014,24,1,44
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2000,313,22,369
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2001,364,23,395
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2002,403,22,457
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2003,368,15,534
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2004,261,4,446
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2005,253,12,505
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2006,320,12,465
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2007,264,7,466
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2008,220,12,508
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2009,203,14,444
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2010,190,9,368
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2011,124,7,472
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2012,116,4,399
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2013,129,5,417
+2,"Columbia Heights, Mt. Pleasant, Pleasant Plains, Park View",2014,139,7,257
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2000,126,5,137
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2001,135,8,151
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2002,135,4,121
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2003,87,1,150
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2004,82,4,131
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2005,97,6,160
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2006,93,7,192
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2007,85,4,192
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2008,70,6,186
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2009,55,2,176
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2010,61,3,154
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2011,60,1,221
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2012,70,1,173
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2013,67,1,172
+3,"Howard University, Le Droit Park, Cardozo/Shaw",2014,54,2,115
+4,"Georgetown, Burleith/Hillandale",2000,35,1,78
+4,"Georgetown, Burleith/Hillandale",2001,33,0,73
+4,"Georgetown, Burleith/Hillandale",2002,38,0,66
+4,"Georgetown, Burleith/Hillandale",2003,38,0,61
+4,"Georgetown, Burleith/Hillandale",2004,33,1,58
+4,"Georgetown, Burleith/Hillandale",2005,29,0,52
+4,"Georgetown, Burleith/Hillandale",2006,31,1,55
+4,"Georgetown, Burleith/Hillandale",2007,34,0,68
+4,"Georgetown, Burleith/Hillandale",2008,28,0,41
+4,"Georgetown, Burleith/Hillandale",2009,26,0,42
+4,"Georgetown, Burleith/Hillandale",2010,37,0,52
+4,"Georgetown, Burleith/Hillandale",2011,11,2,44
+4,"Georgetown, Burleith/Hillandale",2012,10,0,32
+4,"Georgetown, Burleith/Hillandale",2013,14,0,29
+4,"Georgetown, Burleith/Hillandale",2014,14,1,31
+5,"West End, Foggy Bottom, GWU",2000,23,0,46
+5,"West End, Foggy Bottom, GWU",2001,30,0,38
+5,"West End, Foggy Bottom, GWU",2002,32,1,29
+5,"West End, Foggy Bottom, GWU",2003,28,0,37
+5,"West End, Foggy Bottom, GWU",2004,21,1,26
+5,"West End, Foggy Bottom, GWU",2005,16,0,17
+5,"West End, Foggy Bottom, GWU",2006,9,0,15
+5,"West End, Foggy Bottom, GWU",2007,11,0,25
+5,"West End, Foggy Bottom, GWU",2008,21,1,27
+5,"West End, Foggy Bottom, GWU",2009,20,0,36
+5,"West End, Foggy Bottom, GWU",2010,16,0,32
+5,"West End, Foggy Bottom, GWU",2011,19,0,31
+5,"West End, Foggy Bottom, GWU",2012,12,0,31
+5,"West End, Foggy Bottom, GWU",2013,12,0,20
+5,"West End, Foggy Bottom, GWU",2014,10,0,22
+6,"Dupont Circle, Connecticut Avenue/K Street",2000,85,0,210
+6,"Dupont Circle, Connecticut Avenue/K Street",2001,83,0,196
+6,"Dupont Circle, Connecticut Avenue/K Street",2002,112,0,190
+6,"Dupont Circle, Connecticut Avenue/K Street",2003,79,4,210
+6,"Dupont Circle, Connecticut Avenue/K Street",2004,73,2,212
+6,"Dupont Circle, Connecticut Avenue/K Street",2005,69,4,159
+6,"Dupont Circle, Connecticut Avenue/K Street",2006,94,1,161
+6,"Dupont Circle, Connecticut Avenue/K Street",2007,79,0,177
+6,"Dupont Circle, Connecticut Avenue/K Street",2008,78,1,174
+6,"Dupont Circle, Connecticut Avenue/K Street",2009,57,0,160
+6,"Dupont Circle, Connecticut Avenue/K Street",2010,70,0,171
+6,"Dupont Circle, Connecticut Avenue/K Street",2011,48,1,170
+6,"Dupont Circle, Connecticut Avenue/K Street",2012,61,0,157
+6,"Dupont Circle, Connecticut Avenue/K Street",2013,36,2,127
+6,"Dupont Circle, Connecticut Avenue/K Street",2014,54,0,69
+7,"Shaw, Logan Circle",2000,92,7,145
+7,"Shaw, Logan Circle",2001,136,5,208
+7,"Shaw, Logan Circle",2002,115,1,134
+7,"Shaw, Logan Circle",2003,115,3,130
+7,"Shaw, Logan Circle",2004,93,2,149
+7,"Shaw, Logan Circle",2005,90,2,169
+7,"Shaw, Logan Circle",2006,113,4,146
+7,"Shaw, Logan Circle",2007,84,7,155
+7,"Shaw, Logan Circle",2008,58,4,121
+7,"Shaw, Logan Circle",2009,64,1,143
+7,"Shaw, Logan Circle",2010,45,1,147
+7,"Shaw, Logan Circle",2011,52,2,144
+7,"Shaw, Logan Circle",2012,28,1,117
+7,"Shaw, Logan Circle",2013,58,0,100
+7,"Shaw, Logan Circle",2014,44,0,86
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2000,214,4,322
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2001,180,4,330
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2002,191,12,230
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2003,226,10,226
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2004,162,6,175
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2005,162,6,167
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2006,187,3,210
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2007,165,7,208
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2008,137,9,236
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2009,109,1,227
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2010,93,3,248
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2011,103,1,241
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2012,99,0,225
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2013,98,3,172
+8,"Downtown, Chinatown, Penn Quarters, Mount Vernon Square, North Capitol Street",2014,87,1,146
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2000,119,1,84
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2001,92,1,86
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2002,87,6,68
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2003,97,2,74
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2004,102,2,47
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2005,90,2,60
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2006,107,5,81
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2007,92,4,98
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2008,69,2,75
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2009,51,3,59
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2010,47,3,55
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2011,48,0,71
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2012,36,2,59
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2013,43,3,43
+9,"Southwest Employment Area, Southwest/Waterfront, Fort McNair, Buzzard Point",2014,39,1,38
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2000,1,0,17
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2001,5,0,32
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2002,8,0,17
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2003,5,1,19
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2004,7,0,19
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2005,2,0,9
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2006,4,1,11
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2007,5,0,11
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2008,0,1,10
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2009,3,0,12
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2010,5,0,5
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2011,5,0,13
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2012,0,0,9
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2013,0,0,6
+10,"Hawthorne, Barnaby Woods, Chevy Chase",2014,2,0,14
+11,"Friendship Heights, American University Park, Tenleytown",2000,19,0,41
+11,"Friendship Heights, American University Park, Tenleytown",2001,21,0,43
+11,"Friendship Heights, American University Park, Tenleytown",2002,18,0,29
+11,"Friendship Heights, American University Park, Tenleytown",2003,14,0,27
+11,"Friendship Heights, American University Park, Tenleytown",2004,12,0,30
+11,"Friendship Heights, American University Park, Tenleytown",2005,14,0,27
+11,"Friendship Heights, American University Park, Tenleytown",2006,15,1,28
+11,"Friendship Heights, American University Park, Tenleytown",2007,8,0,32
+11,"Friendship Heights, American University Park, Tenleytown",2008,9,2,30
+11,"Friendship Heights, American University Park, Tenleytown",2009,14,0,27
+11,"Friendship Heights, American University Park, Tenleytown",2010,9,0,38
+11,"Friendship Heights, American University Park, Tenleytown",2011,6,0,27
+11,"Friendship Heights, American University Park, Tenleytown",2012,6,0,27
+11,"Friendship Heights, American University Park, Tenleytown",2013,5,0,14
+11,"Friendship Heights, American University Park, Tenleytown",2014,6,0,24
+12,"North Cleveland Park, Forest Hills, Van Ness",2000,5,1,9
+12,"North Cleveland Park, Forest Hills, Van Ness",2001,3,0,21
+12,"North Cleveland Park, Forest Hills, Van Ness",2002,7,1,13
+12,"North Cleveland Park, Forest Hills, Van Ness",2003,2,0,10
+12,"North Cleveland Park, Forest Hills, Van Ness",2004,1,0,7
+12,"North Cleveland Park, Forest Hills, Van Ness",2005,3,0,12
+12,"North Cleveland Park, Forest Hills, Van Ness",2006,4,0,11
+12,"North Cleveland Park, Forest Hills, Van Ness",2007,4,0,8
+12,"North Cleveland Park, Forest Hills, Van Ness",2008,3,0,5
+12,"North Cleveland Park, Forest Hills, Van Ness",2009,9,0,6
+12,"North Cleveland Park, Forest Hills, Van Ness",2010,4,0,9
+12,"North Cleveland Park, Forest Hills, Van Ness",2011,1,0,4
+12,"North Cleveland Park, Forest Hills, Van Ness",2012,1,0,3
+12,"North Cleveland Park, Forest Hills, Van Ness",2013,4,0,8
+12,"North Cleveland Park, Forest Hills, Van Ness",2014,2,0,4
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2000,5,0,5
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2001,10,0,7
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2002,8,0,2
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2003,3,0,2
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2004,3,0,3
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2005,5,0,4
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2006,3,0,8
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2007,3,0,10
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2008,2,0,3
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2009,1,0,8
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2010,2,0,5
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2011,1,0,4
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2012,5,0,3
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2013,5,0,0
+13,"Spring Valley, Palisades, Wesley Heights, Foxhall Crescent, Foxhall Village, Georgetown Reservoir",2014,0,0,2
+14,"Cathedral Heights, McLean Gardens, Glover Park",2000,16,1,16
+14,"Cathedral Heights, McLean Gardens, Glover Park",2001,7,0,12
+14,"Cathedral Heights, McLean Gardens, Glover Park",2002,10,1,17
+14,"Cathedral Heights, McLean Gardens, Glover Park",2003,7,0,9
+14,"Cathedral Heights, McLean Gardens, Glover Park",2004,15,1,14
+14,"Cathedral Heights, McLean Gardens, Glover Park",2005,6,0,17
+14,"Cathedral Heights, McLean Gardens, Glover Park",2006,5,0,6
+14,"Cathedral Heights, McLean Gardens, Glover Park",2007,9,0,15
+14,"Cathedral Heights, McLean Gardens, Glover Park",2008,9,0,12
+14,"Cathedral Heights, McLean Gardens, Glover Park",2009,11,0,10
+14,"Cathedral Heights, McLean Gardens, Glover Park",2010,7,1,7
+14,"Cathedral Heights, McLean Gardens, Glover Park",2011,8,0,10
+14,"Cathedral Heights, McLean Gardens, Glover Park",2012,5,0,10
+14,"Cathedral Heights, McLean Gardens, Glover Park",2013,1,0,7
+14,"Cathedral Heights, McLean Gardens, Glover Park",2014,7,1,5
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2000,10,0,29
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2001,15,0,51
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2002,12,0,36
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2003,8,0,25
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2004,6,1,28
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2005,13,0,22
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2006,3,0,28
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2007,4,0,17
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2008,12,0,19
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2009,4,0,29
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2010,6,0,23
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2011,4,0,24
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2012,4,1,21
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2013,2,0,18
+15,"Cleveland Park, Woodley Park, Massachusetts Avenue Heights, Woodland-Normanstone Terrace",2014,7,0,15
+16,"Colonial Village, Shepherd Park, North Portal Estates",2000,6,0,12
+16,"Colonial Village, Shepherd Park, North Portal Estates",2001,10,0,21
+16,"Colonial Village, Shepherd Park, North Portal Estates",2002,2,0,6
+16,"Colonial Village, Shepherd Park, North Portal Estates",2003,6,0,15
+16,"Colonial Village, Shepherd Park, North Portal Estates",2004,8,0,9
+16,"Colonial Village, Shepherd Park, North Portal Estates",2005,6,0,11
+16,"Colonial Village, Shepherd Park, North Portal Estates",2006,5,1,12
+16,"Colonial Village, Shepherd Park, North Portal Estates",2007,6,1,12
+16,"Colonial Village, Shepherd Park, North Portal Estates",2008,5,0,19
+16,"Colonial Village, Shepherd Park, North Portal Estates",2009,2,0,10
+16,"Colonial Village, Shepherd Park, North Portal Estates",2010,0,0,15
+16,"Colonial Village, Shepherd Park, North Portal Estates",2011,4,0,10
+16,"Colonial Village, Shepherd Park, North Portal Estates",2012,9,1,12
+16,"Colonial Village, Shepherd Park, North Portal Estates",2013,9,0,11
+16,"Colonial Village, Shepherd Park, North Portal Estates",2014,3,0,11
+17,"Takoma, Brightwood, Manor Park",2000,64,9,90
+17,"Takoma, Brightwood, Manor Park",2001,92,2,95
+17,"Takoma, Brightwood, Manor Park",2002,101,10,133
+17,"Takoma, Brightwood, Manor Park",2003,101,4,169
+17,"Takoma, Brightwood, Manor Park",2004,102,4,112
+17,"Takoma, Brightwood, Manor Park",2005,88,2,109
+17,"Takoma, Brightwood, Manor Park",2006,68,2,134
+17,"Takoma, Brightwood, Manor Park",2007,81,1,156
+17,"Takoma, Brightwood, Manor Park",2008,55,4,145
+17,"Takoma, Brightwood, Manor Park",2009,58,1,157
+17,"Takoma, Brightwood, Manor Park",2010,58,3,102
+17,"Takoma, Brightwood, Manor Park",2011,51,1,107
+17,"Takoma, Brightwood, Manor Park",2012,54,0,131
+17,"Takoma, Brightwood, Manor Park",2013,48,2,108
+17,"Takoma, Brightwood, Manor Park",2014,46,1,82
+18,"Brightwood Park, Crestwood, Petworth",2000,187,11,208
+18,"Brightwood Park, Crestwood, Petworth",2001,219,8,190
+18,"Brightwood Park, Crestwood, Petworth",2002,250,13,214
+18,"Brightwood Park, Crestwood, Petworth",2003,238,9,245
+18,"Brightwood Park, Crestwood, Petworth",2004,225,11,225
+18,"Brightwood Park, Crestwood, Petworth",2005,210,3,217
+18,"Brightwood Park, Crestwood, Petworth",2006,205,3,216
+18,"Brightwood Park, Crestwood, Petworth",2007,202,10,332
+18,"Brightwood Park, Crestwood, Petworth",2008,206,9,269
+18,"Brightwood Park, Crestwood, Petworth",2009,196,14,261
+18,"Brightwood Park, Crestwood, Petworth",2010,177,6,268
+18,"Brightwood Park, Crestwood, Petworth",2011,112,9,176
+18,"Brightwood Park, Crestwood, Petworth",2012,128,2,260
+18,"Brightwood Park, Crestwood, Petworth",2013,113,6,250
+18,"Brightwood Park, Crestwood, Petworth",2014,123,7,211
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2000,34,2,48
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2001,50,4,60
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2002,43,1,67
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2003,75,4,86
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2004,48,2,49
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2005,60,4,55
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2006,39,3,89
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2007,46,0,92
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2008,66,3,68
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2009,51,2,85
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2010,34,1,52
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2011,25,3,45
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2012,38,2,42
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2013,32,1,57
+19,"Lamont Riggs, Queens Chapel, Fort Totten, Pleasant Hill",2014,42,0,58
+20,"North Michigan Park, Michigan Park, University Heights",2000,26,1,57
+20,"North Michigan Park, Michigan Park, University Heights",2001,26,1,63
+20,"North Michigan Park, Michigan Park, University Heights",2002,21,3,54
+20,"North Michigan Park, Michigan Park, University Heights",2003,28,1,54
+20,"North Michigan Park, Michigan Park, University Heights",2004,30,1,39
+20,"North Michigan Park, Michigan Park, University Heights",2005,28,8,65
+20,"North Michigan Park, Michigan Park, University Heights",2006,30,0,83
+20,"North Michigan Park, Michigan Park, University Heights",2007,25,2,64
+20,"North Michigan Park, Michigan Park, University Heights",2008,19,3,47
+20,"North Michigan Park, Michigan Park, University Heights",2009,26,2,41
+20,"North Michigan Park, Michigan Park, University Heights",2010,21,1,50
+20,"North Michigan Park, Michigan Park, University Heights",2011,13,1,54
+20,"North Michigan Park, Michigan Park, University Heights",2012,20,2,41
+20,"North Michigan Park, Michigan Park, University Heights",2013,19,1,47
+20,"North Michigan Park, Michigan Park, University Heights",2014,14,1,37
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2000,174,12,158
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2001,187,23,181
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2002,182,14,153
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2003,176,14,165
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2004,168,10,142
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2005,145,13,169
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2006,172,8,159
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2007,130,3,157
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2008,95,9,189
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2009,103,7,204
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2010,90,4,185
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2011,88,8,170
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2012,84,4,171
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2013,65,7,153
+21,"Edgewood, Bloomingdale, Truxton Circle, Eckington",2014,80,6,150
+22,"Brookland, Brentwood, Langdon",2000,108,13,116
+22,"Brookland, Brentwood, Langdon",2001,102,12,94
+22,"Brookland, Brentwood, Langdon",2002,104,11,101
+22,"Brookland, Brentwood, Langdon",2003,114,9,108
+22,"Brookland, Brentwood, Langdon",2004,98,6,83
+22,"Brookland, Brentwood, Langdon",2005,119,6,129
+22,"Brookland, Brentwood, Langdon",2006,93,4,127
+22,"Brookland, Brentwood, Langdon",2007,91,4,123
+22,"Brookland, Brentwood, Langdon",2008,75,8,118
+22,"Brookland, Brentwood, Langdon",2009,50,3,120
+22,"Brookland, Brentwood, Langdon",2010,64,6,100
+22,"Brookland, Brentwood, Langdon",2011,80,2,109
+22,"Brookland, Brentwood, Langdon",2012,76,3,109
+22,"Brookland, Brentwood, Langdon",2013,60,2,112
+22,"Brookland, Brentwood, Langdon",2014,55,1,113
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2000,288,18,137
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2001,242,17,178
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2002,231,21,140
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2003,268,21,207
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2004,248,16,145
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2005,247,11,182
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2006,218,11,171
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2007,211,12,152
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2008,166,13,165
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2009,135,10,155
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2010,181,5,122
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2011,121,14,129
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2012,162,7,175
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2013,123,2,156
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2014,146,8,147
+23,"Ivy City, Arboretum, Trinidad, Carver Langston",2015,0,0,1
+24,"Woodridge, Fort Lincoln, Gateway",2000,22,4,26
+24,"Woodridge, Fort Lincoln, Gateway",2001,27,2,32
+24,"Woodridge, Fort Lincoln, Gateway",2002,34,3,36
+24,"Woodridge, Fort Lincoln, Gateway",2003,39,2,38
+24,"Woodridge, Fort Lincoln, Gateway",2004,26,4,35
+24,"Woodridge, Fort Lincoln, Gateway",2005,24,1,41
+24,"Woodridge, Fort Lincoln, Gateway",2006,25,2,41
+24,"Woodridge, Fort Lincoln, Gateway",2007,29,2,36
+24,"Woodridge, Fort Lincoln, Gateway",2008,19,3,35
+24,"Woodridge, Fort Lincoln, Gateway",2009,20,2,28
+24,"Woodridge, Fort Lincoln, Gateway",2010,15,1,17
+24,"Woodridge, Fort Lincoln, Gateway",2011,15,0,35
+24,"Woodridge, Fort Lincoln, Gateway",2012,25,2,43
+24,"Woodridge, Fort Lincoln, Gateway",2013,23,1,33
+24,"Woodridge, Fort Lincoln, Gateway",2014,19,1,24
+25,"Union Station, Stanton Park, Kingman Park",2000,216,14,290
+25,"Union Station, Stanton Park, Kingman Park",2001,244,7,282
+25,"Union Station, Stanton Park, Kingman Park",2002,184,12,325
+25,"Union Station, Stanton Park, Kingman Park",2003,203,14,314
+25,"Union Station, Stanton Park, Kingman Park",2004,195,10,273
+25,"Union Station, Stanton Park, Kingman Park",2005,183,9,227
+25,"Union Station, Stanton Park, Kingman Park",2006,179,6,273
+25,"Union Station, Stanton Park, Kingman Park",2007,173,11,289
+25,"Union Station, Stanton Park, Kingman Park",2008,154,4,267
+25,"Union Station, Stanton Park, Kingman Park",2009,126,3,292
+25,"Union Station, Stanton Park, Kingman Park",2010,99,4,206
+25,"Union Station, Stanton Park, Kingman Park",2011,88,5,249
+25,"Union Station, Stanton Park, Kingman Park",2012,93,4,264
+25,"Union Station, Stanton Park, Kingman Park",2013,97,1,228
+25,"Union Station, Stanton Park, Kingman Park",2014,104,4,205
+26,"Capitol Hill, Lincoln Park",2000,110,12,187
+26,"Capitol Hill, Lincoln Park",2001,103,1,223
+26,"Capitol Hill, Lincoln Park",2002,92,1,249
+26,"Capitol Hill, Lincoln Park",2003,100,0,228
+26,"Capitol Hill, Lincoln Park",2004,87,4,146
+26,"Capitol Hill, Lincoln Park",2005,79,4,186
+26,"Capitol Hill, Lincoln Park",2006,97,6,147
+26,"Capitol Hill, Lincoln Park",2007,98,6,155
+26,"Capitol Hill, Lincoln Park",2008,74,2,199
+26,"Capitol Hill, Lincoln Park",2009,74,3,190
+26,"Capitol Hill, Lincoln Park",2010,75,1,143
+26,"Capitol Hill, Lincoln Park",2011,43,0,137
+26,"Capitol Hill, Lincoln Park",2012,58,1,154
+26,"Capitol Hill, Lincoln Park",2013,38,1,135
+26,"Capitol Hill, Lincoln Park",2014,53,1,116
+27,"Near Southeast, Navy Yard",2000,53,0,55
+27,"Near Southeast, Navy Yard",2001,65,1,61
+27,"Near Southeast, Navy Yard",2002,66,1,57
+27,"Near Southeast, Navy Yard",2003,63,3,47
+27,"Near Southeast, Navy Yard",2004,34,0,38
+27,"Near Southeast, Navy Yard",2005,17,1,36
+27,"Near Southeast, Navy Yard",2006,15,0,15
+27,"Near Southeast, Navy Yard",2007,11,0,14
+27,"Near Southeast, Navy Yard",2008,7,0,14
+27,"Near Southeast, Navy Yard",2009,10,0,15
+27,"Near Southeast, Navy Yard",2010,9,0,14
+27,"Near Southeast, Navy Yard",2011,9,0,8
+27,"Near Southeast, Navy Yard",2012,4,0,18
+27,"Near Southeast, Navy Yard",2013,3,12,14
+27,"Near Southeast, Navy Yard",2014,7,0,11
+28,"Historic Anacostia",2000,90,5,53
+28,"Historic Anacostia",2001,96,3,30
+28,"Historic Anacostia",2002,75,10,41
+28,"Historic Anacostia",2003,86,3,29
+28,"Historic Anacostia",2004,73,6,31
+28,"Historic Anacostia",2005,45,7,55
+28,"Historic Anacostia",2006,60,6,59
+28,"Historic Anacostia",2007,59,5,70
+28,"Historic Anacostia",2008,62,4,67
+28,"Historic Anacostia",2009,38,2,30
+28,"Historic Anacostia",2010,46,4,57
+28,"Historic Anacostia",2011,57,2,61
+28,"Historic Anacostia",2012,52,2,85
+28,"Historic Anacostia",2013,64,1,58
+28,"Historic Anacostia",2014,63,3,69
+29,"Eastland Gardens, Kenilworth",2000,19,2,9
+29,"Eastland Gardens, Kenilworth",2001,19,0,14
+29,"Eastland Gardens, Kenilworth",2002,20,5,14
+29,"Eastland Gardens, Kenilworth",2003,22,5,11
+29,"Eastland Gardens, Kenilworth",2004,16,2,12
+29,"Eastland Gardens, Kenilworth",2005,35,2,20
+29,"Eastland Gardens, Kenilworth",2006,16,4,9
+29,"Eastland Gardens, Kenilworth",2007,15,2,8
+29,"Eastland Gardens, Kenilworth",2008,18,0,23
+29,"Eastland Gardens, Kenilworth",2009,19,3,18
+29,"Eastland Gardens, Kenilworth",2010,11,1,17
+29,"Eastland Gardens, Kenilworth",2011,8,2,10
+29,"Eastland Gardens, Kenilworth",2012,19,4,8
+29,"Eastland Gardens, Kenilworth",2013,16,0,36
+29,"Eastland Gardens, Kenilworth",2014,42,2,19
+30,"Mayfair, Hillbrook, Mahaning Heights",2000,41,2,52
+30,"Mayfair, Hillbrook, Mahaning Heights",2001,63,4,55
+30,"Mayfair, Hillbrook, Mahaning Heights",2002,46,1,48
+30,"Mayfair, Hillbrook, Mahaning Heights",2003,45,4,57
+30,"Mayfair, Hillbrook, Mahaning Heights",2004,40,2,63
+30,"Mayfair, Hillbrook, Mahaning Heights",2005,55,3,55
+30,"Mayfair, Hillbrook, Mahaning Heights",2006,43,5,44
+30,"Mayfair, Hillbrook, Mahaning Heights",2007,44,2,51
+30,"Mayfair, Hillbrook, Mahaning Heights",2008,46,1,66
+30,"Mayfair, Hillbrook, Mahaning Heights",2009,50,6,78
+30,"Mayfair, Hillbrook, Mahaning Heights",2010,49,0,72
+30,"Mayfair, Hillbrook, Mahaning Heights",2011,54,2,70
+30,"Mayfair, Hillbrook, Mahaning Heights",2012,32,3,77
+30,"Mayfair, Hillbrook, Mahaning Heights",2013,57,1,94
+30,"Mayfair, Hillbrook, Mahaning Heights",2014,64,3,90
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2000,138,19,118
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2001,151,16,134
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2002,139,15,103
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2003,110,24,140
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2004,115,8,88
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2005,131,7,160
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2006,133,8,92
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2007,113,12,108
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2008,141,7,131
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2009,134,6,134
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2010,121,10,130
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2011,126,8,125
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2012,84,2,152
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2013,131,5,192
+31,"Deanwood, Burrville, Grant Park, Lincoln Heights, Fairmont Heights",2014,141,9,172
+32,"River Terrace, Benning, Greenway, Dupont Park",2000,126,5,85
+32,"River Terrace, Benning, Greenway, Dupont Park",2001,123,6,109
+32,"River Terrace, Benning, Greenway, Dupont Park",2002,124,11,79
+32,"River Terrace, Benning, Greenway, Dupont Park",2003,111,7,96
+32,"River Terrace, Benning, Greenway, Dupont Park",2004,107,12,90
+32,"River Terrace, Benning, Greenway, Dupont Park",2005,98,2,70
+32,"River Terrace, Benning, Greenway, Dupont Park",2006,91,9,78
+32,"River Terrace, Benning, Greenway, Dupont Park",2007,96,7,101
+32,"River Terrace, Benning, Greenway, Dupont Park",2008,93,10,97
+32,"River Terrace, Benning, Greenway, Dupont Park",2009,77,3,110
+32,"River Terrace, Benning, Greenway, Dupont Park",2010,100,3,117
+32,"River Terrace, Benning, Greenway, Dupont Park",2011,89,5,133
+32,"River Terrace, Benning, Greenway, Dupont Park",2012,111,7,145
+32,"River Terrace, Benning, Greenway, Dupont Park",2013,113,6,164
+32,"River Terrace, Benning, Greenway, Dupont Park",2014,130,2,182
+33,"Capitol View, Marshall Heights, Benning Heights",2000,179,12,145
+33,"Capitol View, Marshall Heights, Benning Heights",2001,197,14,139
+33,"Capitol View, Marshall Heights, Benning Heights",2002,191,19,149
+33,"Capitol View, Marshall Heights, Benning Heights",2003,138,12,139
+33,"Capitol View, Marshall Heights, Benning Heights",2004,132,18,133
+33,"Capitol View, Marshall Heights, Benning Heights",2005,166,9,112
+33,"Capitol View, Marshall Heights, Benning Heights",2006,168,10,114
+33,"Capitol View, Marshall Heights, Benning Heights",2007,123,8,111
+33,"Capitol View, Marshall Heights, Benning Heights",2008,119,17,138
+33,"Capitol View, Marshall Heights, Benning Heights",2009,127,7,191
+33,"Capitol View, Marshall Heights, Benning Heights",2010,128,7,163
+33,"Capitol View, Marshall Heights, Benning Heights",2011,88,4,137
+33,"Capitol View, Marshall Heights, Benning Heights",2012,99,8,141
+33,"Capitol View, Marshall Heights, Benning Heights",2013,154,8,204
+33,"Capitol View, Marshall Heights, Benning Heights",2014,157,8,167
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2000,119,8,112
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2001,125,10,129
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2002,119,8,126
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2003,105,13,89
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2004,101,5,74
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2005,88,12,84
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2006,122,6,98
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2007,97,6,122
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2008,91,6,110
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2009,97,2,78
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2010,67,4,73
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2011,86,4,78
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2012,98,5,118
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2013,95,6,107
+34,"Twining, Fairlawn, Randle Highlands, Penn Branch, Fort Davis Park, Fort Dupont",2014,96,3,82
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2000,32,3,60
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2001,38,2,67
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2002,28,3,60
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2003,32,0,57
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2004,35,1,75
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2005,33,1,67
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2006,32,0,53
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2007,15,1,73
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2008,16,0,71
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2009,22,2,34
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2010,27,1,56
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2011,20,0,57
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2012,19,1,53
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2013,22,2,51
+35,"Fairfax Village, Naylor Gardens, Hillcrest, Summit Park",2014,23,1,49
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2000,114,4,33
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2001,120,5,55
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2002,118,8,55
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2003,97,9,54
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2004,83,5,83
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2005,82,6,66
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2006,86,3,55
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2007,73,7,71
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2008,65,2,56
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2009,76,4,58
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2010,77,7,68
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2011,58,3,68
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2012,65,1,109
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2013,69,3,98
+36,"Woodland/Fort Stanton, Garfield Heights, Knox Hill",2014,77,4,59
+37,"Sheridan, Barry Farm, Buena Vista",2000,139,6,48
+37,"Sheridan, Barry Farm, Buena Vista",2001,115,13,50
+37,"Sheridan, Barry Farm, Buena Vista",2002,145,5,60
+37,"Sheridan, Barry Farm, Buena Vista",2003,129,9,56
+37,"Sheridan, Barry Farm, Buena Vista",2004,114,10,60
+37,"Sheridan, Barry Farm, Buena Vista",2005,82,8,65
+37,"Sheridan, Barry Farm, Buena Vista",2006,86,10,89
+37,"Sheridan, Barry Farm, Buena Vista",2007,114,12,94
+37,"Sheridan, Barry Farm, Buena Vista",2008,90,5,87
+37,"Sheridan, Barry Farm, Buena Vista",2009,82,9,99
+37,"Sheridan, Barry Farm, Buena Vista",2010,107,6,67
+37,"Sheridan, Barry Farm, Buena Vista",2011,93,6,91
+37,"Sheridan, Barry Farm, Buena Vista",2012,96,4,127
+37,"Sheridan, Barry Farm, Buena Vista",2013,87,2,85
+37,"Sheridan, Barry Farm, Buena Vista",2014,66,11,76
+38,"Douglas, Shipley Terrace",2000,155,7,85
+38,"Douglas, Shipley Terrace",2001,138,6,80
+38,"Douglas, Shipley Terrace",2002,140,12,74
+38,"Douglas, Shipley Terrace",2003,135,7,82
+38,"Douglas, Shipley Terrace",2004,98,16,52
+38,"Douglas, Shipley Terrace",2005,115,22,83
+38,"Douglas, Shipley Terrace",2006,130,7,105
+38,"Douglas, Shipley Terrace",2007,126,12,103
+38,"Douglas, Shipley Terrace",2008,123,10,99
+38,"Douglas, Shipley Terrace",2009,131,7,107
+38,"Douglas, Shipley Terrace",2010,105,5,156
+38,"Douglas, Shipley Terrace",2011,95,4,114
+38,"Douglas, Shipley Terrace",2012,102,7,146
+38,"Douglas, Shipley Terrace",2013,117,6,117
+38,"Douglas, Shipley Terrace",2014,117,6,93
+39,"Congress Heights, Bellevue, Washington Highlands",2000,390,26,282
+39,"Congress Heights, Bellevue, Washington Highlands",2001,368,32,289
+39,"Congress Heights, Bellevue, Washington Highlands",2002,411,24,250
+39,"Congress Heights, Bellevue, Washington Highlands",2003,382,36,262
+39,"Congress Heights, Bellevue, Washington Highlands",2004,306,20,239
+39,"Congress Heights, Bellevue, Washington Highlands",2005,268,19,265
+39,"Congress Heights, Bellevue, Washington Highlands",2006,291,18,201
+39,"Congress Heights, Bellevue, Washington Highlands",2007,314,22,322
+39,"Congress Heights, Bellevue, Washington Highlands",2008,293,26,334
+39,"Congress Heights, Bellevue, Washington Highlands",2009,240,19,377
+39,"Congress Heights, Bellevue, Washington Highlands",2010,280,19,269
+39,"Congress Heights, Bellevue, Washington Highlands",2011,227,6,388
+39,"Congress Heights, Bellevue, Washington Highlands",2012,277,5,300
+39,"Congress Heights, Bellevue, Washington Highlands",2013,253,9,324
+39,"Congress Heights, Bellevue, Washington Highlands",2014,235,10,231
