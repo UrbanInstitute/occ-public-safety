@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OCC Leaflet</title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+</head>
+
+<body>
+    <div id="map" style="width: 800px; height: 700px"></div>
+
+    <script src="js/assaultdata.js" type="text/javascript"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+
+    <script>
+        var geojsonMarkerOptions = {
+            radius: 1,
+            color: "#000000",
+            weight: 1,
+            opacity: 0.5,
+            fillOpacity: 0.5,
+            clickable: false
+        };
+
+        var map = L.map('map', {
+            center: [38.9047, -77.0164],
+            zoom: 12
+        });
+
+        L.tileLayer('https://{s}.tiles.mapbox.com/v3/{id}/{z}/{x}/{y}.png', {
+            id: 'urbaninstitute.iji12b2j'
+        }).addTo(map);
+
+
+        new L.GeoJSON(assault01, {
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, geojsonMarkerOptions);
+            }
+        }).addTo(map);
+    </script>
+</body>
+
+</html>

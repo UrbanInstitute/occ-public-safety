@@ -1,0 +1,577 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-bottom: 40px;
+    padding-top: 70px;
+    color: #5a5a5a;
+    font-family: 'Lato';
+}
+.row {
+    margin-top: 50px;
+}
+/*CUSTOMIZE HIGHCHARTS */
+
+.highcharts-tooltip text {
+    color: #ffffff;
+}
+.lead {
+    text-align: left;
+    font-weight: 400;
+}
+.lead a{
+ color:#83c4e8    
+}
+.chart {
+    margin: 0 auto;
+    margin-top:60px;
+    position: relative;
+    min-width: 400px;
+    min-height: 400px;
+    max-height: 800px;
+        height: 70%;
+
+}
+#timeline {
+    height: 520px;
+    width: 100%;
+    top: 60px;
+    position: relative;
+    margin: 0px;
+}
+#zoomingIn{
+ font-size: 16px;   
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+.navbar-default {
+    background-color: #0096d2;
+    border-color: #0096d2;
+}
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+#navTitle {
+    height: 60px;
+    display: inline;
+    float: left;
+    margin-left: -63px;
+}
+
+/*hack to make firefox display the residential housing map*/
+#buildingMapFF{
+ display: none;
+}
+#viewInteractive{
+    display: none;
+}
+
+@-moz-document url-prefix() {
+    #buildingMap {
+        display: none;
+    }
+    #buildingMapFF{
+        display: block;
+    }
+    #viewInteractive{
+        display: block
+    }
+    #viewLarger{
+        display: none
+    }
+}
+
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+    overflow: auto;
+}
+.carousel {
+    margin-bottom: 60px;
+}
+.carousel-caption {
+    z-index: 10;
+    top: 20px;
+}
+.carousel .item {
+    background-color: #fff;
+}
+.carousel .carousel-inner .bg {
+    background-color: #fff;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel .carousel-inner .bg1 {} .carousel .carousel-inner .bgCover {
+    background-image: url(../images/9Q1A7850.JPG);
+    background-position: center center;
+}
+
+.carousel .carousel-inner .credits {} .carousel .carousel-inner .bgCover {
+    background-image: url(images/20131005_130409.jpg);
+    background-position: center center;
+}
+
+#closingImage{
+    position: inherit;
+    margin-top: 50px;
+    min-width: 450px;
+    min-height: 600px;
+    width: 100%;
+    height: 100%;
+ background-image: url(images/9Q1A8137.JPG);
+        background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carousel .carousel-inner .bg3 {
+    background-image: url(bg3.jpg);
+    background-position: center bottom;
+}
+.carousel-indicators {
+    top: 20px;
+    display: inline;
+    float: left;
+    z-index: 1000;
+}
+.carousel-control {
+    width: 40px;
+    background-color: #ccc;
+}
+.arrow-left {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    display: inline;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+.arrow-right {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    display: inline;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+.carousel-indicators li {
+    border-radius: 0px;
+    border-color: #357ebd;
+    background-color: #357ebd;
+}
+.carousel-indicators .active {
+    background-color: #fff !important;
+}
+.carousel-caption {
+    color: #555;
+    text-shadow: none;
+}
+.title {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    font-size: 1.5em;
+    margin-top: 10%;
+    padding:15px;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.5);
+    left:10%;
+    right:10%;
+}
+#pageTitle {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    top: 0;
+}
+#occ-section{
+font-weight: lighter;}
+.carousel-caption h2 {
+    text-align: left;
+}
+.moreInfo {
+    position: relative;
+    left: 100%;
+    bottom: 10px;
+}
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}
+.chartKey{
+ margin-top: 60px;
+    
+}
+.priceKey{
+ max-width: 350px;   
+    float: left;
+}
+#inmovers{
+ position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+.inmoverchart {
+    position: relative;
+    min-height: 450px;
+    min-width: 400px;
+    height: 450px;
+    width: 600px;
+    margin: 0 auto;
+}
+#neighborhoodMap {
+    height: 600px;
+    height: 90%;
+}
+#buildingMap {
+    height: 600px;
+    height: 90%;
+}
+.multichart3 {
+    position: relative;
+    width: 200px;
+    height: 400px;
+    margin: 0 auto;
+    float: left
+}
+.multichart4 {
+    position: relative;
+    width: 150px;
+    height: 400px;
+    margin: 0 auto;
+    float: left
+}
+#sales{
+    width:650px;
+    margin: 0 auto;
+    text-align: center;
+}
+#rentals{
+    width:650px;
+    margin: 0 auto;
+    text-align: center;
+}
+.btn-group{
+ margin: 0 auto;   
+}
+#previousChapters{
+ margin-top: 18px;
+   position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 290px;
+    z-index: 10000;
+}
+#logo {
+    float: right;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+#share {
+    position: absolute;
+    top:0;
+    right:0;
+  
+    height: 60px;
+}
+#shareMaster {
+    border-left: 1px solid #ccc;
+    width: 70px;
+    height: 60px;
+    padding-left: 20px;
+    display: inline;
+    float: right;
+    display: inline-block;
+    opacity: 1;
+}
+.circle {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-right: 5px;
+    background-color: #fff;
+    color: #0096d2;
+    display: inline-block;
+}
+.circle:hover {
+    background-color: #000;
+}
+#socials a {
+    color: #0096d2;
+}
+#socials a:hover {
+    color: #0096d2;
+}
+#socials {
+    float: right;
+    color: #fff;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+#share:hover #shareMaster {
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+#share:hover #socials {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+/*table styling*/
+.solidLine{
+ border-bottom: 1px solid black;
+    font-weight: 700;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.greyLine{
+     border-bottom: 1px solid #eee;
+
+}
+.source{
+ font-size: 0.65em;   
+}
+.right{
+ text-align: right;
+}
+
+#map-tooltip-content{
+ max-width: 200px;   
+}
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Pad the edges of the mobile views a bit */
+
+.marketing {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+/* Center align the text within the three columns below the carousel */
+
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+/* popup box */
+.black_overlay{
+			display: none;
+			position: absolute;
+			top: 0%;
+			left: 0%;
+			width: 100%;
+			height: 100%;
+			background-color: white;
+			z-index:1001;
+			-moz-opacity: 0.8;
+			opacity:.80;
+			filter: alpha(opacity=80);
+		}
+		.white_content {
+			display: none;
+			position: absolute;
+			top: 15%;
+			left: 15%;
+			width: 70%;
+			height: auto;
+			padding: 16px;
+			border: 16px solid #0096d2;
+			background-color: white;
+			z-index:1002;
+			overflow: auto;
+		}
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+    margin: 80px 0;
+    /* Space out the Bootstrap <hr> more */
+}
+/* Thin out the marketing headings */
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 768px) {
+    .chart {
+        min-width: 280px;
+        max-height: 400px;
+    }
+    .inmoverchart{
+        min-width: 280px;
+        max-height: 400px;
+    }
+    h3, p{
+     max-width: 80%;
+        margin-left: 10%;
+    }
+    h3{
+        margin-top: 50px;
+    }
+    #shareMaster, #socials{
+     display: none;
+    }
+    .carousel-indicators{
+        top: 60px;
+    }
+    .navbar-default{
+        height: 90px;
+    }
+    #previousChapters{
+        display: none;
+    }
+    .carousel .carousel-inner .bg {
+    background-color: #fff;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  
+}
+    .active{
+     height: auto;   
+    }
+}
+
+#imageHide{
+ position: absolute;
+    left: -100000;
+    top: -100000;
+    z-index: -10000000;
+    display: none;
+}
+
+#titleLink{
+ text-decoration: none;
+    color: #fff;
+}
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+    .chart {
+        min-width: 400px;
+        max-width: 480px;
+    }
+    
+}
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {
+    /* Remove the edge padding needed for mobile */
+    .marketing {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 13px;
+        line-height: 1.2;
+        text-align: left;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+    .chart {
+        min-width: 470px;
+    }
+}
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {
+    .chart {
+        min-width: 617px;
+    }
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width: 1200px) {
+        .chart {
+            min-width: 750px;
+        }
+    }
