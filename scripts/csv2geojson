@@ -7,3 +7,8 @@ cd ../homicide
 for i in {2000..2014}
 do csv2geojson homicide$i.csv > homicide$i.geojson
 done
+
+cd ../robbery
+for i in {2000..2014}
+do csv2geojson robbery$i.csv > robbery$i.geojson
+done
