@@ -1,0 +1,3365 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9921036,
+          38.8418007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9784012,
+          38.846199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0297012,
+          38.9247017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9835968,
+          38.8935013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0106964,
+          38.9103012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0197983,
+          38.914299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.030098,
+          38.9277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9884033,
+          38.8406982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0419998,
+          38.9210014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0242004,
+          38.9673004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0419998,
+          38.9210014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9829025,
+          38.9020996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9514999,
+          38.8900986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0198975,
+          38.9612999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9866028,
+          38.9131012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9866028,
+          38.9131012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9357986,
+          38.8759003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0056,
+          38.8312988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9887009,
+          38.8552017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9552002,
+          38.8899002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9854965,
+          38.884201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0100021,
+          38.9155998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9704971,
+          38.8544998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0229034,
+          38.9672012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0235977,
+          38.9376984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0065994,
+          38.9436989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9905014,
+          38.8672981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0217972,
+          38.9314003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9784012,
+          38.8653984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0355988,
+          38.9313011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9876022,
+          38.8419991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9251022,
+          38.8847008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9327011,
+          38.8764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9906998,
+          38.9296989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9682999,
+          38.9342995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0221024,
+          38.9323006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9821014,
+          38.8894997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0723038,
+          38.921299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0151978,
+          38.9135017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0229034,
+          38.9327011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9914017,
+          38.9034004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9812012,
+          38.9341011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0034027,
+          38.9155998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9812012,
+          38.9341011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9521027,
+          38.8652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9910965,
+          38.902401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9910965,
+          38.902401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9891968,
+          38.8376007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9910965,
+          38.902401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9393997,
+          38.8824005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0074005,
+          38.9528999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9162979,
+          38.8944016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0716019,
+          38.9076996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9775009,
+          38.9015007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0298004,
+          38.9399986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.030899,
+          38.9338989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0139999,
+          38.9422989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.924202,
+          38.8931007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9805984,
+          38.8959999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.972702,
+          38.8470993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9610977,
+          38.8802986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9335022,
+          38.8821983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9709015,
+          38.8623009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9297028,
+          38.9014015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9297028,
+          38.9014015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9253006,
+          38.8833008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0261002,
+          38.9126015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.004303,
+          38.823101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0114975,
+          38.9547997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0218964,
+          38.8997002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9897003,
+          38.8316002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9922028,
+          38.9224014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9936981,
+          38.9221001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.036499,
+          38.9305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9427032,
+          38.8974991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.032402,
+          38.9278984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9832993,
+          38.9199982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9719009,
+          38.8566017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0319977,
+          38.9147987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9138031,
+          38.8908005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9870987,
+          38.8588982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9896011,
+          38.8795013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9921036,
+          38.8418007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9524002,
+          38.8875008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0199966,
+          38.9555016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0199966,
+          38.9655991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0697021,
+          38.9524994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9287033,
+          38.8837013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9915009,
+          38.8785019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0072021,
+          38.8988991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0286026,
+          38.9351006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.973999,
+          38.9011993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9377975,
+          38.9123993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0141983,
+          38.9415016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9759979,
+          38.9054985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9393005,
+          38.8983994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9751968,
+          38.8658981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9327011,
+          38.8765984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9896011,
+          38.8543015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0297012,
+          38.9061012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9949036,
+          38.8292999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0230026,
+          38.9757004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.966301,
+          38.9314003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0327988,
+          38.9389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9789963,
+          38.8899002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9789963,
+          38.8899002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0221024,
+          38.9328995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0212021,
+          38.9364014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9365005,
+          38.9006004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0007019,
+          38.9245987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0057983,
+          38.8330994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9943008,
+          38.8268013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9255981,
+          38.9017982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9919968,
+          38.8340988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0215988,
+          38.9655991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0215988,
+          38.9655991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9787979,
+          38.8961983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0054016,
+          38.9179993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0026016,
+          38.8406982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9917984,
+          38.8409996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9881973,
+          38.9221001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0261002,
+          38.9141006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9794998,
+          38.9035988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.917099,
+          38.8903999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.001503,
+          38.824501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9894028,
+          38.8919983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9998016,
+          38.8451996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9294968,
+          38.8931999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9294968,
+          38.8931999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9385986,
+          38.8832016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9853973,
+          38.8797989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9853973,
+          38.8797989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9791031,
+          38.8932991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9657974,
+          38.8535004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9927979,
+          38.9017982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9610977,
+          38.8843002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9296036,
+          38.8983002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9982986,
+          38.8404007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9733963,
+          38.9002991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9982986,
+          38.8404007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9674988,
+          38.9342003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9464035,
+          38.8863983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9729996,
+          38.8473015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9882965,
+          38.949501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0421982,
+          38.921299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9854965,
+          38.9001999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9924011,
+          38.9276009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9791031,
+          38.8950005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9998016,
+          38.8255005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0222015,
+          38.9529991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0242996,
+          38.9095993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9309998,
+          38.8970985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9309998,
+          38.8970985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9749985,
+          38.9192009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9824982,
+          38.8482018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0230026,
+          38.9266014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9906006,
+          38.9276009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9906006,
+          38.9276009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0111008,
+          38.9053993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0270004,
+          38.9104996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9991989,
+          38.8591003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.989502,
+          38.9048996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0325012,
+          38.9275017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9802017,
+          38.8671989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9822006,
+          38.8712997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0218964,
+          38.9056015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0230026,
+          38.9155998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0311966,
+          38.9257011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0007019,
+          38.8278008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9393997,
+          38.8818016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9838028,
+          38.8637009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9897995,
+          38.8806992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9853973,
+          38.8797989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9873962,
+          38.861599
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0147018,
+          38.9185982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9159012,
+          38.889801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9870987,
+          38.8588982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9831009,
+          38.9191017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9828033,
+          38.9042015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9938965,
+          38.8292999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0327988,
+          38.9359016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0205994,
+          38.9497986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0267029,
+          38.9740982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9375992,
+          38.9129982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0085983,
+          38.9126015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9881973,
+          38.8325005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0187988,
+          38.9076996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9555969,
+          38.8595009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9291,
+          38.8815002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0205994,
+          38.9096985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9943008,
+          38.9045982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0220032,
+          38.8984985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0257034,
+          38.9483986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9859009,
+          38.9035988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0066986,
+          38.918499
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0297012,
+          38.9407005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0151978,
+          38.9124985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9750977,
+          38.9035988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0187988,
+          38.9076004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0226974,
+          38.9328003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9773026,
+          38.905899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0327988,
+          38.9341011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9835968,
+          38.8955002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9241028,
+          38.9030991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0327988,
+          38.9364014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0008011,
+          38.8596992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9238968,
+          38.8941002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9889984,
+          38.9070015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9669037,
+          38.8684998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9754028,
+          38.9234009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9868011,
+          38.9096985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0263977,
+          38.9822998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0297012,
+          38.9247017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9822998,
+          38.8713989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0130997,
+          38.9132996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0027008,
+          38.838501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9788971,
+          38.8446999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9179001,
+          38.8983994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0045013,
+          38.8401985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0226974,
+          38.9361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0157013,
+          38.9145012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.004303,
+          38.8330994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9654999,
+          38.8544006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0261002,
+          38.926899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9806976,
+          38.8876991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9178009,
+          38.8909988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9301987,
+          38.8937988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.935997,
+          38.8900986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9915009,
+          38.8783989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.968399,
+          38.9289017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0091019,
+          38.9205017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0045013,
+          38.8377991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0067978,
+          38.8250008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9802017,
+          38.9067993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9840012,
+          38.8613014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0112,
+          38.8708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9750977,
+          38.8722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9806976,
+          38.8933983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9822006,
+          38.8694992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0007019,
+          38.8288994
+        ]
+      }
+    }
+  ]
+}

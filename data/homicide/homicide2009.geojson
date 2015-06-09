@@ -1,0 +1,1937 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9710007,
+          38.8605003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9813004,
+          38.8877983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9873962,
+          38.8595009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9792023,
+          38.8434982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9962997,
+          38.8391991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0314026,
+          38.9272003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.990303,
+          38.8412018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9974976,
+          38.8391991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9918976,
+          38.8627014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9896011,
+          38.8586006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.001503,
+          38.914299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0326996,
+          38.9351997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9873962,
+          38.8420982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9822006,
+          38.8482018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.032402,
+          38.9648018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9809036,
+          38.8628006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0325012,
+          38.9389992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0170975,
+          38.949501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0222015,
+          38.9264984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0230026,
+          38.9327011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9944,
+          38.9494019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.946701,
+          38.8983994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9901962,
+          38.8319016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0057983,
+          38.8302002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9747009,
+          38.9037018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9747009,
+          38.9037018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9747009,
+          38.9037018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9548035,
+          38.8848991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9833984,
+          38.9281006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9672012,
+          38.8610001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9660034,
+          38.8530998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.983902,
+          38.899601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9441986,
+          38.9025993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.001503,
+          38.8292999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9884033,
+          38.8339005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9897995,
+          38.832901
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0112991,
+          38.9215012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9882965,
+          38.8322983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.933403,
+          38.8941994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.024498,
+          38.9473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0334015,
+          38.9352989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.021698,
+          38.9053001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0322037,
+          38.9281998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0001984,
+          38.8282013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0037994,
+          38.9160995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9858017,
+          38.8541985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9300003,
+          38.8847008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0299988,
+          38.9157982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9567032,
+          38.921299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9309006,
+          38.8839989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9779968,
+          38.9342995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9238968,
+          38.8844986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9828033,
+          38.9151993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0326996,
+          38.8866997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0311966,
+          38.9273987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9858017,
+          38.9208984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9941025,
+          38.8296013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0049973,
+          38.8485985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.924202,
+          38.9030991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9798965,
+          38.9033012
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0192032,
+          38.9365005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9393997,
+          38.895401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0009003,
+          38.8596001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9722977,
+          38.8549995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0150986,
+          38.9491005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0022964,
+          38.9178009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9400024,
+          38.908699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9293976,
+          38.8988991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0212021,
+          38.9322014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9571991,
+          38.8852005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9173965,
+          38.8872986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0431976,
+          38.9283981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0011978,
+          38.9203987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0115967,
+          38.8745003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9383011,
+          38.9121017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9897003,
+          38.8782005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9983978,
+          38.8600006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9774017,
+          38.9057999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9952011,
+          38.8622017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9964981,
+          38.8468018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0186005,
+          38.9425011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9833984,
+          38.8792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9784012,
+          38.8546982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9710007,
+          38.8538017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0118027,
+          38.9552002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0008011,
+          38.9203987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0139999,
+          38.9113007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0327988,
+          38.9255981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0175018,
+          38.9085999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0263977,
+          38.9530983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9469986,
+          38.8969994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9272995,
+          38.9026985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.946701,
+          38.896801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0065002,
+          38.8242989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9875031,
+          38.9361992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9806976,
+          38.8521004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9999008,
+          38.8606987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9561005,
+          38.8881989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9810028,
+          38.9026985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9784012,
+          38.8722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.982399,
+          38.8997002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0123978,
+          38.8745003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.924202,
+          38.8937988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9735031,
+          38.9048996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9319,
+          38.8806992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.973999,
+          38.9035988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0276031,
+          38.9473991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9228973,
+          38.8908005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0235977,
+          38.9417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0235977,
+          38.9417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9736023,
+          38.8652992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9730988,
+          38.8504982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9730988,
+          38.8504982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9336014,
+          38.9048004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9372025,
+          38.9007988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0058975,
+          38.8361015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0373001,
+          38.9364014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0134964,
+          38.9426994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9294968,
+          38.8857002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0270004,
+          38.9224014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0277023,
+          38.9557991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9747009,
+          38.9051018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9854965,
+          38.9002991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9433975,
+          38.9056015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9824982,
+          38.8650017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0342026,
+          38.9277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.957901,
+          38.9297981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0009003,
+          38.8303986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0236969,
+          38.9272003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.001503,
+          38.8280983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9806976,
+          38.8529015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0175018,
+          38.9556007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0021973,
+          38.8485985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0279999,
+          38.9532013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0034027,
+          38.9438019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0034027,
+          38.9438019
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9639969,
+          38.8656006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "offense": "Homicide",
+        "year": "2009"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9891968,
+          38.8321991
+        ]
+      }
+    }
+  ]
+}
