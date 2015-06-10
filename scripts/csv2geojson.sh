@@ -1,4 +1,4 @@
-cd /assault
+cd ../data/assault
 for i in {2000..2014}
 do csv2geojson assault$i.csv > assault$i.geojson
 done
@@ -12,3 +12,6 @@ cd ../robbery
 for i in {2000..2014}
 do csv2geojson robbery$i.csv > robbery$i.geojson
 done
+
+cd ../../scripts
+python datajs.py
