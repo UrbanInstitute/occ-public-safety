@@ -5,7 +5,9 @@ Data sources: DC MPD & FBI
 
 For data processing:
 * R
+* ArcMap
 * [csv2geojson](https://github.com/mapbox/csv2geojson)
+* Python
 
 JS dependencies for graphs:
 * d3
