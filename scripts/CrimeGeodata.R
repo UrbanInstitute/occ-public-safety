@@ -50,14 +50,20 @@ write.csv(clusters, file="data/clusterdata.csv", row.names=F,na="0")
 
 require(ggplot2)
 require(extrafont)
-require(scales)
+clusters<-read.csv("data/clusterdata.csv",header=T, stringsAsFactors=F)
 
 linechart <- ggplot(clusters, aes(x=year, y=aggassault, group=cluster)) +
   geom_line() +
+  facet_wrap(~ cluster) +
+  ggtitle("Aggravated Assaults by Neighborhood Cluster") +
   theme(panel.grid.minor=element_blank(), 
         panel.grid.major.x=element_blank(),
         axis.title.y=element_blank(),
         axis.title.x=element_text(size=12,family="Arial",face="bold"),
         axis.text = element_text(size=6, family="Arial", color="#444444"),
-        plot.title = element_text(size=16, family="Arial"))
+        plot.title = element_text(size=16, family="Arial")) 
 linechart
+
+png(filename = "screenshots/assaultchange.png", width=1800, height=1000, res=200)
+linechart
+dev.off()

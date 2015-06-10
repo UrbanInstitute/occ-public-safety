@@ -4,10 +4,8 @@ Data sources: DC MPD & FBI
 * [Neighborhood clusters](http://opendata.dc.gov/datasets/f6c703ebe2534fc3800609a07bad8f5b_17?geometry=-77.247%2C38.886%2C-76.758%2C38.967&filterByExtent=true)
 
 For data processing:
-* R
-* ArcMap
-* [csv2geojson](https://github.com/mapbox/csv2geojson)
-* Python
+* R -> ArcMap -> R: XY data to lat/long + neighborhood cluster for homicides, aggravated, assaults, robberies. Split into 1 CSV for each year*crime
+* Run [csv2geojson](https://github.com/mapbox/csv2geojson) [bash script](/scripts/csv2geojson) and then [Python script](/scripts/datajs.py) to make 1 js file per crime containing variables with each crime*year for Leaflet maps. This avoids cross-domain json ref problems. All other solutions (AJAX requests, hacky code) have their own issues too.
 
 JS dependencies for graphs:
 * d3
