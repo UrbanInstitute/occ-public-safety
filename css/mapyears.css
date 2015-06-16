@@ -1,0 +1,58 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    margin: auto 0;
+    width: 100%;
+    height: 100%;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.leaflet-control-zoom {
+    position: relative;
+    top: 60px;
+}
+
+#layers {
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+    height: auto;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#layers a {
+    display: inline-block;
+    margin: 5px 1px 1px 1px;
+    padding: 6px;
+    width: 40px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#layers a.active,
+#layers a#play_button:hover {
+    background: #0096d2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+#layers a:hover {
+    cursor: pointer;
+}
+
+#layers a#play_button {
+    background: #ccc;
+}
