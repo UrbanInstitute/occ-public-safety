@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>OCC Leaflet</title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 12px;
+            margin: auto 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        #map {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .leaflet-control-zoom {
+            position: relative;
+            top: 60px;
+        }
+        
+        #layers {
+            position: relative;
+            top: 12px;
+            margin-left: 10px;
+            height: auto;
+            background: rgb(255, 255, 255);
+            background: rgba(255, 255, 255, 0.6);
+            font-size: 12px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        #layers a {
+            display: inline-block;
+            margin: 5px 1px 1px 1px;
+            padding: 6px;
+            width: 40px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        #layers a.active, #layers a#play_button:hover {
+            background: #0096d2;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 900;
+        }
+        #layers a:hover {
+            cursor: pointer;
+        }
+        #layers a#play_button {
+            background: #ccc;
+        }      
+        }      
+    </style>
+
+</head>
+
+<body>
+    <div id="map"></div>
+    <div id="layers"></div>
+
+    <script src="js/assaultdata.js" type="text/javascript"></script>
+    <script src="js/homicidedata.js" type="text/javascript"></script>
+    <script type="text/javascript" src="lib/jquery.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+    <script src="js/mapyears.js" type="text/javascript"></script>
+
+</body>
+
+</html>
