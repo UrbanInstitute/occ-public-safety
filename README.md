@@ -12,3 +12,5 @@ JS dependencies for graphs:
 * Leaflet
 * Modernizr
 * jQuery
+
+Hexmaps based on the work of [affinitybridge](https://github.com/affinitybridge/d3-demos-quakes)
