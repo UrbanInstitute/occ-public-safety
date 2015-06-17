@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="css/mapyears.css" />
+
+</head>
+
+<body>
+    <div id='map'></div>
+    <div id="layers"></div>
+</body>
+
+<script src="js/robberydata.js"></script>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.hexbin.v0.js"></script>
+<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js'></script>
+<script src="lib/colorbrewer.js"></script>
+<script src="lib/leaflet.hexbin-layer.js"></script>
+<script src="js/hexmap.js"></script>
+
+<script>
+    robberymap();
+</script>
+
+</html>
