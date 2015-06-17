@@ -73,8 +73,15 @@ function crimemap(layers) {
         layers[i].button.className = 'active';
     }
 
+    //streets on top
+    var streetLayer = L.mapbox.tileLayer('urbaninstitute.h5b1kc2b');
+    streetLayer
+        .setZIndex(100)
+        .addTo(map);
+
 }
 
+//1 function for each map - in parent HTMLs, call the map to draw
 function assaultmap() {
     var max = 50,
         scale,
