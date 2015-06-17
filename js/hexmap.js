@@ -1,4 +1,4 @@
-function crimemap(layers) {
+function crimemap() {
     var max = 50,
         scale,
         classes = 7,
