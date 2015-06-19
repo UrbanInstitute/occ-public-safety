@@ -50,7 +50,7 @@ function crimemap(layers) {
     var layerGroup = L.layerGroup().addTo(map);
 
     // i is the number of the currently-selected layer
-    var i = 1;
+    var i = 13;
 
     // show the first overlay as soon as the map loads
     highlightLayer(i++);

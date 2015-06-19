@@ -1,0 +1,1 @@
+topojson -o data/neighborhoods.json -e geo_gh/neighborhood_clusters.csv --id-property=+cluster,OBJECTID -p +OBJECTID,name -- geo_gh/neighborhood_clusters/neighborhood_clusters.shp
