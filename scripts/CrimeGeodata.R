@@ -3,6 +3,7 @@
 require(dplyr)
 require(doBy)
 require(tidyr)
+require(stats)
 
 crimes<-read.csv("data/dccrime2000-2014_cleaned.csv",header=T)
 
@@ -48,10 +49,27 @@ clusters<-spread(clusters,offense,p.sum)
 clusters<-rename(clusters,robbery=Robbery,homicide=Homicide,aggassault=ADW)
 write.csv(clusters, file="data/clusterdata.csv", row.names=F,na="0")
 
+#Add in cluster population - source: http://www.neighborhoodinfodc.org/comparisontables/comp_table_cltr00.xls
+clusters<-read.csv("data/clusterdata.csv",header=T, stringsAsFactors=F)
+nnip<-read.csv("data/nnip_clusters.csv",header=T, stringsAsFactors=F)
+#get rid of non-cluster rows
+nnip<-slice(nnip,1:39)
+nnip<-nnip%>%select(CLUSTER_TR2000,TotPop_2000,TotPop_2010)
+nnip<-nnip%>%separate(CLUSTER_TR2000, c("c","cluster"))
+nnip<-nnip%>%rename(pop2000=TotPop_2000,pop2010=TotPop_2010)
+nnip<-nnip%>%select(-c)
+
+#interpolate populations
+nnip$slope<-(nnip$pop2010 - nnip$pop2000)/10
+for (i in 2001:2009) {
+  nnip$pop[i] = nnip$pop2000 + nnip$slope*(i - 2000)
+}
+
+
+write.csv(nnip, file="data/clusterpopultation.csv", row.names=F)
+
 require(ggplot2)
 require(extrafont)
-clusters<-read.csv("data/clusterdata.csv",header=T, stringsAsFactors=F)
-
 linechart <- ggplot(clusters, aes(x=year, y=aggassault, group=cluster)) +
   geom_line() +
   facet_wrap(~ cluster) +
