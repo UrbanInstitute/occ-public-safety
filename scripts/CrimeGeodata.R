@@ -4,6 +4,7 @@ require(dplyr)
 require(doBy)
 require(tidyr)
 require(stats)
+require(reshape2)
 
 crimes<-read.csv("data/dccrime2000-2014_cleaned.csv",header=T)
 
@@ -56,24 +57,51 @@ nnip<-read.csv("data/nnip_clusters.csv",header=T, stringsAsFactors=F)
 nnip<-slice(nnip,1:39)
 nnip<-nnip%>%select(CLUSTER_TR2000,TotPop_2000,TotPop_2010)
 nnip<-nnip%>%separate(CLUSTER_TR2000, c("c","cluster"))
-nnip<-nnip%>%rename(pop2000=TotPop_2000,pop2010=TotPop_2010)
+nnip<-nnip%>%rename(pop_2000=TotPop_2000,pop_2010=TotPop_2010)
 nnip<-nnip%>%select(-c)
 
 #interpolate populations
-nnip$slope<-(nnip$pop2010 - nnip$pop2000)/10
-for (i in 2001:2009) {
-  nnip$pop[i] = nnip$pop2000 + nnip$slope*(i - 2000)
-}
+nnip$slope<-(nnip$pop_2010 - nnip$pop_2000)/10
+nnip<-nnip%>%mutate(pop_2001=pop_2000+slope,pop_2002=pop_2000+2*slope,pop_2003=pop_2000+3*slope,pop_2004=pop_2000+4*slope,
+                    pop_2005=pop_2000+5*slope,pop_2006=pop_2000+6*slope,pop_2007=pop_2000+7*slope,pop_2008=pop_2000+8*slope,pop_2009=pop_2000+9*slope)
+nnip<-nnip%>%
+  select(-pop_2010, everything())
+#NNIP method: use 2010 populations for each subsequent year in absence of newer data
+nnip<-nnip%>%mutate(pop_2011=pop_2010,pop_2012=pop_2010,pop_2013=pop_2010,pop_2014=pop_2010)
+#popb: continue the interpolation
+nnip<-nnip%>%mutate(popb_2011=pop_2010+slope,popb_2012=pop_2010+2*slope,popb_2013=pop_2010+3*slope,popb_2014=pop_2010+4*slope)
+nnip<-nnip%>%select(-slope)
 
+#compare 2 population estimates - NNIP and continuing the interpolation
+pop<-nnip%>%gather(year,"pop",2:16)
+pop<-pop%>%select(cluster,year,pop)
+vars<-colsplit(pop$year, "_", c("temp", "year"))
+pop<-pop%>%select(-year)
+pop<-bind_cols(pop,vars)
+pop<-pop%>%select(-temp)
 
-write.csv(nnip, file="data/clusterpopultation.csv", row.names=F)
+popb<-nnip%>%gather(year,"popb",2:12,17:20)
+popb<-popb%>%select(cluster,year,popb)
+vars<-colsplit(popb$year, "_", c("temp", "year"))
+popb<-popb%>%select(-year)
+popb<-bind_cols(popb,vars)
+popb<-popb%>%select(-temp)
+
+#Join to cluster data file
+pop<-left_join(pop,popb, by = c("cluster","year"))
+pop$cluster<-as.numeric(pop$cluster)
+clusters<-left_join(clusters,pop, by = c("cluster","year"))
+clusters<-clusters%>%mutate(assaultrate = 1000*aggassault/pop,assaultrateb = 1000*aggassault/popb,
+                            robrate = 1000*robbery/pop,robrateb = 1000*robbery/popb)
+
+write.csv(clusters, file="data/clusterdata.csv", row.names=F,na="0")
 
 require(ggplot2)
 require(extrafont)
-linechart <- ggplot(clusters, aes(x=year, y=aggassault, group=cluster)) +
+linechart <- ggplot(clusters, aes(x=year, y=assaultrate, group=cluster)) +
   geom_line() +
   facet_wrap(~ cluster) +
-  ggtitle("Aggravated Assaults by Neighborhood Cluster") +
+  ggtitle("Aggravated Assault Rate by Neighborhood Cluster") +
   theme(panel.grid.minor=element_blank(), 
         panel.grid.major.x=element_blank(),
         axis.title.y=element_blank(),
@@ -82,6 +110,6 @@ linechart <- ggplot(clusters, aes(x=year, y=aggassault, group=cluster)) +
         plot.title = element_text(size=16, family="Arial")) 
 linechart
 
-png(filename = "screenshots/assaultchange.png", width=1800, height=1000, res=200)
+png(filename = "screenshots/assaultchangeb.png", width=1800, height=1000, res=200)
 linechart
 dev.off()
