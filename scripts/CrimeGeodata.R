@@ -91,9 +91,9 @@ popb<-popb%>%select(-temp)
 pop<-left_join(pop,popb, by = c("cluster","year"))
 pop$cluster<-as.numeric(pop$cluster)
 clusters<-left_join(clusters,pop, by = c("cluster","year"))
-clusters<-clusters%>%mutate(assaultrate = 1000*aggassault/pop,assaultrateb = 1000*aggassault/popb,
-                            robrate = 1000*robbery/pop,robrateb = 1000*robbery/popb)
-
+clusters<-clusters%>%mutate(assaultrate = 10000*aggassault/pop,assaultrateb = 10000*aggassault/popb,
+                            robrate = 10000*robbery/pop,robrateb = 10000*robbery/popb)
+clusters<-clusters%>%filter(year<2015)
 write.csv(clusters, file="data/clusterdata.csv", row.names=F,na="0")
 
 require(ggplot2)
@@ -110,6 +110,6 @@ linechart <- ggplot(clusters, aes(x=year, y=assaultrate, group=cluster)) +
         plot.title = element_text(size=16, family="Arial")) 
 linechart
 
-png(filename = "screenshots/assaultchangeb.png", width=1800, height=1000, res=200)
+png(filename = "screenshots/assaultchange.png", width=1800, height=1000, res=200)
 linechart
 dev.off()
