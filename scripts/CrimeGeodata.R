@@ -93,11 +93,41 @@ pop$cluster<-as.numeric(pop$cluster)
 clusters<-left_join(clusters,pop, by = c("cluster","year"))
 clusters<-clusters%>%mutate(assaultrate = 10000*aggassault/pop,assaultrateb = 10000*aggassault/popb,
                             robrate = 10000*robbery/pop,robrateb = 10000*robbery/popb)
+clusters<-clusters%>%mutate(violentcrime = aggassault + robbery + homicide, 
+                            violentrate = 10000*violentcrime/pop,violentrateb = 10000*violentcrime/popb)
 clusters<-clusters%>%filter(year<2015)
+
 write.csv(clusters, file="data/clusterdata.csv", row.names=F,na="0")
+clustersmin<-clusters%>%select(cluster,violentrate,year)
+hoods<-clustersmin%>%spread(year,violentrate)
+names(hoods)<-c("cluster","violent2000","violent2001","violent2002","violent2003",
+                "violent2004","violent2005","violent2006","violent2007","violent2008",
+                "violent2009","violent2010","violent2011","violent2012","violent2013","violent2014")
+hoods<-hoods%>%mutate(pctchange14 = (violent2014 - violent2000)/violent2000,
+                      rawchange14 = (violent2014 - violent2000))
 
 require(ggplot2)
 require(extrafont)
+#Bar chart: 2000-2014 change in violent crime
+#Raw
+barchart<-ggplot(hoods, aes(x=cluster, y=rawchange14)) +
+  geom_bar(stat="identity") +
+  ggtitle("Raw change in violent crime per 10,000 residents, 2000-2014")
+barchart
+png(filename = "screenshots/rawchange.png", width=1800, height=1000, res=200)
+barchart
+dev.off()
+
+#Percent
+barchart2<-ggplot(hoods, aes(x=cluster, y=pctchange14)) +
+  geom_bar(stat="identity") +
+  ggtitle("Percent change in violent crime per 10,000 residents, 2000-2014")
+barchart2
+png(filename = "screenshots/pctchange.png", width=1800, height=1000, res=200)
+barchart2
+dev.off()
+
+#Line chart
 linechart <- ggplot(clusters, aes(x=year, y=assaultrate, group=cluster)) +
   geom_line() +
   facet_wrap(~ cluster) +
