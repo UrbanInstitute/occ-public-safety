@@ -1,3 +1,8 @@
+function linecharts() {
+    linedraw();
+    homdraw();
+}
+
 function linedraw() {
     var margin = {
             top: 50,

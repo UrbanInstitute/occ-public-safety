@@ -13,15 +13,8 @@ $(window).load(function () {
         d3.csv(linechart_data_url, function (error, rates) {
             data = rates;
 
-            linedraw();
-            window.onresize = linedraw;
-        });
-
-        d3.csv(linechart_data_url, function (error, rates) {
-            data = rates;
-
-            homdraw();
-            window.onresize = homdraw;
+            linecharts();
+            window.onresize = linecharts;
         });
 
     }
