@@ -2,18 +2,22 @@
 <meta charset="utf-8">
 <style>
     .boundary {
-        fill: #444;
         stroke: #fff;
+        fill: none;
     }
-    
 </style>
 
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
     <script>
         var width = 500,
             height = 500;
+
+        var color = d3.scale.threshold()
+            .domain([-100, -50, -25, 0, 10, 132])
+            .range(["#00578b","#1696d2","#82c4e9","#cfe3f5", "#ffecc5", "#fcb918"]);
 
         var projection = d3.geo.mercator();
 
@@ -28,7 +32,6 @@
             if (error) throw error;
 
             var neighborhoods = topojson.feature(dc, dc.objects.neighborhood_clusters);
-
             projection
                 .scale(1)
                 .translate([0, 0]);
@@ -46,8 +49,9 @@
                 .selectAll("path")
                 .data(topojson.feature(dc, dc.objects.neighborhood_clusters).features)
                 .enter().append("path")
+                .style("fill", function (d) {
+                    return color(d.properties.crimechange);
+                })
                 .attr("d", path);
-
         })
-        d3.select(self.frameElement).style("height", height + "px");
     </script>
