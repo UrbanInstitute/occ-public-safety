@@ -1,57 +1,32 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet">
+<link href="css/occ.css" rel="stylesheet">
 <style>
     .boundary {
         stroke: #fff;
         fill: none;
     }
+    
+    #barchart, #clustermap {
+        max-width: 50%;
+    }
 </style>
 
 <body>
+    <h2>Change in violent crime per 10,000 residents by neighborhood, 2000-2014</h2>
+    <div id="barchart"></div>
+
+    <div id="clustermap"></div>
+
+    <script src="lib/jquery.min.js"></script>
     <script src="lib/d3.min.js"></script>
+    <script src="lib/modernizr.svg.min.js"></script>
     <script src="lib/queue.min.js"></script>
     <script src="lib/topojson.min.js"></script>
+    <script src="js/neighborhoods.js"></script>
     <script>
-        var width = 500,
-            height = 500;
-
-        var color = d3.scale.threshold()
-            .domain([-100, -50, -25, -10, 10, 132])
-            .range(["#00578b", "#1696d2", "#82c4e9", "#cfe3f5", "#ddd", "#fcb918"]);
-
-        var projection = d3.geo.mercator();
-
-        var path = d3.geo.path()
-            .projection(projection);
-
-        var svg = d3.select("body").append("svg")
-            .attr("width", width)
-            .attr("height", height);
-
-        d3.json("data/neighborhoods.json", function (error, dc) {
-            if (error) throw error;
-
-            var neighborhoods = topojson.feature(dc, dc.objects.neighborhood_clusters);
-            projection
-                .scale(1)
-                .translate([0, 0]);
-
-            var b = path.bounds(neighborhoods),
-                s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height),
-                t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
-
-            projection
-                .scale(s)
-                .translate(t);
-
-            svg.append("g")
-                .attr("class", "boundary")
-                .selectAll("path")
-                .data(topojson.feature(dc, dc.objects.neighborhood_clusters).features)
-                .enter().append("path")
-                .style("fill", function (d) {
-                    return color(d.properties.crimechange);
-                })
-                .attr("d", path);
-        })
     </script>
