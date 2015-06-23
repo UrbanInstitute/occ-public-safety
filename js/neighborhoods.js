@@ -12,11 +12,12 @@ var clustermap_aspect_height = 1;
 
 var $legend = $('#legend');
 var legend_aspect_width = 1;
-var legend_aspect_height = 1.2;
+var legend_aspect_height = 1.9;
 
-var colors = ["#00578b", "#1696d2", "#82c4e9", "#e4eef9", "#ffecc5", "#ffda91", "#fcb918"];
-var breaks = [-200, -100, -10, 0, 10, 100];
-var legend_num = [1,2,3,4,5,6,7];
+var colors = ["#00578b", "#1696d2", "#82c4e9", "#e4eef9", "#ffecc5", "#ffda91", "#fcb918"],
+    breaks = [-200, -100, -10, 0, 10, 100],
+    legend_num = [1, 2, 3, 4, 5, 6, 7],
+    legend_text = ["Change in violent crime", "per 10,000 residents"];
 //shared color ramp for both bar chart and map
 var color = d3.scale.threshold()
     .domain(breaks)
@@ -29,7 +30,7 @@ function clusterslide() {
 }
 
 function legenddraw() {
-    
+
     var margin = {
         top: 5,
         right: 15,
@@ -49,7 +50,7 @@ function legenddraw() {
 
     var lp_h = 20,
         ls_w = 40,
-        ls_h = 30;
+        ls_h = 25;
 
 
     var legend = svg.selectAll("g.legend")
@@ -58,8 +59,18 @@ function legenddraw() {
         .attr("class", "legend");
 
     legend.append("text")
+        .data(legend_text)
+        .attr("x", 0)
+        .attr("y", function (d, i) {
+            return i * 15 + 10;
+        })
+        .text(function (d, i) {
+            return d;
+        });
+
+    legend.append("text")
         .data(breaks)
-        .attr("x", ls_w + 20)
+        .attr("x", ls_w + 5)
         .attr("y", function (d, i) {
             return height - ((i * ls_h) + lp_h);
         })
@@ -68,7 +79,7 @@ function legenddraw() {
         });
 
     legend.append("rect")
-        .attr("x", 15)
+        .attr("x", 0)
         .attr("y", function (d, i) {
             return height - ((i * ls_h) + lp_h);
         })
@@ -154,6 +165,26 @@ function bardraw() {
         .attr("height", function (d) {
             return Math.abs(y(0) - (y(d.rawchange14)));
         });
+
+    svg.append("text")
+        .attr("x", 0)
+        .attr("y", function (d) {
+            return y(-60);
+        })
+        .text(function (d) {
+            return "Increase in crime";
+        })
+        .attr("class", "legend");
+
+    svg.append("text")
+        .attr("x", width * 0.8)
+        .attr("y", function (d) {
+            return y(40);
+        })
+        .text(function (d) {
+            return "Decrease in crime";
+        })
+        .attr("class", "legend");
 
 
     function type(d) {
