@@ -1,3 +1,5 @@
+var mobile_threshold = 600;
+
 var barchart_data_url = "data/clusters_violentcrime.csv";
 var $barchart = $('#barchart');
 var barchart_aspect_width = 3;
@@ -8,22 +10,82 @@ var $clustermap = $('#clustermap');
 var clustermap_aspect_width = 1;
 var clustermap_aspect_height = 1;
 
+var $legend = $('#legend');
+var legend_aspect_width = 1;
+var legend_aspect_height = 1.2;
+
+var colors = ["#00578b", "#1696d2", "#82c4e9", "#e4eef9", "#ffecc5", "#ffda91", "#fcb918"];
+var breaks = [-200, -100, -10, 0, 10, 100];
+var legend_num = [1,2,3,4,5,6,7];
 //shared color ramp for both bar chart and map
 var color = d3.scale.threshold()
-    .domain([-200, -100, -10, 0, 10, 100])
-    .range(["#00578b", "#1696d2", "#82c4e9", "#e4eef9", "#ffecc5", "#ffda91", "#fcb918"]);
+    .domain(breaks)
+    .range(colors);
 
 function clusterslide() {
+    legenddraw();
     bardraw();
     mapdraw();
+}
+
+function legenddraw() {
+    
+    var margin = {
+        top: 5,
+        right: 15,
+        bottom: 5,
+        left: 15
+    };
+    var width = $legend.width() - margin.left - margin.right,
+        height = Math.ceil((width * legend_aspect_height) / legend_aspect_width) - margin.top - margin.bottom;
+
+    $legend.empty();
+
+    var svg = d3.select("#legend").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var lp_h = 20,
+        ls_w = 40,
+        ls_h = 30;
+
+
+    var legend = svg.selectAll("g.legend")
+        .data(legend_num)
+        .enter().append("g")
+        .attr("class", "legend");
+
+    legend.append("text")
+        .data(breaks)
+        .attr("x", ls_w + 20)
+        .attr("y", function (d, i) {
+            return height - ((i * ls_h) + lp_h);
+        })
+        .text(function (d, i) {
+            return d;
+        });
+
+    legend.append("rect")
+        .attr("x", 15)
+        .attr("y", function (d, i) {
+            return height - ((i * ls_h) + lp_h);
+        })
+        .attr("width", ls_w)
+        .attr("height", lp_h)
+        .attr("z-index", 10)
+        .style("fill", function (d, i) {
+            return colors[i];
+        })
 }
 
 function bardraw() {
     var margin = {
         top: 5,
-        right: 30,
-        bottom: 30,
-        left: 60
+        right: 35,
+        bottom: 5,
+        left: 15
     };
     var width = $barchart.width() - margin.left - margin.right,
         height = Math.ceil((width * barchart_aspect_height) / barchart_aspect_width) - margin.top - margin.bottom;
@@ -52,9 +114,9 @@ function bardraw() {
 
     var yAxis = d3.svg.axis()
         .scale(y)
-        .orient("left")
-        .tickSize(-width)
-        .ticks(6);
+        .orient("right")
+        .tickSize(width)
+        .tickValues([100, 0, -100, -200]);
 
     var gy = svg.append("g")
         .attr("class", "y axis")
@@ -64,6 +126,10 @@ function bardraw() {
             return d;
         })
         .classed("minor", true);
+
+    gy.selectAll("text")
+        .attr("class", "baraxis")
+        .attr("dx", 4);
 
     var pctbar = svg.selectAll(".bar")
         .data(data)

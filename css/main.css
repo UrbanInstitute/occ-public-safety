@@ -1,9 +1,19 @@
 #barchart {
     max-width: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 #clustermap {
     max-width: 35%;
+    margin-top: -100px;
+    margin-left: 50px;
+}
+
+#legend {
+    max-width: 200px;
+    margin-top: -200px;
+    margin-left: 20px;
 }
 
 .boundary {
@@ -41,6 +51,14 @@
 }
 
 .axis .minor line {
-    stroke: #999;
+    stroke: #bbb;
     stroke-dasharray: 2, 2;
+}
+
+.baraxis {
+    font-weight: 700;
+}
+
+.legend {
+    font-size: 12px;
 }
