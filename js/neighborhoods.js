@@ -12,7 +12,7 @@ var clustermap_aspect_height = 1;
 
 var $legend = $('#legend');
 var legend_aspect_width = 1;
-var legend_aspect_height = 1.9;
+var legend_aspect_height = 1.8;
 
 var colors = ["#00578b", "#1696d2", "#82c4e9", "#e4eef9", "#ffecc5", "#ffda91", "#fcb918"],
     breaks = [-200, -100, -10, 0, 10, 100],
@@ -50,7 +50,7 @@ function legenddraw() {
 
     var lp_h = 20,
         ls_w = 40,
-        ls_h = 25;
+        ls_h = 22;
 
 
     var legend = svg.selectAll("g.legend")
