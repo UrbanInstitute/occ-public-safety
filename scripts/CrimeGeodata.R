@@ -105,7 +105,7 @@ names(hoods)<-c("cluster","violent2000","violent2001","violent2002","violent2003
                 "violent2009","violent2010","violent2011","violent2012","violent2013","violent2014")
 hoods<-hoods%>%mutate(pctchange14 = (violent2014 - violent2000)/violent2000,
                       rawchange14 = (violent2014 - violent2000))
-
+write.csv(hoods, file="data/clusters_violentcrime.csv", row.names=F)
 require(ggplot2)
 require(extrafont)
 #Bar chart: 2000-2014 change in violent crime

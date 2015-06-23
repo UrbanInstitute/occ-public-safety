@@ -1,6 +1,9 @@
-#barchart,
-#clustermap {
+#barchart {
     max-width: 50%;
+}
+
+#clustermap {
+    max-width: 35%;
 }
 
 .boundary {

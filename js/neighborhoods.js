@@ -10,8 +10,8 @@ var clustermap_aspect_height = 1;
 
 //shared color ramp for both bar chart and map
 var color = d3.scale.threshold()
-    .domain([-100, -50, -25, -10, 10, 132])
-    .range(["#00578b", "#1696d2", "#82c4e9", "#cfe3f5", "#ddd", "#fcb918"]);
+    .domain([-200, -100, -10, 0, 10, 100])
+    .range(["#00578b", "#1696d2", "#82c4e9", "#e4eef9", "#ffecc5", "#ffda91", "#fcb918"]);
 
 function clusterslide() {
     bardraw();
@@ -37,7 +37,7 @@ function bardraw() {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     data.sort(function (a, b) {
-        return a.rawchange14 - b.rawchange14;
+        return b.rawchange14 - a.rawchange14;
     });
 
     var x = d3.scale.ordinal()
