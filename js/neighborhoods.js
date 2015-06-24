@@ -12,11 +12,11 @@ var clustermap_aspect_height = 1;
 
 var $legend = $('#legend');
 var legend_aspect_width = 1;
-var legend_aspect_height = 1.8;
+var legend_aspect_height = 1.9;
 
-var colors = ["#00578b", "#1696d2", "#82c4e9", "#e4eef9", "#ffecc5", "#ffda91", "#fcb918"],
-    breaks = [-200, -100, -10, 0, 10, 100],
-    legend_num = [1, 2, 3, 4, 5, 6, 7],
+var colors = ["#001634","#18507d", "#0096d2", "#82c2e7", "#d7e8f6", "#ffedcd", "#ffda91", "#fcb918"],
+    breaks = [-300,-200, -100, -10, 0, 10, 100],
+    legend_num = [1, 2, 3, 4, 5, 6, 7,8],
     legend_text = ["Change in violent crime", "per 10,000 residents"];
 //shared color ramp for both bar chart and map
 var color = d3.scale.threshold()
@@ -72,7 +72,7 @@ function legenddraw() {
         .data(breaks)
         .attr("x", ls_w + 5)
         .attr("y", function (d, i) {
-            return height - ((i * ls_h) + lp_h);
+            return height - ((i * ls_h) + lp_h - 2);
         })
         .text(function (d, i) {
             return d;
@@ -167,23 +167,25 @@ function bardraw() {
         });
 
     svg.append("text")
-        .attr("x", 0)
+        .attr("x", x.rangeBand() * 2)
         .attr("y", function (d) {
-            return y(-60);
+            return y(110);
         })
         .text(function (d) {
             return "Increase in crime";
         })
+        .attr("fill", "#fcb918")
         .attr("class", "legend");
 
     svg.append("text")
-        .attr("x", width * 0.8)
+        .attr("x", width * 0.53)
         .attr("y", function (d) {
-            return y(40);
+            return y(-130);
         })
         .text(function (d) {
             return "Decrease in crime";
         })
+        .attr("fill","#18507d")
         .attr("class", "legend");
 
 
