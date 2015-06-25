@@ -87,7 +87,7 @@ function assaultmap() {
         scale,
         classes = 7,
         container = L.DomUtil.get('layers'),
-        scheme = colorbrewer["Reds"][classes];
+        scheme = ["#fce49f", "#ffda71", "#ffcd3f", "#fbb317", "#f9a31a", "#f58720", "#e76424"];
 
     function hex_style(hexagons) {
         // Maintain a density scale relative to initial zoom level.
@@ -164,7 +164,7 @@ function robberymap() {
         scale,
         classes = 7,
         container = L.DomUtil.get('layers'),
-        scheme = colorbrewer["Reds"][classes];
+        scheme = ["#f9f4b3", "#eee976", "#cdda54", "#a6cc4a", "#67b844", "#059b49", "#007b3e"];
 
     function hex_style(hexagons) {
         // Maintain a density scale relative to initial zoom level.
@@ -238,9 +238,9 @@ function robberymap() {
 function homicidemap() {
     var max = 8,
         scale,
-        classes = 7,
+        classes = 5,
         container = L.DomUtil.get('layers'),
-        scheme = colorbrewer["Reds"][classes];
+        scheme = ["#ffafd8", "#f183b2", "#ec4d98", "#e20988", "#c61a79"];
 
     function hex_style(hexagons) {
         // Maintain a density scale relative to initial zoom level.
