@@ -18,7 +18,11 @@
 
 .boundary {
     stroke: #fff;
-    fill: none;
+}
+
+.bar.selected,
+.boundary.selected {
+    fill: #e20988;
 }
 
 .chartline {

@@ -14,20 +14,14 @@ var $legend = $('#legend');
 var legend_aspect_width = 1;
 var legend_aspect_height = 1.9;
 
-var colors = ["#001634","#18507d", "#0096d2", "#82c2e7", "#d7e8f6", "#ffedcd", "#ffda91", "#fcb918"],
-    breaks = [-300,-200, -100, -10, 0, 10, 100],
-    legend_num = [1, 2, 3, 4, 5, 6, 7,8],
+var colors = ["#001634", "#18507d", "#0096d2", "#82c2e7", "#d7e8f6", "#ffedcd", "#ffda91", "#fcb918"],
+    breaks = [-300, -200, -100, -10, 0, 10, 100],
+    legend_num = [1, 2, 3, 4, 5, 6, 7, 8],
     legend_text = ["Change in violent crime", "per 10,000 residents"];
 //shared color ramp for both bar chart and map
 var color = d3.scale.threshold()
     .domain(breaks)
     .range(colors);
-
-function clusterslide() {
-    legenddraw();
-    bardraw();
-    mapdraw();
-}
 
 function legenddraw() {
 
@@ -91,7 +85,7 @@ function legenddraw() {
         })
 }
 
-function bardraw() {
+function bardraw(id) {
     var margin = {
         top: 5,
         right: 35,
@@ -103,7 +97,7 @@ function bardraw() {
 
     $barchart.empty();
 
-    var svg = d3.select("#barchart").append("svg")
+    var svg = d3.select(id).append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
@@ -154,7 +148,7 @@ function bardraw() {
         .attr("fill", function (d) {
             return color(d.rawchange14);
         })
-        .attr("class", "pctbar")
+        .attr("class", "bar")
         .attr("x", function (d) {
             return x(d.cluster);
         })
@@ -185,7 +179,7 @@ function bardraw() {
         .text(function (d) {
             return "Decrease in crime";
         })
-        .attr("fill","#18507d")
+        .attr("fill", "#18507d")
         .attr("class", "legend");
 
 
@@ -196,7 +190,7 @@ function bardraw() {
 
 }
 
-function mapdraw() {
+function mapdraw(id) {
     var margin = {
         top: 5,
         right: 5,
@@ -213,7 +207,7 @@ function mapdraw() {
     var path = d3.geo.path()
         .projection(projection);
 
-    var svg = d3.select("#clustermap").append("svg")
+    var svg = d3.select(id).append("svg")
         .attr("width", width)
         .attr("height", height);
 
@@ -235,10 +229,32 @@ function mapdraw() {
         .selectAll("path")
         .data(topojson.feature(dc, dc.objects.neighborhood_clusters).features)
         .enter().append("path")
-        .style("fill", function (d) {
+        .attr('id', function (d) {
+            return "v" + d.properties.cluster;
+        })
+        .attr("class", "boundary")
+        .attr("fill", function (d) {
             return color(d.properties.crimechange);
         })
         .attr("d", path);
+}
+
+function clusterslide() {
+    legenddraw();
+    bardraw("#barchart");
+    mapdraw("#clustermap");
+
+    var allbars = d3.selectAll("rect,path");
+    allbars.on("mouseover", function () {
+        var moused_id = this.id;
+        allbars.classed("selected", function () {
+            return this.id === moused_id;
+        });
+    })
+
+    allbars.on("mouseout", function () {
+        allbars.classed("selected", false);
+    })
 }
 
 $(window).load(function () {
