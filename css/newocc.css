@@ -249,11 +249,17 @@ body {
 }
 
 .carousel-indicators {
-    padding-left: 40%;
+    position: absolute;
+    left: 0;
+    width: 250px;
+    height: 80px;
+    padding: 0;
     top: 81px;
     display: inline;
-    float: left;
+    float: right;
     z-index: 1000;
+    text-align: right;
+    margin-left: 70%;
 }
 
 .carousel-indicators li {
@@ -345,4 +351,9 @@ body {
 .bg-image img {
     margin-top: 40px;
     width: 100%;
+}
+
+.credits {
+    font-style: italic;
+    font-size: 12px;
 }
