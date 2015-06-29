@@ -37,13 +37,13 @@ body {
 }
 
 #navTitle {
-    height: 60px;
+    height: 70px;
     display: inline;
     float: left;
     margin-left: 40px;
     color: #FFF;
-    padding-bottom: 6px;
-    padding-top: 3px;
+    padding-bottom: 11px;
+    padding-top: 11px;
 }
 
 #titleLink {
@@ -54,13 +54,13 @@ body {
 .navDC {
     font-size: 14px;
     line-height: 15px;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .navOCC {
     font-size: 26px;
-    line-height: 32px;
-    font-weight: normal;
+    line-height: 30px;
+    font-weight: 700;
 }
 
 .navChap {
@@ -69,21 +69,34 @@ body {
 
 .btn-group {
     margin: 0 auto;
+    float: left;
+}
+
+.btn-primary {
+    background-color: #1696d2;
+    border-radius: 1px;
+    border-color: #fff;
+    line-height: 0.8em;
+}
+
+.btn .active {
+    background-color: #1696d2;
 }
 
 #previousChapters {
-    margin-top: 18px;
     position: relative;
     display: inline-block;
-    float: right;
-    margin-right: 290px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 35px;
     z-index: 10000;
 }
 
 #logo {
-    float: right;
-    padding-right: 20px;
-    margin-top: 5px;
+    float: left;
+    padding-left: 25px;
+    margin-top: 16px;
+    height: 100%;
 }
 
 #share {
@@ -206,14 +219,6 @@ body {
     background-size: cover;
 }
 
-.carousel-indicators {
-    padding-left: 40%;
-    top: 80px;
-    display: inline;
-    float: left;
-    z-index: 1000;
-}
-
 .carousel-control {
     width: 40px;
     background-color: #ccc;
@@ -243,14 +248,30 @@ body {
     margin-left: -15px;
 }
 
+.carousel-indicators {
+    padding-left: 40%;
+    top: 81px;
+    display: inline;
+    float: left;
+    z-index: 1000;
+}
+
 .carousel-indicators li {
+    width: 14px;
+    height: 14px;
     border-radius: 0px;
-    border-color: #4d4d4d;
-    background-color: #4d4d4d;
+    border-color: #6d6d6d;
+    background-color: #6d6d6d;
+    margin-right: 5px;
 }
 
 .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+    border-radius: 0px;
+    border-color: #1696d2;
     background-color: #1696d2 !important;
+    margin-right: 5px;
 }
 
 .carousel-caption {
@@ -310,4 +331,18 @@ body {
 
 .visible {
     display: block;
+}
+
+.map {
+    height: 800px;
+    width: 100%;
+}
+
+.content {
+    margin-top: 40px;
+}
+
+.bg-image img {
+    margin-top: 40px;
+    width: 100%;
 }

@@ -1,3 +1,12 @@
+var mobile_threshold = 600;
+var data;
+var linechart_data_url = "data/dcrates.csv";
+
+var $homchart = $('#homchart');
+var $linechart = $('#linechart');
+var linechart_aspect_width = 1;
+var linechart_aspect_height = 1.75;
+
 function linecharts() {
     linedraw();
     homdraw();
@@ -269,3 +278,16 @@ function homdraw() {
         return d === y.domain()[1] ? s + " per 100,000" : s;
     }
 }
+
+$(window).load(function () {
+    if (Modernizr.svg) { // if svg is supported, draw dynamic chart
+
+        d3.csv(linechart_data_url, function (error, rates) {
+            data = rates;
+
+            linecharts();
+            window.onresize = linecharts;
+        });
+
+    }
+});
