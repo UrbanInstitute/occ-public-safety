@@ -1,0 +1,313 @@
+body {
+    padding-bottom: 40px;
+    padding-top: 70px;
+    color: #5a5a5a;
+    font-family: 'Lato';
+}
+
+.row {
+    margin-top: 70px;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+.navbar-default {
+    background-color: #0096d2;
+    border-color: #0096d2;
+}
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#navTitle {
+    height: 60px;
+    display: inline;
+    float: left;
+    margin-left: 40px;
+    color: #FFF;
+    padding-bottom: 6px;
+    padding-top: 3px;
+}
+
+#titleLink {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navDC {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: normal;
+}
+
+.navOCC {
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.navChap {
+    font-weight: 100;
+}
+
+.btn-group {
+    margin: 0 auto;
+}
+
+#previousChapters {
+    margin-top: 18px;
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 290px;
+    z-index: 10000;
+}
+
+#logo {
+    float: right;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+#share {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 60px;
+}
+
+#shareMaster {
+    border-left: 1px solid #ccc;
+    width: 70px;
+    height: 60px;
+    padding-left: 20px;
+    display: inline;
+    float: right;
+    display: inline-block;
+    opacity: 1;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-right: 5px;
+    background-color: #fff;
+    color: #0096d2;
+    display: inline-block;
+}
+
+.circle:hover {
+    background-color: #000;
+}
+
+#socials a {
+    color: #0096d2;
+}
+
+#socials a:hover {
+    color: #0096d2;
+}
+
+#socials {
+    float: right;
+    color: #fff;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+#share:hover #shareMaster {
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+
+#share:hover #socials {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+    /*overflow: auto;*/
+}
+
+.carousel-caption {
+    z-index: 10;
+    text-align: left;
+}
+
+.carousel .item {
+    background-color: #fff;
+}
+
+.carousel .carousel-inner .bg {
+    background-color: #fff;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel .carousel-inner .bgCover {
+    background-image: url(../images/9Q1A7850.JPG);
+    background-position: center center;
+}
+
+#closingImage {
+    position: inherit;
+    margin-top: 50px;
+    min-width: 450px;
+    min-height: 600px;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/9Q1A8137.JPG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-indicators {
+    padding-left: 40%;
+    top: 80px;
+    display: inline;
+    float: left;
+    z-index: 1000;
+}
+
+.carousel-control {
+    width: 40px;
+    background-color: #ccc;
+}
+
+.arrow-left {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    display: inline;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.arrow-right {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    display: inline;
+    position: absolute;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+
+.carousel-indicators li {
+    border-radius: 0px;
+    border-color: #4d4d4d;
+    background-color: #4d4d4d;
+}
+
+.carousel-indicators .active {
+    background-color: #1696d2 !important;
+}
+
+.carousel-caption {
+    color: #555;
+    text-shadow: none;
+}
+
+.title {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    margin-top: 60px;
+    padding: 15px;
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0%;
+    right: 60%;
+    top: 0%;
+    bottom: 0%;
+}
+
+.leftbox {
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: left;
+    margin-top: 10%;
+}
+
+.leftbox chapter {
+    font-size: 1.2em;
+}
+
+.leftbox h1 {
+    text-transform: uppercase;
+    margin-top: 3px;
+    margin-bottom: 1em;
+}
+
+.lead {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 1em;
+}
+
+#occ-section {
+    font-weight: lighter;
+}
+
+.moreInfo {
+    position: relative;
+    left: 100%;
+    bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
