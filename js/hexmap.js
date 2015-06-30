@@ -241,7 +241,8 @@ function homicidemap() {
         scale,
         classes = 5,
         container = L.DomUtil.get('layers'),
-        scheme = ["#ffafd8", "#f183b2", "#ec4d98", "#e20988", "#c61a79"];
+        scheme = ["#DB0984", "#AD137F", "#870D80", "#6B0062", "#460442"];
+    //scheme = ["#ffafd8", "#f183b2", "#ec4d98", "#e20988", "#c61a79"];
 
     function hex_style(hexagons) {
         // Maintain a density scale relative to initial zoom level.
