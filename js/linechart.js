@@ -36,19 +36,18 @@ function linedraw() {
 
     var x = d3.scale.linear()
         .range([padding, width])
-        .domain([1999, 2013.5]);
+        .domain([2000, 2013.5]);
 
     var y = d3.scale.linear()
         .domain([0, 1000])
         .range([height, 0]);
 
     var color = d3.scale.ordinal()
-        .range(["#1696d2", "#666666"])
+        .range(["#54b849","#fdbf11"])
         .domain(labels);
 
     var xAxis = d3.svg.axis()
         .scale(x)
-        .tickSize(0)
         .orient("bottom")
         .tickFormat(formatYAxis)
         .ticks(numticks);
@@ -186,19 +185,18 @@ function homdraw() {
 
     var x = d3.scale.linear()
         .range([padding, width])
-        .domain([1999, 2013.5]);
+        .domain([2000, 2013.5]);
 
     var y = d3.scale.linear()
         .domain([0, 50])
         .range([height, 0]);
 
     var color = d3.scale.ordinal()
-        .range(["#1696d2", "#666666"])
+        .range(["#ec008b"])
         .domain(labels);
 
     var xAxis = d3.svg.axis()
         .scale(x)
-        .tickSize(0)
         .orient("bottom")
         .tickFormat(formatYAxis)
         .ticks(numticks);

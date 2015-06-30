@@ -2,9 +2,10 @@ function crimemap(layers) {
 
     L.mapbox.accessToken = 'pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ';
     var map = L.mapbox.map("map", 'urbaninstitute.iji12b2j', {
-            maxZoom: 17,
-            minZoom: 11,
-            fadeAnimation: false
+            zoomControl: false,
+            fadeAnimation: false,
+            maxZoom: 12,
+            minZoom: 12
         })
         .setView([38.910, -77.02], 12);
 

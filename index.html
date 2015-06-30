@@ -1,41 +1,310 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>OCC - Crime</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>Our Changing City :: Public Safety</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/occ.css" rel="stylesheet">
+    <link href="css/newocc.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8">
-                <p>
-                    <a href="http://datatools.urban.org/features/hrecht/occ-test/assaultmap.html">Assault hex map</a>
-                    <br>
-                    <iframe src="http://datatools.urban.org/features/hrecht/occ-test/assaultmap.html" frameborder="no" align="center" height="600px" width="100%"></iframe>
-                    <a href="http://datatools.urban.org/features/hrecht/occ-test/assaultdots.html">Assault dot map</a>
-                    <br>
+    <!--nav bar-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div id="logo">
+            <a href="http://www.urban.org">
+                <img src="images/UrbanU.png" alt="The Urban Institute" />
+            </a>
+        </div>
+        <div id="navTitle" class="clickable f1">
+            <a class="navDC" id="titleLink" href="http://datatools.urban.org/features/ourchangingcity/" target="_blank">WASHINGTON, DC:</br></a>
+            <a class="navOCC" id="titleLink">OUR CHANGING CITY</a>
+            <span class="navOCC navChap">:: PUBLIC SAFETY</span>
+        </div>
 
-                    <a href="http://datatools.urban.org/features/hrecht/occ-test/robberymap.html">Robbery hex map</a>
-                    <br>
-                    <a href="http://datatools.urban.org/features/hrecht/occ-test/homicidemap.html">Homicide hex map</a>
-                    <br>
 
-                    <a href="http://datatools.urban.org/features/hrecht/occ-test/neighborhoods.html">Neighborhoods slide</a>
-                </p>
+        <!--previous chapters-->
+        <div class="btn-group" id="previousChapters">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Previous Chapters
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li>
+                    <a href="http://datatools.urban.org/features/OurChangingCity/demographics/#index">Demographics</a>
+                </li>
+                <li>
+                    <a href="http://datatools.urban.org/features/OurChangingCity/schools/#index">Schools</a>
+                </li>
+                <li>
+                    <a href="http://datatools.urban.org/features/OurChangingCity/housing/#index">Housing</a>
+                </li>
+            </ul>
+        </div>
+
+        <!--share icons-->
+        <div id="share">
+            <div id="shareMaster">
+                <div id="shareCircle" class="circle">
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+            <div id="socials">
+                <a href="https://twitter.com/home?status=New%20@urbaninstitute%20interactive:%20How%20%23housing%20is%20evolving%20in%20%23DC%20http://urbn.is/DC_Change3" target="_blank">
+                    <div id="twitter" class="circle">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://urbn.is/DC_Change3" target="_blank">
+                    <div id="facebook" class="circle">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                </a>
+                <a href="mailto:%20?Subject=New interactive feature by the Urban Institute&amp;Body=Hi! I thought you'd be interested in this new interactive feature from the Urban Institute: “Our Changing City: Housing” http://datatools.urban.org/Features/OurChangingCity/housing/" target="_blank">
+                    <div id="email" class="circle">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                </a>
             </div>
         </div>
+    </nav>
+
+    <!-- main carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
+
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+            <li data-target="#myCarousel" data-slide-to="6"></li>
+            <li data-target="#myCarousel" data-slide-to="7"></li>
+            <li data-target="#myCarousel" data-slide-to="8"></li>
+        </ol>
+
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+            <!-- opening slide -->
+            <div class="item bg bgCover active" id="cover">
+                <div class="container">
+
+                    <div class="carousel-caption title">
+                        <div class="leftbox">
+                            <div class="chapter">Chapter 4</div>
+                            <h1>Public Safety</h1>
+                            <p class="lead">Violent crime has fallen dramatically nation-wide, and in DC, over the past 20 years. The District’s homicide rate has plunged, taking the city far from its days as the nation’s “murder capital.” And, despite some ups and downs, aggravated assaults and robberies—two key elements of violent crime—are also on the decline.</p>
+                            <p class="lead">However, these improvements have been uneven across the District. Stubborn pockets of violent crime remain unchanged in some neighborhoods, particularly in Northeast and Southeast DC. Tackling this persistent violent crime will require a more holistic public safety approach—one that goes beyond policing to include social services and that emphasizes prevention instead of reaction. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- main slides -->
+            <div class="item bg" id="violentcrime">
+                <div class="container content">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="clearfix"></div>
+                            <h3 class="section-heading">Violent crime continues falling steadily beyond the 1990s crime drop</h3>
+                            <p>Researchers are still ﬁguring out what caused the nationwide drop in violent crime in the mid- to late 90s. DC is a compelling case because it has been particularly successful at extending that crime decline. That success is due in large part to a renewed emphasis on community-oriented policing and evidence-based tactics, as well as changing demographics and economic growth.</p>
+                            <p>DC Police Chief Cathy Lanier has empha-sized community engagement by increasing foot patrols, using social media and a tip line to foster community involvement, encouraging more one-on-one interactions between police and residents, and valuing empathy in police recruitment and training.</p>
+                            <p>Lanier has also rejected zero-tolerance and “hot spots” policing, aggressive strategies that combat violent crime by cracking down on minor offenses and ﬂooding high-crime areas with police. The problem with these tactics, Lanier says, is that they alienate residents—who are also often victims and witnesses—and turn them against the police. And when you’re trying to focus on serious violent offenders, these strategies are not guaranteed to target the right people.</p>
+                            <p>What’s more, DC’s police department has invested in new technologies, like closed-circuit television and body cameras for police, and has improved the quality and availability of crime data.</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>Violent Crime</h2>
+                            <div id="linechart"></div>
+                        </div>
+                        <div class="col-sm-4">
+                            <h2>Homicide</h2>
+                            <div id="homchart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item bg" id="assault">
+                <div class="container content">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="clearfix"></div>
+                            <h3 class="section-heading">Aggravated assaults declined citywide, but remained high in Northeast and Southeast DC</h3>
+                            <p>Aggravated assaults are serious physical assaults, often involving a deadly weapon like a gun or knife. The rate of aggravated assaults per 100,000 people in DC fell signiﬁcantly from 801 in 2000 to 576 in 2013.</p>
+                            <p> However, some areas had smaller declines, particularly in Trinidad, along the H Street Corridor, and in neighborhoods east of the Anacostia River. The population east of the river also remained fairly consistent during this period, meaning that increases (or a lack of decline) in the volume of crime can’t be explained by an increase in the number of residents.</p>
+                        </div>
+                        <div class="col-sm-8 ">
+                            <iframe src="assaultmap.html" frameborder="no" align="center" height="80%" width="100%"></iframe>
+                            <a href="http://datatools.urban.org/features/hrecht/occ-test/assaultmap.html" target=_blank>View this map fullscreen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item bg" id="robbbery">
+                <div class="container content">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="clearfix"></div>
+                            <h3 class="section-heading">Robberies follow the trend of other violent crimes</h3>
+                            <p>Robberies followed roughly the same path as aggravated assaults, steadily declining in the city overall but remaining fairly stable in some parts of the District. Robberies, where the offender uses or threatens force, are considered violent crimes, while thefts like pick-pocketing are not.</p>
+                        </div>
+                        <div class="col-sm-8 ">
+                            <iframe width='100%' height='550px' frameBorder='0' src='robberymap.html' allowfullscreen=”true” mozallowfullscreen=”true” webkitallowfullscreen=”true”></iframe>
+<a href="http://datatools.urban.org/features/hrecht/occ-test/robberymap.html" target=_blank>View this map fullscreen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item bg" id="homicide">
+                <div class="container content">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="clearfix"></div>
+                            <h3 class="section-heading">Homicides in DC hit record lows</h3>
+                            <p>In 2012, DC hit a record low of 88 homicides, down from a peak of 397 in 1996. Homicides have gone up slightly since then, hovering around 100 a year.</p>
+                            <p>
+                                This dramatic drop in homicides stems from a number of factors, including economic growth, demographic changes, and improve-ments in policing strategies. Additionally, the decrease may reﬂect changes like better medical care and improved EMT response times, which play an important role in preventing deaths due to violence.</p>
+                        </div>
+                        <div class="col-sm-8 ">
+                            <iframe width='100%' height='550px' frameBorder='0' src='homicidemap.html' allowfullscreen=”true” mozallowfullscreen=”true” webkitallowfullscreen=”true”></iframe>
+<a href="http://datatools.urban.org/features/hrecht/occ-test/homicidemap.html" target=_blank>View this map fullscreen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item bg" id="neighborhoods">
+                <div class="container content">
+                    <div class="row">
+                        <div class="col-sm-4" id="textbox">
+                            <div class="clearfix"></div>
+                            <h3 class="section-heading">Which neighborhoods had the biggest decreases in violent crime?</h3>
+                            <p>Looking at violent crime by neighborhood cluster, we can see that the biggest drop in crime occurred in the Chinatown/Penn Quarter area. From 2000 to 2014, the rate of violent crime fell from 63 crimes for every 1,000 residents to 17. The violent crime rate also fell considerably in the Navy Yard area, one of DC’s fastest-growing neighborhoods.</p>
+                            <p>During the same period, while crime was declining citywide, the violent crime rate increased slightly in four adjacent neighborhood clusters in Ward 7: Eastland Gardens/Kenilworth, Deanwood/Lincoln Heights, Mayfair/Hillbrook, and River Terrace/Benning.</p>
+                            <p>Measuring crimes per residents allows us to compare neighborhoods of different sizes, but it’s also important to note that these four Ward 7 neighborhoods have much smaller populations and lower raw crime numbers than Chinatown. For example, in 2014, the Kenilworth area had roughly 2,450 residents and experienced 63 violent crimes, while the Chinatown area was home to some 13,600 residents and experienced 234 violent crimes.</p>
+                            <p>Many areas saw little to no change in the violent crime rate over the past 15 years. Stable crime levels can mean very different things. Several neighborhood clusters in upper northwest DC, for example, started out with a very low crime rate and have maintained it, while other neighborhoods have higher crime rates that remain unchanged.</p>
+                        </div>
+                        <div class="col-sm-8 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item bg" id="cluster8">
+                <div class="container content">
+                    <div class="row">
+                        <div class="col-sm-4" id="text8">
+                            <div class="clearfix"></div>
+                            <h3 class="section-heading">Zooming in: 
+Chinatown/Penn Quarter</h3>
+                            <p>The number of violent crimes in the Chinatown/Penn Quarter neighborhood cluster (which includes downtown and Mt. Vernon Square) dropped more than 50 percent from 2000 to 2014, while the population grew from about 8,600 to 13,600 residents.</p>
+                            <p>Since the MCI Center—now named the Verizon Center—opened in 1997, this area has gone through a signiﬁcant trans-formation, with a surge of new residential and business development. That growth was likely one of a number of reasons crime dropped so dramatically. Increased activity may have made committing crimes more difﬁcult, led to a higher police presence, or encouraged the delivery of better public services. There is also a feedback effect: the citywide drop in crime attracted more residents, encouraging growth and economic development. While Wards 2 and 3 still lead by a good margin, other wards are more spread out across the price spectrum now than in the 1990s</p>
+                        </div>
+                        <div class="col-sm-8 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item bg" id="cluster29">
+                <div class="container content">
+                    <div class="row">
+                        <div class="col-sm-4" id="text29">
+                            <div class="clearfix"></div>
+                            <h3 class="section-heading">Zooming in: 
+Eastland Gardens/Kenilworth</h3>
+                            <p>Violent crime rose slightly in Eastland Gardens/Kenilworth and three other neighborhood clusters in Ward 7. The increases have been small, but violent crime was already high in these areas and is concentrated in a few city blocks. These neighborhoods have not beneﬁtted as fully from the Districtwide decline in crime, nor have they shared in the same economic growth as the rest of the city.</p>
+                            <p>The Eastland Gardens and Kenilworth area has faced persistently high poverty and unemployment rates. It’s also geographically cut off from the rest of the city by the Anacostia Freeway on the east and the Anacostia River to the west. Limited access to public transportation further isolates residents.</p>
+                            <p>Federal investment may help this community more forward. In 2010, the DC Promise Neighborhood Initiative, which works in Eastland Gardens and Kenilworth, received federal funding for an ambitious effort to provide cradle-to-career supports, such as afterschool programs and access to health care, for children and their families. The hope is that intensive social services will give the children and families in these neighborhoods the tools to build healthy, stable homes and careers.</p>
+                        </div>
+                        <div class="col-sm-8 ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item bg" id="conclusion">
+                <div class="container content">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="clearfix"></div>
+                            <h3 class="section-heading">Building on DC’s public safety improvements will take more than policing alone</h3>
+                            <p>The crime-reduction strategies that have taken DC to this point won’t be enough to take us the next level. Many of the remaining aggravated assaults and homicides involve issues like domestic violence, which cannot be addressed by policing alone. To tackle the new face of crime in DC, we’ll need a holistic approach that involves social services, the police, nonproﬁts, and residents working together. Only by partnering can the city build healthier, safer communities—creating the social supports, stability, and opportunities that will bring down even the most persistent pockets of violent crime.</p>
+                            <div class="credits">
+                                <p>Written by Samuel Bieler, Elizabeth Pelletier, and Serena Lei</br>Research by Elizabeth Pelletier, Samuel Bieler, and Nancy La Vigne</br>Design and photography by Christina Baird</br>Web development by Hannah Recht</p>
+                                <p>Copyright © August 2015. Urban Institute.</p>
+                                <p>The views expressed are those of the authors and should not be attributed to the Urban Institute, its trustees, or its funders.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-md-offset-1">
+                            <div class="bg-image">
+                                <img src="images/9Q1A7850.JPG">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <div class="arrow-left">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31 31" enable-background="new 0 0 31 31" xml:space="preserve">
+                    <g>
+                        <circle fill="none" stroke="#555555" stroke-miterlimit="10" cx="15.5" cy="15.5" r="15" />
+                        <g>
+                            <path fill="#555555" d="M9.6,15.7v-0.6l10.5-5.4v0.9c0,0.2-0.1,0.4-0.4,0.5L12,15c-0.2,0.1-0.3,0.1-0.5,0.2
+			c-0.2,0.1-0.3,0.1-0.5,0.2c0.4,0.1,0.7,0.2,1,0.3l7.8,3.9c0.1,0.1,0.2,0.1,0.3,0.2c0.1,0.1,0.1,0.2,0.1,0.3v0.9L9.6,15.7z" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <div class="arrow-right">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31 31" enable-background="new 0 0 31 31" xml:space="preserve">
+                    <g>
+                        <circle fill="none" stroke="#555555" stroke-miterlimit="10" cx="15.5" cy="15.5" r="15" />
+                        <g>
+                            <path fill="#555555" d="M10.9,21.1v-0.9c0-0.1,0-0.2,0.1-0.3c0.1-0.1,0.1-0.2,0.3-0.2l7.8-3.9c0.3-0.1,0.6-0.3,1-0.3
+			c-0.2,0-0.4-0.1-0.5-0.2c-0.2-0.1-0.3-0.1-0.5-0.2l-7.8-3.9c-0.2-0.1-0.4-0.3-0.4-0.5V9.7l10.5,5.4v0.6L10.9,21.1z" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+        </a>
     </div>
 
-    <script src="lib/bootstrap.min.js"></script>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
     <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+
+    <script src="lib/d3.min.js"></script>
+    <script src="lib/modernizr.svg.min.js"></script>
+    <script src="js/linechart.js"></script>
+
 </body>
 
 </html>
