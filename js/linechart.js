@@ -5,7 +5,7 @@ var linechart_data_url = "data/dcrates.csv";
 var $homchart = $('#homchart');
 var $linechart = $('#linechart');
 var linechart_aspect_width = 1;
-var linechart_aspect_height = 1.75;
+var linechart_aspect_height = 1.5;
 
 function linecharts() {
     linedraw();
@@ -15,16 +15,11 @@ function linecharts() {
 function linedraw() {
     var margin = {
             top: 50,
-            right: 150,
-            bottom: 35,
-            left: 10
+            right: 20,
+            bottom: 25,
+            left: 20
         },
         numticks = 6;
-    if ($linechart.width() < mobile_threshold) {
-        margin.top = 70;
-        margin.right = 20;
-        margin.left = 20;
-    }
     var width = $linechart.width() - margin.left - margin.right,
         height = Math.ceil((width * linechart_aspect_height) / linechart_aspect_width) - margin.top - margin.bottom,
         padding = 30;
@@ -83,20 +78,6 @@ function linedraw() {
         };
     });
 
-    var type = svg.selectAll(".type")
-        .data(types)
-        .enter().append("g")
-        .attr("class", "type");
-
-    type.append("path")
-        .attr("class", "chartline")
-        .attr("d", function (d) {
-            return line(d.values);
-        })
-        .style("stroke", function (d) {
-            return color(d.name);
-        });
-
     var yAxis = d3.svg.axis()
         .scale(y)
         .tickSize(width)
@@ -122,21 +103,35 @@ function linedraw() {
         .attr("class", "x axis")
         .call(xAxis);
 
+    var type = svg.selectAll(".type")
+        .data(types)
+        .enter().append("g")
+        .attr("class", "type");
+
+    type.append("path")
+        .attr("class", "chartline")
+        .attr("d", function (d) {
+            return line(d.values);
+        })
+        .style("stroke", function (d) {
+            return color(d.name);
+        });
+
     var legend = svg.selectAll("g.legend")
         .data(labels)
         .enter().append("g");
 
-    var l_h = 4;
+    var l_h = 9;
 
     legend.append("rect")
         .attr("id", function (d) {
             return d;
         })
-        .attr("x", 10)
-        .attr("y", function (d, i) {
-            return -40 - (25 * i);
+        .attr("x", function (d, i) {
+            return 5 + (100 * i);
         })
-        .attr("width", 20)
+        .attr("y", -45)
+        .attr("width", 15)
         .attr("height", l_h)
         .style("fill", function (d, i) {
             return color(d);
@@ -146,10 +141,10 @@ function linedraw() {
         .attr("id", function (d) {
             return d;
         })
-        .attr("x", 40)
-        .attr("y", function (d, i) {
-            return -33 - (25 * i);
+        .attr("x", function (d, i) {
+            return 23 + (100 * i);
         })
+        .attr("y", -35)
         .attr("class", "axis")
         .text(function (d, i) {
             return labels[i];
@@ -157,24 +152,19 @@ function linedraw() {
 
     function formatYAxis(d) {
         var s = formatAxis(d);
-        return d === y.domain()[1] ? s + " per 100,000" : s;
+        return d === y.domain()[1] ? s + " per 100,000 residents" : s;
     }
 }
 
 function homdraw() {
     var margin = {
             top: 50,
-            right: 150,
-            bottom: 35,
-            left: 10
+            right: 20,
+            bottom: 25,
+            left: 20
         },
         numticks = 6;
-    if ($linechart.width() < mobile_threshold) {
-        margin.top = 70;
-        margin.right = 20;
-        margin.left = 20;
-    }
-    var width = $linechart.width() - margin.left - margin.right,
+    var width = $homchart.width() - margin.left - margin.right,
         height = Math.ceil((width * linechart_aspect_height) / linechart_aspect_width) - margin.top - margin.bottom,
         padding = 30;
 
@@ -232,20 +222,6 @@ function homdraw() {
         };
     });
 
-    var type = svg.selectAll(".type")
-        .data(types)
-        .enter().append("g")
-        .attr("class", "type");
-
-    type.append("path")
-        .attr("class", "chartline")
-        .attr("d", function (d) {
-            return line(d.values);
-        })
-        .style("stroke", function (d) {
-            return color(d.name);
-        });
-
     var yAxis = d3.svg.axis()
         .scale(y)
         .tickSize(width)
@@ -270,10 +246,25 @@ function homdraw() {
         .attr("transform", "translate(0," + height + ")")
         .attr("class", "x axis")
         .call(xAxis);
+    
+    var type = svg.selectAll(".type")
+        .data(types)
+        .enter().append("g")
+        .attr("class", "type");
+
+    type.append("path")
+        .attr("class", "chartline")
+        .attr("d", function (d) {
+            return line(d.values);
+        })
+        .style("stroke", function (d) {
+            return color(d.name);
+        });
+
 
     function formatYAxis(d) {
         var s = formatAxis(d);
-        return d === y.domain()[1] ? s + " per 100,000" : s;
+        return d === y.domain()[1] ? s + " per 100,000 residents" : s;
     }
 }
 

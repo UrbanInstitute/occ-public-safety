@@ -128,12 +128,13 @@
                             <p>What’s more, DC’s police department has invested in new technologies, like closed-circuit television and body cameras for police, and has improved the quality and availability of crime data.</p>
                         </div>
                         <div class="col-sm-4">
-                            <h2>Violent Crime</h2>
-                            <div id="linechart"></div>
+                            <h2 class="graphtitle">Violent Crime</h2>
+                            <div id="linechart"><img src="images/violentcrime-fallback.png" alt="[Graph of robbery and aggravated assault rates decreasing from 2000-2013]" />
+                            </div>
                         </div>
                         <div class="col-sm-4">
-                            <h2>Homicide</h2>
-                            <div id="homchart"></div>
+                            <h2 class="graphtitle">Homicide</h2>
+                            <div id="homchart"><img src="images/homicide-fallback.png" alt="[Graph of homicide rate decreasing from 2000-2013]" />></div>
                         </div>
                     </div>
                 </div>
@@ -149,7 +150,9 @@
                             <p> However, some areas had smaller declines, particularly in Trinidad, along the H Street Corridor, and in neighborhoods east of the Anacostia River. The population east of the river also remained fairly consistent during this period, meaning that increases (or a lack of decline) in the volume of crime can’t be explained by an increase in the number of residents.</p>
                         </div>
                         <div class="col-sm-8 ">
-                            <iframe src="assaultmap.html" frameborder="no" align="center" height="80%" width="100%"></iframe>
+                            <div class="hexmap">
+                                <iframe src="assaultmap.html" frameborder="no" align="center" height="600px" width="100%"></iframe>
+                            </div>
                             <a href="http://datatools.urban.org/features/hrecht/occ-test/assaultmap.html" target=_blank>View this map fullscreen</a>
                         </div>
                     </div>
@@ -165,8 +168,10 @@
                             <p>Robberies followed roughly the same path as aggravated assaults, steadily declining in the city overall but remaining fairly stable in some parts of the District. Robberies, where the offender uses or threatens force, are considered violent crimes, while thefts like pick-pocketing are not.</p>
                         </div>
                         <div class="col-sm-8 ">
-                            <iframe width='100%' height='550px' frameBorder='0' src='robberymap.html' allowfullscreen=”true” mozallowfullscreen=”true” webkitallowfullscreen=”true”></iframe>
-<a href="http://datatools.urban.org/features/hrecht/occ-test/robberymap.html" target=_blank>View this map fullscreen</a>
+                            <div class="hexmap">
+                                <iframe width='100%' height='600px' frameBorder='0' src='robberymap.html' allowfullscreen=”true” mozallowfullscreen=”true” webkitallowfullscreen=”true”></iframe>
+                            </div>
+                            <a href="http://datatools.urban.org/features/hrecht/occ-test/robberymap.html" target=_blank>View this map fullscreen</a>
                         </div>
                     </div>
                 </div>
@@ -183,9 +188,11 @@
                             <p>
                                 This dramatic drop in homicides stems from a number of factors, including economic growth, demographic changes, and improve-ments in policing strategies. Additionally, the decrease may reﬂect changes like better medical care and improved EMT response times, which play an important role in preventing deaths due to violence.</p>
                         </div>
-                        <div class="col-sm-8 ">
-                            <iframe width='100%' height='550px' frameBorder='0' src='homicidemap.html' allowfullscreen=”true” mozallowfullscreen=”true” webkitallowfullscreen=”true”></iframe>
-<a href="http://datatools.urban.org/features/hrecht/occ-test/homicidemap.html" target=_blank>View this map fullscreen</a>
+                        <div class="col-sm-8">
+                            <div id = "homicidemap" class="hexmap">
+                                <iframe width='100%' min-height='100%' frameBorder='0' src='homicidemap.html' allowfullscreen=”true” mozallowfullscreen=”true” webkitallowfullscreen=”true”></iframe>
+                            </div>
+                            <a href="http://datatools.urban.org/features/hrecht/occ-test/homicidemap.html" target=_blank>View this map fullscreen</a>
                         </div>
                     </div>
                 </div>
@@ -300,6 +307,12 @@ Eastland Gardens/Kenilworth</h3>
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="lib/jquery.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#content').height($(window).height());
+        });
+    </script>
 
     <script src="lib/d3.min.js"></script>
     <script src="lib/modernizr.svg.min.js"></script>

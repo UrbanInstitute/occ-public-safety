@@ -193,7 +193,7 @@ body {
 #cluster8,
 #cluster29,
 #conclusion {
-    overflow: auto;
+    overflow-y: auto;
 }
 
 .carousel-caption {
@@ -363,6 +363,42 @@ body {
     font-style: italic;
     font-size: 12px;
 }
+
+.graphtitle {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+#linechart,
+#homchart{
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+}
+
+#linechart img,
+#homchart img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.hexmap {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+#homicidemap {
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 /* Custom, iPhone Retina */
