@@ -1,18 +1,92 @@
 var mobile_threshold = 600;
 var data;
 var linechart_data_url = "data/dcrates.csv";
+var clusters_data_url = "data/clusters8_29.csv";
 
-var $homchart = $('#homchart');
-var $linechart = $('#linechart');
 var linechart_aspect_width = 1;
 var linechart_aspect_height = 1.5;
 
-function linecharts() {
-    linedraw();
-    homdraw();
+var options,
+    $homchart,
+    $linechart;
+
+function leftdraw_dc() {
+    $linechart = $('#linedc');
+    options = {
+        years: [2000, 2013.5],
+        max: 1000,
+        axlabel: " per 100,000 residents"
+    };
+    data = data_city;
+    linedraw("#linedc");
 }
 
-function linedraw() {
+function homdraw_dc() {
+    $homchart = $('#homdc');
+    options = {
+        years: [2000, 2013.5],
+        max: 50,
+        axlabel: " per 100,000 residents"
+    };
+    data = data_city;
+    homdraw("#homdc");
+}
+
+function leftdraw_8() {
+    $linechart = $('#line8');
+    options = {
+        years: [2000, 2014.5],
+        max: 40,
+        axlabel: " per 1,000 residents"
+    };
+    data = data_cl.filter(function (d) {
+        return d.cluster == 8;
+    });
+    linedraw("#line8");
+}
+
+function homdraw_8() {
+    $homchart = $('#hom8');
+    options = {
+        years: [2000, 2014.5],
+        max: 3,
+        axlabel: " per 1,000 residents",
+        yformat: '.1f'
+    };
+    data = data_cl.filter(function (d) {
+        return d.cluster == 8;
+    });
+    homdraw("#hom8");
+}
+
+function leftdraw_29() {
+    $linechart = $('#line29');
+    options = {
+        years: [2000, 2014.5],
+        max: 40,
+        axlabel: " per 1,000 residents"
+    };
+    data = data_cl.filter(function (d) {
+        return d.cluster == 29;
+    });
+    linedraw("#line29");
+}
+
+function homdraw_29() {
+    $homchart = $('#hom29');
+    options = {
+        years: [2000, 2014.5],
+        max: 3,
+        axlabel: " per 1,000 residents",
+        yformat: '.1f'
+    };
+    data = data_cl.filter(function (d) {
+        return d.cluster == 29;
+    });
+    homdraw("#hom29");
+}
+
+function linedraw(div) {
     var margin = {
             top: 50,
             right: 20,
@@ -31,20 +105,20 @@ function linedraw() {
 
     var x = d3.scale.linear()
         .range([padding, width])
-        .domain([2000, 2013.5]);
+        .domain(options.years);
 
     var y = d3.scale.linear()
-        .domain([0, 1000])
+        .domain([0, options.max])
         .range([height, 0]);
 
     var color = d3.scale.ordinal()
-        .range(["#54b849","#fdbf11"])
+        .range(["#54b849", "#fdbf11"])
         .domain(labels);
 
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
-        .tickFormat(formatYAxis)
+        .tickFormat(formatAxis)
         .ticks(numticks);
 
     var line = d3.svg.line()
@@ -56,14 +130,14 @@ function linedraw() {
             return y(d.rate);
         });
 
-    var svg = d3.select("#linechart").append("svg")
+    var svg = d3.select(div).append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     color.domain(d3.keys(data[0]).filter(function (key) {
-        return key == "robrate" | key == "aggrate";
+        return key == "robrate" | key == "assaultrate";
     }));
 
     var types = color.domain().map(function (name) {
@@ -152,11 +226,11 @@ function linedraw() {
 
     function formatYAxis(d) {
         var s = formatAxis(d);
-        return d === y.domain()[1] ? s + " per 100,000 residents" : s;
+        return d === y.domain()[1] ? s + options.axlabel : s;
     }
 }
 
-function homdraw() {
+function homdraw(div) {
     var margin = {
             top: 50,
             right: 20,
@@ -170,15 +244,16 @@ function homdraw() {
 
     $homchart.empty();
 
-    var formatAxis = d3.format('.0f');
+    var formatAxis = d3.format(options.yformat);
+    var formatXAxis = d3.format('.0f');
     var labels = ["Homicide"];
 
     var x = d3.scale.linear()
         .range([padding, width])
-        .domain([2000, 2013.5]);
+        .domain(options.years);
 
     var y = d3.scale.linear()
-        .domain([0, 50])
+        .domain([0, options.max])
         .range([height, 0]);
 
     var color = d3.scale.ordinal()
@@ -188,7 +263,7 @@ function homdraw() {
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
-        .tickFormat(formatYAxis)
+        .tickFormat(formatXAxis)
         .ticks(numticks);
 
     var line = d3.svg.line()
@@ -200,7 +275,7 @@ function homdraw() {
             return y(d.rate);
         });
 
-    var svg = d3.select("#homchart").append("svg")
+    var svg = d3.select(div).append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
@@ -246,7 +321,7 @@ function homdraw() {
         .attr("transform", "translate(0," + height + ")")
         .attr("class", "x axis")
         .call(xAxis);
-    
+
     var type = svg.selectAll(".type")
         .data(types)
         .enter().append("g")
@@ -264,19 +339,28 @@ function homdraw() {
 
     function formatYAxis(d) {
         var s = formatAxis(d);
-        return d === y.domain()[1] ? s + " per 100,000 residents" : s;
+        return d === y.domain()[1] ? s + options.axlabel : s;
     }
+}
+
+function linecharts() {
+    leftdraw_dc();
+    homdraw_dc();
+    leftdraw_8();
+    homdraw_8();
+    leftdraw_29();
+    homdraw_29();
 }
 
 $(window).load(function () {
     if (Modernizr.svg) { // if svg is supported, draw dynamic chart
-
         d3.csv(linechart_data_url, function (error, rates) {
-            data = rates;
-
-            linecharts();
-            window.onresize = linecharts;
+            d3.csv(clusters_data_url, function (error, rates_cl) {
+                data_city = rates;
+                data_cl = rates_cl;
+                linecharts();
+                window.onresize = linecharts;
+            })
         });
-
     }
 });

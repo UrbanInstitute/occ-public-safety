@@ -1,4 +1,4 @@
-year,population,homicides,homrate,rapes,raperate,robberies,robrate,aggassault,aggrate,burglaries,burgrate,thefts,theftrate
+year,population,homicides,homrate,rapes,raperate,robberies,robrate,aggassault,assaultrate,burglaries,burgrate,thefts,theftrate
 2000,572059,242,42.3,251,43.88,3553,621.09,4582,800.97,4745,829.4598984,21637,3782.302175
 2001,571822,232,40.57,188,32.88,3940,689.03,5568,973.73,5009,875.9718934,21434,3748.369248
 2002,570898,262,45.89,262,45.89,3731,653.53,4854,850.24,5167,905.0653532,20903,3661.424633
