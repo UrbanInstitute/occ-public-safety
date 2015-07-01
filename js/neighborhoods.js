@@ -15,9 +15,9 @@ var legend_aspect_width = 1;
 var legend_aspect_height = 1.9;
 
 var colors = ["#001634", "#18507d", "#0096d2", "#82c2e7", "#d7e8f6", "#ffedcd", "#ffda91", "#fcb918"],
-    breaks = [-300, -200, -100, -10, 0, 10, 100],
+    breaks = [-30, -20, -10, -1, 0, 1, 10],
     legend_num = [1, 2, 3, 4, 5, 6, 7, 8],
-    legend_text = ["Change in violent crime", "per 10,000 residents"];
+    legend_text = ["Change in violent crime", "per 1,000 residents"];
 //shared color ramp for both bar chart and map
 var color = d3.scale.threshold()
     .domain(breaks)
@@ -115,13 +115,13 @@ function bardraw(id) {
 
     var y = d3.scale.linear()
         .range([height, 0])
-        .domain([-455, 132]);
+        .domain([-46, 13]);
 
     var yAxis = d3.svg.axis()
         .scale(y)
         .orient("right")
         .tickSize(width)
-        .tickValues([100, 0, -100, -200]);
+        .tickValues([10, 0, -10, -20]);
 
     var gy = svg.append("g")
         .attr("class", "y axis")
@@ -163,7 +163,7 @@ function bardraw(id) {
     svg.append("text")
         .attr("x", x.rangeBand() * 2)
         .attr("y", function (d) {
-            return y(110);
+            return y(11);
         })
         .text(function (d) {
             return "Increase in crime";
@@ -174,7 +174,7 @@ function bardraw(id) {
     svg.append("text")
         .attr("x", width * 0.53)
         .attr("y", function (d) {
-            return y(-130);
+            return y(-13);
         })
         .text(function (d) {
             return "Decrease in crime";

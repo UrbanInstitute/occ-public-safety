@@ -17,7 +17,7 @@ write.csv(occs, file="data/occ_crimes.csv", row.names=FALSE)
 #Add lat-long & neighborhood cluster in ArcMap - originally projected in ESPG 26985
 occg<-read.csv("data/occ_crimesgeomatch_all.csv",header=T, stringsAsFactors=F)
 occm<-occg%>%filter(Latitude !=0) %>%
-  select(occm,offense,year,Latitude,Longitude)
+  select(offense,year,Latitude,Longitude)
 write.csv(occm, file="data/occ_crimes_min.csv", row.names=FALSE)
 
 #For each crime, export points by year
@@ -47,10 +47,8 @@ clusters <-
               occg)
 clusters<-clusters%>%spread(offense,p.sum) %>%
   rename(robbery=Robbery,homicide=Homicide,aggassault=ADW)
-write.csv(clusters, file="data/clusterdata.csv", row.names=F,na="0")
 
 #Add in cluster population - source: http://www.neighborhoodinfodc.org/comparisontables/comp_table_cltr00.xls
-clusters<-read.csv("data/clusterdata.csv",header=T, stringsAsFactors=F)
 nnip<-read.csv("data/nnip_clusters.csv",header=T, stringsAsFactors=F)
 #get rid of non-cluster rows
 nnip<-nnip%>%slice(1:39) %>%
