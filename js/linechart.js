@@ -26,7 +26,8 @@ function homdraw_dc() {
     options = {
         years: [2000, 2013.5],
         max: 50,
-        axlabel: " per 100,000 residents"
+        axlabel: " per 100,000 residents",
+        yformat: '.0f'
     };
     data = data_city;
     homdraw("#homdc");

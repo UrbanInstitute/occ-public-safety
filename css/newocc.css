@@ -21,8 +21,8 @@ body {
 }
 
 .navbar-default {
-    background-color: #0096d2;
-    border-color: #0096d2;
+    background-color: #1696d2;
+    border-color: #1696d2;
 }
 /* Flip around the padding for proper display in narrow viewports */
 
@@ -126,7 +126,7 @@ body {
     margin-top: 25px;
     margin-right: 5px;
     background-color: #fff;
-    color: #0096d2;
+    color: #1696d2;
     display: inline-block;
 }
 
@@ -135,11 +135,11 @@ body {
 }
 
 #socials a {
-    color: #0096d2;
+    color: #1696d2;
 }
 
 #socials a:hover {
-    color: #0096d2;
+    color: #1696d2;
 }
 
 #socials {
@@ -185,6 +185,7 @@ body {
 }
 /*set overflow height individually for each slide*/
 
+#cover,
 #violentcrime,
 #assault,
 #robbery,
@@ -372,18 +373,17 @@ body {
 }
 
 #linechart,
-#homchart{
+#homchart {
     width: 100%;
     height: 100%;
     min-height: 500px;
 }
 
 #linechart img,
-#homchart img{
+#homchart img {
     max-width: 100%;
     height: auto;
 }
-
 
 .hexmap {
     position: relative;
@@ -393,125 +393,64 @@ body {
     min-height: 100%;
     overflow: hidden;
 }
+
 #homicidemap {
     margin-bottom: -9999px;
     padding-bottom: 9999px;
 }
-
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 768px) {
-    .chart {
-        min-width: 280px;
-        max-height: 400px;
+@media (max-width: 767px) {
+    .content,
+    .row{
+        margin-top: 10px;
     }
-    h3,
-    p {
-        max-width: 80%;
-        margin-left: 10%;
+    .section-heading {
+        font-size: 1.2em;
     }
-    h3 {
-        margin-top: 50px;
+    #cover {
+        display: block;
+        height: 100% !important;
+        width: 100%;
+        background-image:none;
     }
-    #shareMaster,
-    #socials {
-        display: none;
+    .leftbox, .title {
+        margin: inherit;
+        width: 100%;
+        color: #5a5a5a;
+        background-color: rgba(0, 0, 0, 0);
+        text-shadow: none;
     }
-    .carousel-indicators {
-        top: 60px;
+    .lead {
+        font-size: 1em;
     }
-    .navbar-default {
-        height: 90px;
-    }
-    #previousChapters {
-        display: none;
-    }
-    .carousel .carousel-inner .bg {
-        background-color: #fff;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: auto;
-    }
-    .active {
+    #myCarousel .item {
+        display: block;
+        padding-bottom: 2px;
         height: auto;
     }
-}
-
-#imageHide {
-    position: absolute;
-    left: -100000;
-    top: -100000;
-    z-index: -10000000;
-    display: none;
-}
-
-#titleLink {
-    text-decoration: none;
-    color: #fff;
-}
-/* Extra Small Devices, Phones */
-
-@media only screen and (min-width: 480px) {
-    .chart {
-        min-width: 400px;
-        max-width: 480px;
+    .carousel-inner {
+        overflow-y: scroll;
+    }
+    .carousel-control,
+    .navbar,
+    .hexmap,
+    #assaultmap,
+    #homicidemap,
+    #robberymap,
+    iframe {
+        display: none;
+        height: 0;
+        width: 0;
+        width: 0;
+    }
+    .carousel-indicators,
+    ol {
+        display: none;
+        height: 0;
+        width: 0;
+        width: 0;
     }
 }
-/* Small Devices, Tablets */
-
-@media only screen and (min-width: 768px) {
-    /* Remove the edge padding needed for mobile */
-    
-    .marketing {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    /* Navbar positioning foo */
-    
-    .navbar-wrapper {
-        margin-top: 20px;
-    }
-    .navbar-wrapper .container {
-        padding-right: 30px;
-        padding-left: 30px;
-    }
-    .navbar-wrapper .navbar {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    /* The navbar becomes detached from the top, so we round the corners */
-    
-    .navbar-wrapper .navbar {
-        border-radius: 4px;
-    }
-    /* Bump up size of carousel content */
-    
-    .carousel-caption p {
-        margin-bottom: 20px;
-        font-size: 13px;
-        line-height: 1.2;
-        text-align: left;
-    }
-    .featurette-heading {
-        font-size: 50px;
-    }
-    .chart {
-        min-width: 470px;
-    }
-}
-/* Medium Devices, Desktops */
-
-@media only screen and (min-width: 992px) {
-    .chart {
-        min-width: 617px;
-    }
-    /* Large Devices, Wide Screens */
-    
-    @media only screen and (min-width: 1200px) {
-        .chart {
-            min-width: 750px;
-        }
-    }
