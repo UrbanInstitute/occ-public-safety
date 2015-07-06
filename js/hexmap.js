@@ -41,7 +41,7 @@ function crimemap(layers) {
             highlightLayer(n);
             i = n;
             nextInterval = clearInterval(nextInterval);
-            play_button.innerHTML = play;
+            play_button.innerHTML = pause;
         };
     });
 
@@ -51,7 +51,7 @@ function crimemap(layers) {
     var layerGroup = L.layerGroup().addTo(map);
 
     // i is the number of the currently-selected layer
-    var i = 13;
+    var i = 0;
 
     // show the first overlay as soon as the map loads
     highlightLayer(i++);
@@ -75,8 +75,7 @@ function crimemap(layers) {
     }
 
     //streets on top
-    var streetLayer = L.mapbox.tileLayer('urbaninstitute.h5b1kc2b');
-    streetLayer
+    var streetLayer = L.mapbox.tileLayer('urbaninstitute.h5b1kc2b')
         .setZIndex(100)
         .addTo(map);
 
