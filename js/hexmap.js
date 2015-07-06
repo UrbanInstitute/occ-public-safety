@@ -41,7 +41,7 @@ function crimemap(layers) {
             highlightLayer(n);
             i = n;
             nextInterval = clearInterval(nextInterval);
-            play_button.innerHTML = pause;
+            play_button.innerHTML = play;
         };
     });
 
