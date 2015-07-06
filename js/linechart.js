@@ -90,9 +90,9 @@ function homdraw_29() {
 function linedraw(div) {
     var margin = {
             top: 50,
-            right: 20,
+            right: 5,
             bottom: 25,
-            left: 20
+            left: 5
         },
         numticks = 6;
     var width = $linechart.width() - margin.left - margin.right,
@@ -234,9 +234,9 @@ function linedraw(div) {
 function homdraw(div) {
     var margin = {
             top: 50,
-            right: 20,
+            right: 5,
             bottom: 25,
-            left: 20
+            left: 5
         },
         numticks = 6;
     var width = $homchart.width() - margin.left - margin.right,

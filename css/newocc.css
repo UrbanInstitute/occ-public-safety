@@ -1,8 +1,12 @@
 body {
     padding-bottom: 40px;
     padding-top: 70px;
-    color: #5a5a5a;
+    color: #666666;
     font-family: 'Lato';
+}
+
+p {
+    font-size: 13px;
 }
 
 .row {
@@ -299,32 +303,31 @@ body {
 
 .title {
     color: #fff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
     margin-top: 60px;
     padding: 15px;
-    background-color: #000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.65);
     left: 0%;
-    right: 60%;
+    right: 50%;
     top: 0%;
     bottom: 0%;
 }
 
 .leftbox {
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: left;
     margin-top: 10%;
 }
 
-.leftbox chapter {
-    font-size: 1.2em;
+.leftbox .chapter {
+    font-size: 16px;
 }
 
 .leftbox h1 {
     text-transform: uppercase;
     margin-top: 3px;
     margin-bottom: 1em;
+    font-size: 36px;
 }
 
 .lead {
@@ -335,6 +338,11 @@ body {
 
 #occ-section {
     font-weight: lighter;
+}
+
+.section-heading {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .moreInfo {
@@ -366,10 +374,10 @@ body {
 }
 
 .graphtitle {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-left: 20px;
+    color: #333;
 }
 
 #linechart,
@@ -394,9 +402,22 @@ body {
     overflow: hidden;
 }
 
-#homicidemap {
-    margin-bottom: -9999px;
-    padding-bottom: 9999px;
+#barchart {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#clustermap {
+    width: 65%;
+    margin-top: -90px;
+    margin-left: 50px;
+}
+
+#legend {
+    max-width: 150px;
+    margin-top: -200px;
+    margin-left: 20px;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -404,7 +425,7 @@ body {
 
 @media (max-width: 767px) {
     .content,
-    .row{
+    .row {
         margin-top: 10px;
     }
     .section-heading {
@@ -414,9 +435,10 @@ body {
         display: block;
         height: 100% !important;
         width: 100%;
-        background-image:none;
+        background-image: none;
     }
-    .leftbox, .title {
+    .leftbox,
+    .title {
         margin: inherit;
         width: 100%;
         color: #5a5a5a;
@@ -434,23 +456,32 @@ body {
     .carousel-inner {
         overflow-y: scroll;
     }
-    .carousel-control,
-    .navbar,
-    .hexmap,
-    #assaultmap,
-    #homicidemap,
-    #robberymap,
-    iframe {
-        display: none;
-        height: 0;
-        width: 0;
-        width: 0;
-    }
     .carousel-indicators,
     ol {
         display: none;
         height: 0;
         width: 0;
         width: 0;
+    }
+    .carousel-control,
+    .navbar,
+    .hexmap,
+    #assaultmap,
+    #homicidemap,
+    #robberymap,
+    iframe,
+    #barchart {
+        display: none;
+        height: 0;
+        width: 0;
+        width: 0;
+    }
+    #clustermap {
+        width: 100%;
+        margin: auto;
+    }
+    #legend {
+        width: 100%;
+        margin: auto;
     }
 }

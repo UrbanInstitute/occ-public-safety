@@ -8,7 +8,7 @@ var barchart_aspect_height = 1;
 var clustermap_data_url = "data/neighborhoods.json";
 var $clustermap = $('#clustermap');
 var clustermap_aspect_width = 1;
-var clustermap_aspect_height = 1;
+var clustermap_aspect_height = 1.1;
 
 var $legend = $('#legend');
 var legend_aspect_width = 1;
