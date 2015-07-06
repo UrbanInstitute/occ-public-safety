@@ -48,26 +48,20 @@ clusters <-
 clusters<-clusters%>%spread(offense,p.sum) %>%
   rename(robbery=Robbery,homicide=Homicide,aggassault=ADW)
 
-#Add in cluster population - source: http://www.neighborhoodinfodc.org/comparisontables/comp_table_cltr00.xls
-nnip<-read.csv("data/nnip_clusters.csv",header=T, stringsAsFactors=F)
-#get rid of non-cluster rows
-nnip<-nnip%>%slice(1:39) %>%
-  select(CLUSTER_TR2000,TotPop_2000,TotPop_2010) %>%
-  separate(CLUSTER_TR2000, c("c","cluster")) %>%
-  rename(pop_2000=TotPop_2000,pop_2010=TotPop_2010) %>%
-  select(-c)
+#Add in cluster population - source: Census tract matched to cluster boundaries by P. Taitian
+pops<-read.csv("data/clusterpops.csv",header=T, stringsAsFactors=F)
 
 #interpolate populations
 #NNIP method: use 2010 populations for each subsequent year in absence of newer data
-nnip$slope<-(nnip$pop_2010 - nnip$pop_2000)/10
-nnip<-nnip%>%mutate(pop_2001=pop_2000+slope,pop_2002=pop_2000+2*slope,pop_2003=pop_2000+3*slope,pop_2004=pop_2000+4*slope,
+pops$slope<-(pops$pop_2010 - pops$pop_2000)/10
+pops<-pops%>%mutate(pop_2001=pop_2000+slope,pop_2002=pop_2000+2*slope,pop_2003=pop_2000+3*slope,pop_2004=pop_2000+4*slope,
                     pop_2005=pop_2000+5*slope,pop_2006=pop_2000+6*slope,pop_2007=pop_2000+7*slope,pop_2008=pop_2000+8*slope,pop_2009=pop_2000+9*slope) %>%
   select(-pop_2010, everything()) %>%
   mutate(pop_2011=pop_2010,pop_2012=pop_2010,pop_2013=pop_2010,pop_2014=pop_2010) %>%
   select(-slope)
 
 #join cluster population by year to crimes
-pop<-nnip%>%gather(year,"pop",2:16) %>%
+pop<-pops%>%gather(year,"pop",2:16) %>%
   select(cluster,year,pop)
 vars<-colsplit(pop$year, "_", c("temp", "year"))
 pop<-pop%>%select(-year)
