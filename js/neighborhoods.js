@@ -1,4 +1,5 @@
-var mobile_threshold = 600;
+var mobile_threshold = 768;
+var $clustergraphs = $('#clustergraphs');
 
 var barchart_data_url = "data/clusters_violentcrime.csv";
 var $barchart = $('#barchart');
@@ -16,73 +17,94 @@ var legend_aspect_height = 1.9;
 
 var colors = ["#001634", "#18507d", "#0096d2", "#82c2e7", "#d7e8f6", "#ffedcd", "#ffda91", "#fcb918"],
     breaks = [-30, -20, -10, -1, 0, 1, 10],
-    legend_num = [1, 2, 3, 4, 5, 6, 7, 8],
-    legend_text = ["Change in violent crime", "per 1,000 residents"];
+    legend_num = [1, 2, 3, 4, 5, 6, 7, 8];
 //shared color ramp for both bar chart and map
 var color = d3.scale.threshold()
     .domain(breaks)
     .range(colors);
 
 function legenddraw() {
+            var margin = {
+            top: 5,
+            right: 2,
+            bottom: 5,
+            left: 2
+        };
+        var width = $legend.width() - margin.left - margin.right,
+            height = Math.ceil((width * legend_aspect_height) / legend_aspect_width) - margin.top - margin.bottom;
 
-    var margin = {
-        top: 5,
-        right: 15,
-        bottom: 5,
-        left: 15
-    };
-    var width = $legend.width() - margin.left - margin.right,
-        height = Math.ceil((width * legend_aspect_height) / legend_aspect_width) - margin.top - margin.bottom;
+        $legend.empty();
 
-    $legend.empty();
+        var svg = d3.select("#legend").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+    
+    if ($clustergraphs.width() < mobile_threshold) {
+        
+        var lp_h = 18,
+            ls_w = width / 8;
 
-    var svg = d3.select("#legend").append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        var legend = svg.selectAll("g.legend")
+            .data(legend_num)
+            .enter().append("g")
+            .attr("class", "legend");
 
-    var lp_h = 20,
-        ls_w = 40,
-        ls_h = 22;
+        legend.append("text")
+            .data(breaks)
+            .attr("x", function (d, i) {
+                return (i * ls_w) + ls_w - 5;
+            })
+            .attr("y", 30)
+            .text(function (d, i) {
+                return d;
+            });
 
+        legend.append("rect")
+            .attr("y", 0)
+            .attr("x", function (d, i) {
+                return (i * (ls_w));
+            })
+            .attr("width", ls_w)
+            .attr("height", lp_h)
+            .attr("z-index", 10)
+            .style("fill", function (d, i) {
+                return colors[i];
+            })
+    } else {
 
-    var legend = svg.selectAll("g.legend")
-        .data(legend_num)
-        .enter().append("g")
-        .attr("class", "legend");
+        var lp_h = 20,
+            ls_w = 40,
+            ls_h = 22;
 
-    legend.append("text")
-        .data(legend_text)
-        .attr("x", 0)
-        .attr("y", function (d, i) {
-            return i * 15 + 10;
-        })
-        .text(function (d, i) {
-            return d;
-        });
+        var legend = svg.selectAll("g.legend")
+            .data(legend_num)
+            .enter().append("g")
+            .attr("class", "legend");
 
-    legend.append("text")
-        .data(breaks)
-        .attr("x", ls_w + 5)
-        .attr("y", function (d, i) {
-            return height - ((i * ls_h) + lp_h - 2);
-        })
-        .text(function (d, i) {
-            return d;
-        });
+        legend.append("text")
+            .data(breaks)
+            .attr("x", ls_w + 5)
+            .attr("y", function (d, i) {
+                return height - ((i * ls_h) + lp_h - 2);
+            })
+            .text(function (d, i) {
+                return d;
+            });
 
-    legend.append("rect")
-        .attr("x", 0)
-        .attr("y", function (d, i) {
-            return height - ((i * ls_h) + lp_h);
-        })
-        .attr("width", ls_w)
-        .attr("height", lp_h)
-        .attr("z-index", 10)
-        .style("fill", function (d, i) {
-            return colors[i];
-        })
+        legend.append("rect")
+            .attr("x", 0)
+            .attr("y", function (d, i) {
+                return height - ((i * ls_h) + lp_h);
+            })
+            .attr("width", ls_w)
+            .attr("height", lp_h)
+            .attr("z-index", 10)
+            .style("fill", function (d, i) {
+                return colors[i];
+            })
+    }
 }
 
 function bardraw(id) {

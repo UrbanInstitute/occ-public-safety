@@ -209,7 +209,13 @@
                             <p>Measuring crimes per residents allows us to compare neighborhoods of different sizes, but it’s also important to note that these four Ward 7 neighborhoods have much smaller populations and lower raw crime numbers than Chinatown. For example, in 2014, the Kenilworth area had roughly 2,450 residents and experienced 63 violent crimes, while the Chinatown area was home to some 13,600 residents and experienced 234 violent crimes.</p>
                             <p>Many areas saw little to no change in the violent crime rate over the past 15 years. Stable crime levels can mean very different things. Several neighborhood clusters in upper northwest DC, for example, started out with a very low crime rate and have maintained it, while other neighborhoods have higher crime rates that remain unchanged.</p>
                         </div>
-                        <div class="col-sm-8 ">
+                        <div class="col-sm-8" id="clustergraphs">
+                            <div id="barchart"></div>
+                            <div id="clustermap"></div>
+                            <div id="legholder">
+                                <div class="legend">Change in violent crime per 1,000 residents</div>
+                                <div id="legend"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -329,8 +335,10 @@ Eastland Gardens/Kenilworth</h3>
     </script>
 
     <script src="lib/d3.min.js"></script>
+    <script src="lib/topojson.min.js"></script>
     <script src="lib/modernizr.svg.min.js"></script>
     <script src="js/linechart.js"></script>
+
 
 </body>
 

@@ -414,8 +414,8 @@ body {
     margin-left: 50px;
 }
 
-#legend {
-    max-width: 150px;
+#legholder {
+    max-width: 100px;
     margin-top: -200px;
     margin-left: 20px;
 }
@@ -480,8 +480,9 @@ body {
         width: 100%;
         margin: auto;
     }
-    #legend {
+    #legholder {
         width: 100%;
+        max-width: 100%;
         margin: auto;
     }
 }
