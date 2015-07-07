@@ -88,7 +88,12 @@ hoods<-hoods%>%mutate(pctchange14 = (violent2014 - violent2000)/violent2000,
                       rawchange14 = (violent2014 - violent2000))
 write.csv(hoods, file="data/clusters_violentcrime.csv", row.names=F)
 
-#Clusters 8 and 29 for neighborhood zoom-in slides
-clz<-clusters%>%filter(cluster==8|cluster==29) %>% 
+#Clusters for neighborhood zoom-in slides, DC rates
+clusters<-read.csv("data/clusterdata.csv",header=T, stringsAsFactors=F)
+clz<-clusters%>%filter(cluster==27|cluster==29) %>% 
   select(cluster,year,assaultrate,robrate,homrate)
-write.csv(clz, file="data/clusters8_29.csv", row.names=F)
+dc<-read.csv("data/dcrates.csv",header=T, stringsAsFactors=F)
+dc<-dc%>%select(year,assaultrate,robrate,homrate) %>%
+  mutate(cluster=0)
+clz<-bind_rows(clz,dc)
+write.csv(clz, file="data/linerates.csv", row.names=F)

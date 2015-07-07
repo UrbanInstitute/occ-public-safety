@@ -1,7 +1,6 @@
 var mobile_threshold = 600;
 var data;
-var linechart_data_url = "data/dcrates.csv";
-var clusters_data_url = "data/clusters8_29.csv";
+var linechart_data_url = "data/linerates.csv";
 
 var linechart_aspect_width = 1;
 var linechart_aspect_height = 1.5;
@@ -17,7 +16,9 @@ function leftdraw_dc() {
         max: 1000,
         axlabel: " per 100,000 residents"
     };
-    data = data_city;
+    data = data_cl.filter(function (d) {
+        return d.cluster == 0;
+    });
     linedraw("#linedc");
 }
 
@@ -29,39 +30,41 @@ function homdraw_dc() {
         axlabel: " per 100,000 residents",
         yformat: '.0f'
     };
-    data = data_city;
+    data = data_cl.filter(function (d) {
+        return d.cluster == 0;
+    });
     homdraw("#homdc");
 }
 
-function leftdraw_8() {
-    $linechart = $('#line8');
+function leftdraw_l() {
+    $linechart = $('#linel');
     options = {
         years: [2000, 2014.5],
         max: 40,
         axlabel: " per 1,000 residents"
     };
     data = data_cl.filter(function (d) {
-        return d.cluster == 8;
+        return d.cluster == 27;
     });
-    linedraw("#line8");
+    linedraw("#linel");
 }
 
-function homdraw_8() {
-    $homchart = $('#hom8');
+function homdraw_l() {
+    $homchart = $('#homl');
     options = {
         years: [2000, 2014.5],
-        max: 3,
+        max: 4,
         axlabel: " per 1,000 residents",
         yformat: '.1f'
     };
     data = data_cl.filter(function (d) {
-        return d.cluster == 8;
+        return d.cluster == 27;
     });
-    homdraw("#hom8");
+    homdraw("#homl");
 }
 
-function leftdraw_29() {
-    $linechart = $('#line29');
+function leftdraw_h() {
+    $linechart = $('#lineh');
     options = {
         years: [2000, 2014.5],
         max: 40,
@@ -70,21 +73,21 @@ function leftdraw_29() {
     data = data_cl.filter(function (d) {
         return d.cluster == 29;
     });
-    linedraw("#line29");
+    linedraw("#lineh");
 }
 
-function homdraw_29() {
-    $homchart = $('#hom29');
+function homdraw_h() {
+    $homchart = $('#homh');
     options = {
         years: [2000, 2014.5],
-        max: 3,
+        max: 4,
         axlabel: " per 1,000 residents",
         yformat: '.1f'
     };
     data = data_cl.filter(function (d) {
         return d.cluster == 29;
     });
-    homdraw("#hom29");
+    homdraw("#homh");
 }
 
 function linedraw(div) {
@@ -303,7 +306,7 @@ function homdraw(div) {
         .tickSize(width)
         .tickFormat(formatYAxis)
         .orient("right")
-        .ticks(6);
+        .ticks(4);
 
     var gy = svg.append("g")
         .attr("class", "y axis")
@@ -347,21 +350,19 @@ function homdraw(div) {
 function linecharts() {
     leftdraw_dc();
     homdraw_dc();
-    leftdraw_8();
-    homdraw_8();
-    leftdraw_29();
-    homdraw_29();
+    leftdraw_l();
+    homdraw_l();
+    leftdraw_h();
+    homdraw_h();
 }
 
 $(window).load(function () {
     if (Modernizr.svg) { // if svg is supported, draw dynamic chart
         d3.csv(linechart_data_url, function (error, rates) {
-            d3.csv(clusters_data_url, function (error, rates_cl) {
-                data_city = rates;
-                data_cl = rates_cl;
-                linecharts();
-                window.onresize = linecharts;
-            })
+            data_cl = rates;
+            linecharts();
+            window.onresize = linecharts;
+
         });
     }
 });
