@@ -193,7 +193,7 @@ body {
 #robbery,
 #homicide,
 #neighborhoods,
-#cluster8,
+#cluster27,
 #cluster29,
 #conclusion {
     overflow-y: auto;
@@ -263,8 +263,9 @@ body {
 }
 
 .indic-container {
-    width: 970px;
     width: 1170px;
+    width: 970px;
+    width: 750px;
     margin: auto;
     position: absolute;
     left: 0;

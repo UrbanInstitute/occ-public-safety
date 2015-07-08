@@ -9,6 +9,12 @@ var options,
     $homchart,
     $linechart;
 
+var yearf = d3.format("02d");
+
+function formatYear(d) {
+    return "'" + yearf(Math.abs(2000 - d));
+}
+
 function leftdraw_dc() {
     $linechart = $('#linedc');
     options = {
@@ -122,7 +128,7 @@ function linedraw(div) {
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
-        .tickFormat(formatAxis)
+        .tickFormat(formatYear)
         .ticks(numticks);
 
     var line = d3.svg.line()
@@ -249,7 +255,6 @@ function homdraw(div) {
     $homchart.empty();
 
     var formatAxis = d3.format(options.yformat);
-    var formatXAxis = d3.format('.0f');
     var labels = ["Homicide"];
 
     var x = d3.scale.linear()
@@ -267,7 +272,7 @@ function homdraw(div) {
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
-        .tickFormat(formatXAxis)
+        .tickFormat(formatYear)
         .ticks(numticks);
 
     var line = d3.svg.line()
