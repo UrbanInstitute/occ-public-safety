@@ -355,14 +355,3 @@ function linecharts() {
     leftdraw_h();
     homdraw_h();
 }
-
-$(window).load(function () {
-    if (Modernizr.svg) { // if svg is supported, draw dynamic chart
-        d3.csv(linechart_data_url, function (error, rates) {
-            data_cl = rates;
-            linecharts();
-            window.onresize = linecharts;
-
-        });
-    }
-});

@@ -24,25 +24,25 @@ var color = d3.scale.threshold()
     .range(colors);
 
 function legenddraw() {
-            var margin = {
-            top: 5,
-            right: 2,
-            bottom: 5,
-            left: 2
-        };
-        var width = $legend.width() - margin.left - margin.right,
-            height = Math.ceil((width * legend_aspect_height) / legend_aspect_width) - margin.top - margin.bottom;
+    var margin = {
+        top: 5,
+        right: 2,
+        bottom: 5,
+        left: 2
+    };
+    var width = $legend.width() - margin.left - margin.right,
+        height = Math.ceil((width * legend_aspect_height) / legend_aspect_width) - margin.top - margin.bottom;
 
-        $legend.empty();
+    $legend.empty();
 
-        var svg = d3.select("#legend").append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-            .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-    
+    var svg = d3.select("#legend").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
     if ($clustergraphs.width() < mobile_threshold) {
-        
+
         var lp_h = 18,
             ls_w = width / 8;
 
@@ -108,6 +108,9 @@ function legenddraw() {
 }
 
 function bardraw(id) {
+    
+    data = ratechange;
+    
     var margin = {
         top: 5,
         right: 35,
@@ -278,18 +281,3 @@ function clusterslide() {
         allbars.classed("selected", false);
     })
 }
-
-$(window).load(function () {
-    if (Modernizr.svg) { // if svg is supported, draw dynamic chart
-
-        d3.csv(barchart_data_url, function (error, rates) {
-            data = rates;
-            d3.json(clustermap_data_url, function (error, dc2) {
-                if (error) throw error;
-                dc = dc2;
-                clusterslide();
-                window.onresize = clusterslide;
-            });
-        });
-    }
-});
