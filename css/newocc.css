@@ -449,6 +449,7 @@ body {
     .title {
         margin: inherit;
         width: 100%;
+        height: auto;
         color: #5a5a5a;
         background-color: rgba(0, 0, 0, 0);
         text-shadow: none;

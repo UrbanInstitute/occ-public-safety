@@ -30,8 +30,13 @@ function legenddraw() {
         bottom: 5,
         left: 2
     };
+
     var width = $legend.width() - margin.left - margin.right,
-        height = Math.ceil((width * legend_aspect_height) / legend_aspect_width) - margin.top - margin.bottom;
+        height = 180;
+
+    if ($clustergraphs.width() < mobile_threshold) {
+        height = 30;
+    }
 
     $legend.empty();
 
@@ -108,9 +113,9 @@ function legenddraw() {
 }
 
 function bardraw(id) {
-    
+
     data = ratechange;
-    
+
     var margin = {
         top: 5,
         right: 35,
@@ -265,19 +270,24 @@ function mapdraw(id) {
 }
 
 function clusterslide() {
-    legenddraw();
-    bardraw("#barchart");
-    mapdraw("#clustermap");
+    if ($clustergraphs.width() < mobile_threshold) {
+        legenddraw();
+        mapdraw("#clustermap");
+    } else {
+        legenddraw();
+        bardraw("#barchart");
+        mapdraw("#clustermap");
 
-    var allbars = d3.selectAll("rect,path");
-    allbars.on("mouseover", function () {
-        var moused_id = this.id;
-        allbars.classed("selected", function () {
-            return this.id === moused_id;
-        });
-    })
+        var allbars = d3.selectAll("rect,path");
+        allbars.on("mouseover", function () {
+            var moused_id = this.id;
+            allbars.classed("selected", function () {
+                return this.id === moused_id;
+            });
+        })
 
-    allbars.on("mouseout", function () {
-        allbars.classed("selected", false);
-    })
+        allbars.on("mouseout", function () {
+            allbars.classed("selected", false);
+        })
+    }
 }
