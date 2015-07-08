@@ -22,79 +22,81 @@
 <body>
     <!--nav bar-->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div id="logo">
-            <a href="http://www.urban.org">
-                <img src="images/UrbanU.png" alt="The Urban Institute" />
-            </a>
-        </div>
-        <div id="navTitle" class="clickable f1">
-            <a class="navDC" id="titleLink" href="http://datatools.urban.org/features/ourchangingcity/" target="_blank">WASHINGTON, DC:</br></a>
-            <a class="navOCC" id="titleLink" href="http://datatools.urban.org/features/ourchangingcity/" target="_blank">OUR CHANGING CITY</a>
-            <span class="navOCC navChap">:: PUBLIC SAFETY</span>
-        </div>
-
-
-        <!--previous chapters-->
-        <div class="btn-group" id="previousChapters">
-            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                Previous Chapters
-                <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li>
-                    <a href="http://datatools.urban.org/features/OurChangingCity/demographics/#index">Demographics</a>
-                </li>
-                <li>
-                    <a href="http://datatools.urban.org/features/OurChangingCity/schools/#index">Schools</a>
-                </li>
-                <li>
-                    <a href="http://datatools.urban.org/features/OurChangingCity/housing/#index">Housing</a>
-                </li>
-            </ul>
-        </div>
-
-        <!--share icons-->
-        <div id="share">
-            <div id="shareMaster">
-                <div id="shareCircle" class="circle">
-                    <i class="fa fa-share"></i>
-                </div>
+        <div class="container">
+            <div id="logo">
+                <a href="http://www.urban.org">
+                    <img src="images/UrbanU.png" alt="The Urban Institute" />
+                </a>
             </div>
-            <div id="socials">
-                <a href="https://twitter.com/home?status=New%20@urbaninstitute%20interactive:%20How%20%23housing%20is%20evolving%20in%20%23DC%20http://urbn.is/DC_Change3" target="_blank">
-                    <div id="twitter" class="circle">
-                        <i class="fa fa-twitter"></i>
+            <div id="navTitle" class="clickable f1">
+                <a class="navDC" id="titleLink" href="http://datatools.urban.org/features/ourchangingcity/" target="_blank">WASHINGTON, DC:</br></a>
+                <a class="navOCC" id="titleLink" href="http://datatools.urban.org/features/ourchangingcity/" target="_blank">OUR CHANGING CITY</a>
+                <span class="navOCC navChap">:: PUBLIC SAFETY</span>
+            </div>
+
+
+            <!--previous chapters-->
+            <div class="btn-group" id="previousChapters">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Previous Chapters
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a href="http://datatools.urban.org/features/OurChangingCity/demographics/#index">Demographics</a>
+                    </li>
+                    <li>
+                        <a href="http://datatools.urban.org/features/OurChangingCity/schools/#index">Schools</a>
+                    </li>
+                    <li>
+                        <a href="http://datatools.urban.org/features/OurChangingCity/housing/#index">Housing</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--share icons-->
+            <div id="share">
+                <div id="shareMaster">
+                    <div id="shareCircle" class="circle">
+                        <i class="fa fa-share"></i>
                     </div>
-                </a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=http://urbn.is/DC_Change3" target="_blank">
-                    <div id="facebook" class="circle">
-                        <i class="fa fa-facebook"></i>
-                    </div>
-                </a>
-                <a href="mailto:%20?Subject=New interactive feature by the Urban Institute&amp;Body=Hi! I thought you'd be interested in this new interactive feature from the Urban Institute: “Our Changing City: Housing” http://datatools.urban.org/Features/OurChangingCity/housing/" target="_blank">
-                    <div id="email" class="circle">
-                        <i class="fa fa-envelope"></i>
-                    </div>
-                </a>
+                </div>
+                <div id="socials">
+                    <a href="https://twitter.com/home?status=New%20@urbaninstitute%20interactive:%20How%20%23housing%20is%20evolving%20in%20%23DC%20http://urbn.is/DC_Change3" target="_blank">
+                        <div id="twitter" class="circle">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://urbn.is/DC_Change3" target="_blank">
+                        <div id="facebook" class="circle">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                    </a>
+                    <a href="mailto:%20?Subject=New interactive feature by the Urban Institute&amp;Body=Hi! I thought you'd be interested in this new interactive feature from the Urban Institute: “Our Changing City: Housing” http://datatools.urban.org/Features/OurChangingCity/housing/" target="_blank">
+                        <div id="email" class="circle">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- main carousel -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" data-wrap="false">
-
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-            <li data-target="#myCarousel" data-slide-to="5"></li>
-            <li data-target="#myCarousel" data-slide-to="6"></li>
-            <li data-target="#myCarousel" data-slide-to="7"></li>
-            <li data-target="#myCarousel" data-slide-to="8"></li>
-        </ol>
-
+        <div class="indic-container">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+                <li data-target="#myCarousel" data-slide-to="7"></li>
+                <li data-target="#myCarousel" data-slide-to="8"></li>
+            </ol>
+        </div>
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
