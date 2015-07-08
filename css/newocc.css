@@ -432,6 +432,10 @@ body {
 /* Custom, iPhone Retina */
 
 @media (max-width: 767px) {
+    body,
+    html {
+        overflow-x: hidden;
+    }
     .content,
     .row {
         margin-top: 10px;
@@ -464,7 +468,6 @@ body {
     }
     .carousel-inner {
         overflow-y: scroll;
-        overflow-x: hidden;
     }
     .carousel-indicators,
     ol {

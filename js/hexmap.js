@@ -7,7 +7,7 @@ function crimemap(layers) {
             maxZoom: 12,
             minZoom: 12
         })
-        .setView([38.910, -77.02], 12);
+        .setView([38.910, -77.010618], 12);
 
     map.attributionControl
         .addAttribution('<a href="http://www.urban.org/">&copy; Urban Institute</a>');
@@ -110,49 +110,49 @@ function assaultmap() {
     }
 
     var assaultlayers = [{
-            name: "2000",
+            name: "'00",
             layer: init(assault2000)
      }, {
-            name: "2001",
+            name: "'01",
             layer: init(assault2001)
      }, {
-            name: "2002",
+            name: "'02",
             layer: init(assault2002)
      }, {
-            name: "2003",
+            name: "'03",
             layer: init(assault2003)
      }, {
-            name: "2004",
+            name: "'04",
             layer: init(assault2004)
      }, {
-            name: "2005",
+            name: "'05",
             layer: init(assault2005)
      }, {
-            name: "2006",
+            name: "'06",
             layer: init(assault2006)
      }, {
-            name: "2007",
+            name: "'07",
             layer: init(assault2007)
      }, {
-            name: "2008",
+            name: "'08",
             layer: init(assault2008)
      }, {
-            name: "2009",
+            name: "'09",
             layer: init(assault2009)
      }, {
-            name: "2010",
+            name: "'10",
             layer: init(assault2010)
      }, {
-            name: "2011",
+            name: "'11",
             layer: init(assault2011)
      }, {
-            name: "2012",
+            name: "'12",
             layer: init(assault2012)
      }, {
-            name: "2013",
+            name: "'13",
             layer: init(assault2013)
      }, {
-            name: "2014",
+            name: "'14",
             layer: init(assault2014)
      }
 ];
@@ -186,49 +186,49 @@ function robberymap() {
         return tile;
     }
     var robberylayers = [{
-            name: "2000",
+            name: "'00",
             layer: init(robbery2000)
      }, {
-            name: "2001",
+            name: "'01",
             layer: init(robbery2001)
      }, {
-            name: "2002",
+            name: "'02",
             layer: init(robbery2002)
      }, {
-            name: "2003",
+            name: "'03",
             layer: init(robbery2003)
      }, {
-            name: "2004",
+            name: "'04",
             layer: init(robbery2004)
      }, {
-            name: "2005",
+            name: "'05",
             layer: init(robbery2005)
      }, {
-            name: "2006",
+            name: "'06",
             layer: init(robbery2006)
      }, {
-            name: "2007",
+            name: "'07",
             layer: init(robbery2007)
      }, {
-            name: "2008",
+            name: "'08",
             layer: init(robbery2008)
      }, {
-            name: "2009",
+            name: "'09",
             layer: init(robbery2009)
      }, {
-            name: "2010",
+            name: "'10",
             layer: init(robbery2010)
      }, {
-            name: "2011",
+            name: "'11",
             layer: init(robbery2011)
      }, {
-            name: "2012",
+            name: "'12",
             layer: init(robbery2012)
      }, {
-            name: "2013",
+            name: "'13",
             layer: init(robbery2013)
      }, {
-            name: "2014",
+            name: "'14",
             layer: init(robbery2014)
      }
 ];
@@ -263,49 +263,49 @@ function homicidemap() {
         return tile;
     }
     var homicidelayers = [{
-            name: "2000",
+            name: "'00",
             layer: init(homicide2000)
      }, {
-            name: "2001",
+            name: "'01",
             layer: init(homicide2001)
      }, {
-            name: "2002",
+            name: "'02",
             layer: init(homicide2002)
      }, {
-            name: "2003",
+            name: "'03",
             layer: init(homicide2003)
      }, {
-            name: "2004",
+            name: "'04",
             layer: init(homicide2004)
      }, {
-            name: "2005",
+            name: "'05",
             layer: init(homicide2005)
      }, {
-            name: "2006",
+            name: "'06",
             layer: init(homicide2006)
      }, {
-            name: "2007",
+            name: "'07",
             layer: init(homicide2007)
      }, {
-            name: "2008",
+            name: "'08",
             layer: init(homicide2008)
      }, {
-            name: "2009",
+            name: "'09",
             layer: init(homicide2009)
      }, {
-            name: "2010",
+            name: "'10",
             layer: init(homicide2010)
      }, {
-            name: "2011",
+            name: "'11",
             layer: init(homicide2011)
      }, {
-            name: "2012",
+            name: "'12",
             layer: init(homicide2012)
      }, {
-            name: "2013",
+            name: "'13",
             layer: init(homicide2013)
      }, {
-            name: "2014",
+            name: "'14",
             layer: init(homicide2014)
      }
 ];

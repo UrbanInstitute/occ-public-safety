@@ -21,20 +21,21 @@ body {
 #layers {
     position: relative !important;
     top: 12px;
-    margin-left: 10px;
     height: auto;
     background: rgba(255, 255, 255, 0.6);
     font-size: 12px;
     border-radius: 5px;
     text-align: center;
     z-index: 100000;
+
 }
 
 #layers a {
     display: inline-block;
     margin: 5px 1px 1px 1px;
     padding: 6px;
-    width: 40px;
+    height: 17px;
+    width: 30px;
     text-align: center;
     background-color: #fff;
     border-radius: 5px;
@@ -42,10 +43,8 @@ body {
 
 #layers a.active,
 #layers a#play_button:hover {
-    background: #0096d2;
-    margin: 5px 1px 1px 1px;
+    background: #1696d2;
     color: #fff;
-    font-size: 14px;
     font-weight: 900;
 }
 
@@ -55,4 +54,9 @@ body {
 
 #layers a#play_button {
     background: #ccc;
+}
+
+@media (max-width: 706px) {
+    #layers {
+        max-width: 380px;
 }
