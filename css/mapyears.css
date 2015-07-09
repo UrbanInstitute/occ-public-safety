@@ -56,6 +56,15 @@ body {
     background: #ccc;
 }
 
+.map-tooltip {
+    padding: 4px;
+    background-color: #fff;
+    color: #333;
+    opacity: 0.8;
+    border: 1px solid #aaa;
+    pointer-events: none;
+}
+
 @media (max-width: 706px) {
     #layers {
         max-width: 380px;

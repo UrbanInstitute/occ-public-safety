@@ -1,3 +1,37 @@
+d3.helper = {};
+
+d3.helper.tooltip = function (accessor) {
+    return function (selection) {
+        var tooltipDiv;
+        var bodyNode = d3.select('body').node();
+        selection.on("mouseover", function (d, i) {
+                // Clean up lost tooltips
+                d3.select('body').selectAll('div.tooltip').remove();
+                // Append tooltip
+                tooltipDiv = d3.select('body').append('div').attr('class', 'map-tooltip');
+                var absoluteMousePos = d3.mouse(bodyNode);
+                tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+                    .style('top', (absoluteMousePos[1]) + 'px')
+                    .style('position', 'absolute')
+                    .style('z-index', 1001);
+                // Add text using the accessor function
+                var tooltipText = accessor(d, i) || '';
+            })
+            .on('mousemove', function (d, i) {
+                // Move tooltip
+                var absoluteMousePos = d3.mouse(bodyNode);
+
+                tooltipDiv.style('left', (absoluteMousePos[0]) + 'px')
+                    .style('top', (absoluteMousePos[1]) + 'px');
+                var tooltipText = accessor(d, i) || '';
+                tooltipDiv.html(tooltipText);
+            })
+            .on("mouseout", function (d, i) {
+                tooltipDiv.remove();
+            });
+    };
+};
+
 function crimemap(layers) {
 
     L.mapbox.accessToken = 'pk.eyJ1IjoidXJiYW5pbnN0aXR1dGUiLCJhIjoiTEJUbmNDcyJ9.mbuZTy4hI_PWXw3C3UFbDQ';
@@ -74,11 +108,6 @@ function crimemap(layers) {
         layers[i].button.className = 'active';
     }
 
-    //streets on top
-    var streetLayer = L.mapbox.tileLayer('urbaninstitute.h5b1kc2b')
-        .setZIndex(100)
-        .addTo(map);
-
 }
 
 //1 function for each map - in parent HTMLs, call the map to draw
@@ -96,10 +125,14 @@ function assaultmap() {
             .range(d3.range(classes));
 
         hexagons
-        // .attr("stroke", scheme[classes - 1])
             .attr("fill", function (d) {
-            return scheme[scale(d.length)];
-        });
+                return scheme[scale(d.length)];
+            })
+            .call(d3.helper.tooltip(
+                function (d, i) {
+                    return d.length;
+                }
+            ));
     }
 
     function init(id) {
@@ -173,10 +206,14 @@ function robberymap() {
             .range(d3.range(classes));
 
         hexagons
-        // .attr("stroke", scheme[classes - 1])
             .attr("fill", function (d) {
-            return scheme[scale(d.length)];
-        });
+                return scheme[scale(d.length)];
+            })
+            .call(d3.helper.tooltip(
+                function (d, i) {
+                    return d.length;
+                }
+            ));
     }
 
     function init(id) {
@@ -250,10 +287,14 @@ function homicidemap() {
             .range(d3.range(classes));
 
         hexagons
-        // .attr("stroke", scheme[classes - 1])
             .attr("fill", function (d) {
-            return scheme[scale(d.length)];
-        });
+                return scheme[scale(d.length)];
+            })
+            .call(d3.helper.tooltip(
+                function (d, i) {
+                    return d.length;
+                }
+            ));
     }
 
     function init(id) {

@@ -254,7 +254,7 @@ function homdraw(div) {
 
     $homchart.empty();
 
-    var formatAxis = d3.format(options.yformat);
+    var formatAxis = d3.format('.0f');
     var labels = ["Homicide"];
 
     var x = d3.scale.linear()

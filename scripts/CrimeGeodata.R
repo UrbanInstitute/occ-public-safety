@@ -97,3 +97,8 @@ dc<-dc%>%select(year,assaultrate,robrate,homrate) %>%
   mutate(cluster=0)
 clz<-bind_rows(clz,dc)
 write.csv(clz, file="data/linerates.csv", row.names=F)
+
+#Check change in crime rates by cluster
+change<-clusters%>%filter(year==2000|year==2014) %>%
+  select(cluster,cluster_name,year,assaultrate,robrate,homrate,violentrate)
+cchange <- summaryBy(assaultrate + robrate + homrate + violentrate ~ cluster + cluster_name, FUN=diff,data=change)
