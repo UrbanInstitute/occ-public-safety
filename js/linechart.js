@@ -33,8 +33,7 @@ function homdraw_dc() {
     options = {
         years: [2000, 2013.5],
         max: 50,
-        axlabel: " per 100,000 residents",
-        yformat: '.0f'
+        axlabel: " per 100,000 residents"
     };
     data = data_cl.filter(function (d) {
         return d.cluster == 0;
@@ -60,8 +59,7 @@ function homdraw_l() {
     options = {
         years: [2000, 2014.5],
         max: 4,
-        axlabel: " per 1,000 residents",
-        yformat: '.1f'
+        axlabel: " per 1,000 residents"
     };
     data = data_cl.filter(function (d) {
         return d.cluster == 27;
@@ -87,8 +85,7 @@ function homdraw_h() {
     options = {
         years: [2000, 2014.5],
         max: 4,
-        axlabel: " per 1,000 residents",
-        yformat: '.1f'
+        axlabel: " per 1,000 residents"
     };
     data = data_cl.filter(function (d) {
         return d.cluster == 29;

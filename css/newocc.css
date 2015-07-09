@@ -374,10 +374,18 @@ body {
 }
 
 .bg-image img {
-    margin-top: 40px;
+    padding-top: 40px;
     width: 100%;
 }
 
+.source {
+    padding-top: 5px;
+    font-size: 12px;
+}
+
+#credits {
+    padding-top: 1em;
+}
 .credits {
     font-style: italic;
     font-size: 12px;
