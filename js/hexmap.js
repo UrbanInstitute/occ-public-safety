@@ -112,21 +112,19 @@ function crimemap(layers) {
 
 //1 function for each map - in parent HTMLs, call the map to draw
 function assaultmap() {
-    var max = 50,
-        scale,
-        classes = 7,
-        container = L.DomUtil.get('layers'),
-        scheme = ["#fce49f", "#ffda71", "#ffcd3f", "#fbb317", "#f9a31a", "#f58720", "#e76424"];
+    var container = L.DomUtil.get('layers'),
+        scheme = ["#fce49f", "#ffda71", "#ffcd3f", "#fbb317", "#f9a31a", "#f58720", "#e76424"],
+        breaks = [5,10,15,20,25,30];
 
     function hex_style(hexagons) {
         // Maintain a density scale relative to initial zoom level.
-        scale = d3.scale.quantize()
-            .domain([0, max])
-            .range(d3.range(classes));
+        color = d3.scale.threshold()
+            .domain(breaks)
+            .range(scheme);
 
         hexagons
             .attr("fill", function (d) {
-                return scheme[scale(d.length)];
+                return color(d.length);
             })
             .call(d3.helper.tooltip(
                 function (d, i) {
@@ -193,21 +191,18 @@ function assaultmap() {
 }
 
 function robberymap() {
-    var max = 50,
-        scale,
-        classes = 7,
-        container = L.DomUtil.get('layers'),
-        scheme = ["#f9f4b3", "#eee976", "#cdda54", "#a6cc4a", "#67b844", "#059b49", "#007b3e"];
+    var container = L.DomUtil.get('layers'),
+        scheme = ["#f9f4b3", "#eee976", "#cdda54", "#a6cc4a", "#67b844", "#059b49", "#007b3e"],
+        breaks = [8,16,24,32,40,48];
 
     function hex_style(hexagons) {
-        // Maintain a density scale relative to initial zoom level.
-        scale = d3.scale.quantize()
-            .domain([0, max])
-            .range(d3.range(classes));
+        color = d3.scale.threshold()
+            .domain(breaks)
+            .range(scheme);
 
         hexagons
             .attr("fill", function (d) {
-                return scheme[scale(d.length)];
+                return color(d.length);
             })
             .call(d3.helper.tooltip(
                 function (d, i) {
@@ -273,22 +268,19 @@ function robberymap() {
 }
 
 function homicidemap() {
-    var max = 8,
-        scale,
-        classes = 5,
-        container = L.DomUtil.get('layers'),
-        scheme = ["#DB0984", "#AD137F", "#870D80", "#6B0062", "#460442"];
-    //scheme = ["#ffafd8", "#f183b2", "#ec4d98", "#e20988", "#c61a79"];
+    var container = L.DomUtil.get('layers'),
+        scheme = ["#DB0984", "#AD137F", "#870D80", "#6B0062", "#460442"],
+        breaks = [2, 3, 4, 5];
 
     function hex_style(hexagons) {
-        // Maintain a density scale relative to initial zoom level.
-        scale = d3.scale.quantize()
-            .domain([0, max])
-            .range(d3.range(classes));
+
+        color = d3.scale.threshold()
+            .domain(breaks)
+            .range(scheme);
 
         hexagons
             .attr("fill", function (d) {
-                return scheme[scale(d.length)];
+                return color(d.length);
             })
             .call(d3.helper.tooltip(
                 function (d, i) {
