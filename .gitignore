@@ -1,5 +1,6 @@
 geo/
 data/old/
+dotmap/
 *.Rproj
 *.Rproj.user
 *.Rhistory
