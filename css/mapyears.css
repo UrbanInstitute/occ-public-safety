@@ -37,6 +37,9 @@ body {
     width: 70px;
 }
 
+#layers {
+    min-height: 36px;
+}
 #layers a {
     display: inline-block;
     margin: 5px 1px 1px 1px;
@@ -65,9 +68,8 @@ body {
 
 .map-tooltip {
     padding: 4px;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.8);
     color: #333;
-    opacity: 0.8;
     border: 1px solid #aaa;
     pointer-events: none;
 }

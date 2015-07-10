@@ -54,7 +54,7 @@ function crimemap(layers) {
     var play_button = control.appendChild(document.createElement('a'))
     var pause = "&#9616;&#9616;";
     var play = "&#9654;";
-    play_button.innerHTML = pause;
+    play_button.innerHTML = play;
     play_button.id = "play_button";
     play_button.onclick = function () {
         if (nextInterval) {
@@ -90,7 +90,7 @@ function crimemap(layers) {
     // show the first overlay as soon as the map loads
     highlightLayer(i++);
 
-    var nextInterval = animate();
+    var nextInterval;
 
     function animate() {
         // and then time the next() function to run every 1 seconds
