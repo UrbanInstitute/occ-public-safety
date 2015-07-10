@@ -1,4 +1,3 @@
-var mobile_threshold = 600;
 var $clustergraphs = $('#clustergraphs');
 
 var barchart_data_url = "data/clusters_violentcrime.csv";

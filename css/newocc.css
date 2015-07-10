@@ -16,6 +16,10 @@ p {
 -------------------------------------------------- */
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 
+.navbar {
+    max-height: 70px;
+}
+
 .navbar-wrapper {
     position: absolute;
     top: 0;
@@ -262,16 +266,27 @@ body {
     margin-left: -15px;
 }
 /*carousel indicators - follow container width*/
+
 .indic-container {
-    width: 1170px;
-    width: 970px;
-    width: 750px;
+    width: 1140px;
     margin: auto;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
+}
+
+@media (max-width: 1200px) and (min-width: 991px) {
+    .indic-container {
+        width: 940px;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+    .indic-container {
+        width: 720px;
+    }
 }
 
 .carousel-indicators {
@@ -355,12 +370,6 @@ body {
     font-weight: 700;
 }
 
-.moreInfo {
-    position: relative;
-    left: 100%;
-    bottom: 10px;
-}
-
 .hidden {
     display: none;
 }
@@ -386,6 +395,7 @@ body {
 #credits {
     padding-top: 1em;
 }
+
 .credits {
     font-style: italic;
     font-size: 12px;
@@ -446,6 +456,15 @@ body {
 -------------------------------------------------- */
 /* Custom, iPhone Retina */
 
+@media (max-width: 993px) and (min-width: 768px) {
+    #previousChapters {
+        display: none;
+        height: 0;
+        width: 0;
+        width: 0;
+    }
+}
+
 @media (max-width: 767px) {
     body,
     html {
@@ -454,6 +473,9 @@ body {
     .content,
     .row {
         margin-top: 10px;
+    }
+    .col-sm-6 {
+        padding: 0;
     }
     .section-heading {
         font-size: 1.2em;
