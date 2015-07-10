@@ -469,9 +469,10 @@ body {
         margin: inherit;
         width: 100%;
         height: auto;
-        color: #5a5a5a;
+        color: #333333;
         background-color: rgba(0, 0, 0, 0);
         text-shadow: none;
+        font-size: 13px;
     }
     .lead {
         font-size: 1em;
@@ -498,7 +499,8 @@ body {
     #homicidemap,
     #robberymap,
     iframe,
-    #barchart {
+    #barchart,
+    #closingpic {
         display: none;
         height: 0;
         width: 0;
@@ -512,5 +514,8 @@ body {
         width: 100%;
         max-width: 100%;
         margin: auto;
+    }
+    .closing {
+        font-size: 13px;
     }
 }

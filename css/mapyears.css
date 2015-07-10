@@ -27,7 +27,14 @@ body {
     border-radius: 5px;
     text-align: center;
     z-index: 100000;
+}
 
+#legend {
+    position: relative !important;
+    z-index: 10000000;
+    top: 300px;
+    left: 20px;
+    width: 70px;
 }
 
 #layers a {
@@ -68,4 +75,4 @@ body {
 @media (max-width: 706px) {
     #layers {
         max-width: 380px;
-}
+    }

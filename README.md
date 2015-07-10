@@ -4,7 +4,7 @@
 * Population, aggravated assault and robbery data 2000 through 2012: [FBI UCR statistics](http://www.ucrdatatool.gov/Search/Crime/Local/JurisbyJurisLarge.cfm)
 * Population, aggravated assault and robbery data for 2013: [FBI Crime in the United States 2013 report](https://www.fbi.gov/about-us/cjis/ucr/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/tables/table-8/table-8-state-cuts/table_8_offenses_known_to_law_enforcement_district_of_columbia_by_city_2013.xls)
 * Homicide data: [DC MPD District Crime Data at a Glance](http://mpdc.dc.gov/page/district-crime-data-glance)
-* Geo-coded crime data: [DC Metropolitan Police Department crime statistics download tool](http://crimemap.dc.gov/CrimeMapSearch.aspx)
+* Geo-coded crime data 2011-present: [DC Metropolitan Police Department crime statistics download tool](http://crimemap.dc.gov/CrimeMapSearch.aspx) - 2000-2010, direct from MPD
 
 ###For data processing:
 * [CrimeGeodata.R](/scripts/CrimeGeodata.R) + ArcMap: XY data to lat/long + neighborhood cluster for homicides, aggravated, assaults, robberies. Split into 1 CSV for each year*crime

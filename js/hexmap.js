@@ -107,14 +107,68 @@ function crimemap(layers) {
         for (var j = 0; j < active.length; j++) active[j].className = '';
         layers[i].button.className = 'active';
     }
+}
+var breaks,
+    scheme,
+    leg_breaks;
 
+function legend() {
+
+    var margin = {
+        top: 5,
+        right: 2,
+        bottom: 5,
+        left: 2
+    };
+
+    var width = 70 - margin.left - margin.right,
+        height = 170 - margin.top - margin.bottom;
+
+    var svg = d3.select("#legend").append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    var lp_h = 20,
+        ls_w = 40,
+        ls_h = 22;
+
+    var legend = svg.selectAll("g.legend")
+        .data(leg_breaks)
+        .enter().append("g")
+        .attr("class", "legend");
+
+    legend.append("text")
+        .data(leg_breaks)
+        .attr("x", ls_w + 5)
+        .attr("y", function (d, i) {
+            return i * ls_h + 3;
+        })
+        .text(function (d, i) {
+            return d;
+        });
+
+    legend.append("rect")
+        .data(scheme)
+        .attr("x", 0)
+        .attr("y", function (d, i) {
+            return i * ls_h;
+        })
+        .attr("width", ls_w)
+        .attr("height", lp_h)
+        .attr("z-index", 10)
+        .style("fill", function (d, i) {
+            return scheme[i];
+        })
 }
 
 //1 function for each map - in parent HTMLs, call the map to draw
 function assaultmap() {
-    var container = L.DomUtil.get('layers'),
-        scheme = ["#fce49f", "#ffda71", "#ffcd3f", "#fbb317", "#f9a31a", "#f58720", "#e76424"],
-        breaks = [5,10,15,20,25,30];
+    var container = L.DomUtil.get('layers');
+    scheme = ["#fce49f", "#ffda71", "#ffcd3f", "#fbb317", "#f9a31a", "#f58720", "#e76424"],
+        breaks = [5, 10, 15, 20, 25, 30],
+        leg_breaks = [1, 5, 10, 15, 20, 25, 30, 59];
 
     function hex_style(hexagons) {
         // Maintain a density scale relative to initial zoom level.
@@ -188,12 +242,14 @@ function assaultmap() {
      }
 ];
     crimemap(assaultlayers);
+    legend();
 }
 
 function robberymap() {
-    var container = L.DomUtil.get('layers'),
-        scheme = ["#f9f4b3", "#eee976", "#cdda54", "#a6cc4a", "#67b844", "#059b49", "#007b3e"],
-        breaks = [8,16,24,32,40,48];
+    var container = L.DomUtil.get('layers');
+    scheme = ["#f9f4b3", "#eee976", "#cdda54", "#a6cc4a", "#67b844", "#059b49", "#007b3e"],
+        breaks = [8, 16, 24, 32, 40, 48],
+        leg_breaks = [1, 8, 16, 24, 32, 40, 48, 70];
 
     function hex_style(hexagons) {
         color = d3.scale.threshold()
@@ -265,12 +321,14 @@ function robberymap() {
      }
 ];
     crimemap(robberylayers);
+    legend();
 }
 
 function homicidemap() {
-    var container = L.DomUtil.get('layers'),
-        scheme = ["#DB0984", "#AD137F", "#870D80", "#6B0062", "#460442"],
-        breaks = [2, 3, 4, 5];
+    var container = L.DomUtil.get('layers');
+    scheme = ["#DB0984", "#AD137F", "#870D80", "#6B0062", "#460442"],
+        breaks = [2, 3, 4, 5],
+        leg_breaks = [1, 2, 3, 4, 5, 12];
 
     function hex_style(hexagons) {
 
@@ -343,4 +401,5 @@ function homicidemap() {
      }
 ];
     crimemap(homicidelayers);
+    legend();
 }
