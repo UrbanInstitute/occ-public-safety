@@ -44,14 +44,15 @@
     font-size: 26px;
     font-weight: 700;
     opacity: 0;
+    text-align:left;
 }
 .tooltip-name {
     font-size: 14px;
     font-weight: 700;
-    color: #666;
+    color: #666666;
     opacity: 0;
+    text-align:left;
 }
 .tooltip-num.selected, .tooltip-name.selected {
     opacity: 1;
-    color: #666;
 }

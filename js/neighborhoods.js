@@ -219,9 +219,9 @@ function bardraw(id) {
 }
 
 function mapdraw(id) {
-    
+
     var formatnum = d3.format('.0f');
-    
+
     var margin = {
         top: 5,
         right: 5,
@@ -270,34 +270,67 @@ function mapdraw(id) {
         })
         .attr("d", path);
 
+    //"tooltips" have opacity = 0 when not selected, = 1 when selected aka the corresponding polygon or bar is hovered - basically they're all sitting there just not visible
     var tooltip = svg.selectAll("text")
         .data(topojson.feature(dc, dc.objects.neighborhood_clusters).features)
         .enter()
         .append("g");
-    
+
     tooltip.append("text")
-        .attr("class","tooltip-num")
+        .attr("class", "tooltip-num")
         .text(function (d) {
             return formatnum(d.properties.crimechange);
         })
         .attr("id", function (d) {
             return "v" + d.properties.cluster;
         })
-        .attr("x", width*0.9)
-        .attr("y", 40)
-        .attr("text-anchor", "middle");
-    
+        .attr("x", width * 0.6)
+        .attr("y", 40);
+
     tooltip.append("text")
-        .attr("class","tooltip-name")
+        .attr("class", "tooltip-name")
         .text(function (d) {
             return d.properties.name;
         })
         .attr("id", function (d) {
             return "v" + d.properties.cluster;
         })
-        .attr("x", width*0.9)
+        .attr("fill", "#666")
+        .attr("x", width * 0.6)
         .attr("y", 60)
-        .attr("text-anchor", "middle");
+        .call(wrap, width * 0.4);
+
+    function wrap(text, lwidth) {
+        text.each(function () {
+            var text = d3.select(this),
+                words = text.text().split(/\s+/).reverse(),
+                word,
+                line = [],
+                lineNumber = 0,
+                lineHeight = 1.1, // ems
+                y = text.attr("y"),
+                dy = parseFloat(text.attr("dy"));
+            var tspan = text.text(null)
+                .append("tspan")
+                .attr("x", width * 0.6)
+                .attr("y", y)
+                .attr("dy", dy + "em");
+            while (word = words.pop()) {
+                line.push(word);
+                tspan.text(line.join(" "));
+                if (tspan.node().getComputedTextLength() > lwidth) {
+                    line.pop();
+                    tspan.text(line.join(" "));
+                    line = [word];
+                    tspan = text.append("tspan")
+                        .attr("x", width * 0.6)
+                        .attr("y", y)
+                        .attr("dy", ++lineNumber * 16)
+                        .text(word);
+                }
+            }
+        });
+    }
 }
 
 function clusterslide() {
