@@ -54,6 +54,12 @@ p {
     padding-top: 11px;
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    color: #fff;
+    background-color: #fff;
+    height: 3px;
+}
+
 #titleLink {
     text-decoration: none;
     color: #fff;
@@ -515,7 +521,8 @@ body {
         width: 0;
     }
     .carousel-control,
-    .navbar,
+    #navTitle,
+    #previousChapters,
     .hexmap,
     #assaultmap,
     #homicidemap,
