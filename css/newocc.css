@@ -5,6 +5,15 @@ body {
     font-family: 'Lato';
 }
 
+h1,
+h2,
+h3,
+h1,
+h2,
+h3 {
+    margin-top: 25px;
+}
+
 p {
     font-size: 13px;
 }
@@ -373,7 +382,7 @@ body {
 
 .section-heading {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .hidden {
@@ -449,14 +458,13 @@ body {
 
 #clustermap {
     width: 65%;
-    margin-top: -90px;
-    margin-left: 50px;
+    margin-top: -80px;
 }
 
 #legholder {
     max-width: 100px;
-    margin-top: -200px;
-    margin-left: 20px;
+    margin-top: -320px;
+    margin-left: 68%;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -471,7 +479,7 @@ body {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     body,
     html {
         overflow-x: hidden;
@@ -490,15 +498,16 @@ body {
         display: block;
         height: 100% !important;
         width: 100%;
-        background-image: none;
+        color: rgba(0, 0, 0, 0.65);
     }
     .leftbox,
     .title {
-        margin: inherit;
+        margin: 0;
+        padding: 0;
+        position: relative;
         width: 100%;
-        height: auto;
-        color: #333333;
         background-color: rgba(0, 0, 0, 0);
+        height: auto;
         text-shadow: none;
         font-size: 13px;
     }
@@ -521,7 +530,6 @@ body {
         width: 0;
     }
     .carousel-control,
-    #navTitle,
     #previousChapters,
     .hexmap,
     #assaultmap,
@@ -546,5 +554,46 @@ body {
     }
     .closing {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 476px) {
+    .navbar {
+        height: 65px;
+    }
+    .navbar-toggle {
+        margin-top: 14px;
+    }
+    #logo {
+        margin-left: 10px;
+        margin-top: 12px;
+    }
+    .navOCC {
+        font-size: 18px;
+    }
+    #navTitle {
+        text-align: left;
+    }
+    #intro {
+        padding-top: 65px;
+    }
+}
+
+@media (max-width: 475px) {
+    .navbar {
+        height: 55px;
+    }
+    #logo {
+        margin-left: 10px;
+        margin-top: 7px;
+    }
+    #navTitle {
+        display: none;
+        height: 0;
+        width: 0;
+        width: 0;
+    }
+    #intro {
+        padding-top: 55px;
     }
 }

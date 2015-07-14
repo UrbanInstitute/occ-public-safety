@@ -16,7 +16,8 @@ var legend_aspect_height = 1.9;
 
 var colors = ["#001634", "#18507d", "#0096d2", "#82c2e7", "#d7e8f6", "#ffedcd", "#ffda91", "#fcb918"],
     breaks = [-30, -20, -10, -1, 0, 1, 10],
-    legend_num = [1, 2, 3, 4, 5, 6, 7, 8];
+    legend_num = [1, 2, 3, 4, 5, 6, 7, 8],
+    labeltext = "temp";
 //shared color ramp for both bar chart and map
 var color = d3.scale.threshold()
     .domain(breaks)
@@ -79,7 +80,7 @@ function legenddraw() {
     } else {
 
         var lp_h = 20,
-            ls_w = 40,
+            ls_w = 20,
             ls_h = 22;
 
         var legend = svg.selectAll("g.legend")
@@ -190,14 +191,13 @@ function bardraw(id) {
         });
 
     svg.append("text")
-        .attr("x", x.rangeBand() * 2)
+        .attr("x", x.rangeBand() * 3)
         .attr("y", function (d) {
             return y(11);
         })
         .text(function (d) {
             return "Increase in crime";
         })
-        .attr("fill", "#fcb918")
         .attr("class", "legend");
 
     svg.append("text")
@@ -208,7 +208,6 @@ function bardraw(id) {
         .text(function (d) {
             return "Decrease in crime";
         })
-        .attr("fill", "#18507d")
         .attr("class", "legend");
 
 
@@ -220,6 +219,9 @@ function bardraw(id) {
 }
 
 function mapdraw(id) {
+    
+    var formatnum = d3.format('.0f');
+    
     var margin = {
         top: 5,
         right: 5,
@@ -253,19 +255,49 @@ function mapdraw(id) {
         .scale(s)
         .translate(t);
 
-    svg.append("g")
-        .attr("class", "boundary")
-        .selectAll("path")
+    svg.selectAll("path")
         .data(topojson.feature(dc, dc.objects.neighborhood_clusters).features)
         .enter().append("path")
         .attr('id', function (d) {
             return "v" + d.properties.cluster;
+        })
+        .attr('change', function (d) {
+            return d.properties.crimechange;
         })
         .attr("class", "boundary")
         .attr("fill", function (d) {
             return color(d.properties.crimechange);
         })
         .attr("d", path);
+
+    var tooltip = svg.selectAll("text")
+        .data(topojson.feature(dc, dc.objects.neighborhood_clusters).features)
+        .enter()
+        .append("g");
+    
+    tooltip.append("text")
+        .attr("class","tooltip-num")
+        .text(function (d) {
+            return formatnum(d.properties.crimechange);
+        })
+        .attr("id", function (d) {
+            return "v" + d.properties.cluster;
+        })
+        .attr("x", width*0.9)
+        .attr("y", 40)
+        .attr("text-anchor", "middle");
+    
+    tooltip.append("text")
+        .attr("class","tooltip-name")
+        .text(function (d) {
+            return d.properties.name;
+        })
+        .attr("id", function (d) {
+            return "v" + d.properties.cluster;
+        })
+        .attr("x", width*0.9)
+        .attr("y", 60)
+        .attr("text-anchor", "middle");
 }
 
 function clusterslide() {
@@ -277,7 +309,7 @@ function clusterslide() {
         bardraw("#barchart");
         mapdraw("#clustermap");
 
-        var allbars = d3.selectAll("rect,path");
+        var allbars = d3.selectAll("rect,path,.tooltip-num,.tooltip-name");
         allbars.on("mouseover", function () {
             var moused_id = this.id;
             allbars.classed("selected", function () {
