@@ -1,17 +1,13 @@
-cd ../data/assault
 for i in {2000..2014}
-do csv2geojson assault$i.csv > assault$i.geojson
+do csv2geojson data/assault/assault$i.csv > data/assault/assault$i.geojson
 done
 
-cd ../homicide
 for i in {2000..2014}
-do csv2geojson homicide$i.csv > homicide$i.geojson
+do csv2geojson data/homicide/homicide$i.csv > data/homicide/homicide$i.geojson
 done
 
-cd ../robbery
 for i in {2000..2014}
-do csv2geojson robbery$i.csv > robbery$i.geojson
+do csv2geojson data/robbery/robbery$i.csv > data/robbery/robbery$i.geojson
 done
 
-cd ../../scripts
-python datajs.py
+python scripts/datajs.py

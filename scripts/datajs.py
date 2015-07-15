@@ -17,5 +17,5 @@ for i in crimes:
         djs = djs + str(i) + str(x) + "=" + str(dt[x]) + ","
     djs = djs + str(i) + "2014 =" + str(dt[2014]) + ";"
   
-    with open("js/" + str(i) + "data.js", 'w') as f:
+    with open("data/" + str(i) + "data.js", 'w') as f:
         f.write(djs)
