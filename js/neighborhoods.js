@@ -48,7 +48,7 @@ function legenddraw() {
     if ($clustergraphs.width() < mobile_threshold) {
 
         var lp_h = 18,
-            ls_w = width / 8;
+            ls_w = width / 7;
 
         var legend = svg.selectAll("g.legend")
             .data(legend_num)
