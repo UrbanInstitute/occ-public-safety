@@ -110,7 +110,10 @@ function crimemap(layers) {
 }
 var breaks,
     scheme,
-    leg_breaks;
+    leg_breaks,
+    textheight,
+    ls_h,
+    legheight;
 
 function legend() {
 
@@ -122,7 +125,7 @@ function legend() {
     };
 
     var width = 70 - margin.left - margin.right,
-        height = 170 - margin.top - margin.bottom;
+        height = legheight - margin.top - margin.bottom;
 
     var svg = d3.select("#legend").append("svg")
         .attr("width", width + margin.left + margin.right)
@@ -131,19 +134,19 @@ function legend() {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     var lp_h = 20,
-        ls_w = 40,
-        ls_h = 22;
+        ls_w = 20;
 
     var legend = svg.selectAll("g.legend")
-        .data(leg_breaks)
+        .data(scheme)
         .enter().append("g")
         .attr("class", "legend");
 
+    //homicide map uses buckets of 1 - label side of bucket. Others - label breakpoints
     legend.append("text")
         .data(leg_breaks)
         .attr("x", ls_w + 5)
         .attr("y", function (d, i) {
-            return i * ls_h + 3;
+            return i * ls_h + textheight;
         })
         .text(function (d, i) {
             return d;
@@ -158,6 +161,7 @@ function legend() {
         .attr("width", ls_w)
         .attr("height", lp_h)
         .attr("z-index", 10)
+        .attr("class", "hexagon")
         .style("fill", function (d, i) {
             return scheme[i];
         })
@@ -168,7 +172,10 @@ function assaultmap() {
     var container = L.DomUtil.get('layers');
     scheme = ["#fce49f", "#ffda71", "#ffcd3f", "#fbb317", "#f9a31a", "#f58720", "#e76424"],
         breaks = [5, 10, 15, 20, 25, 30],
-        leg_breaks = [1, 5, 10, 15, 20, 25, 30, 59];
+        leg_breaks = breaks,
+        legheight = 160,
+        ls_h = 22,
+        textheight = ls_h + 3;
 
     function hex_style(hexagons) {
         // Maintain a density scale relative to initial zoom level.
@@ -249,7 +256,10 @@ function robberymap() {
     var container = L.DomUtil.get('layers');
     scheme = ["#f9f4b3", "#eee976", "#cdda54", "#a6cc4a", "#67b844", "#059b49", "#007b3e"],
         breaks = [8, 16, 24, 32, 40, 48],
-        leg_breaks = [1, 8, 16, 24, 32, 40, 48, 70];
+        leg_breaks = breaks,
+        legheight = 160,
+        ls_h = 22,
+        textheight = ls_h + 3;
 
     function hex_style(hexagons) {
         color = d3.scale.threshold()
@@ -328,7 +338,10 @@ function homicidemap() {
     var container = L.DomUtil.get('layers');
     scheme = ["#DB0984", "#AD137F", "#870D80", "#6B0062", "#460442"],
         breaks = [2, 3, 4, 5],
-        leg_breaks = [1, 2, 3, 4, 5, 12];
+        leg_breaks = [1, 2, 3, 4, "5+"],
+        legheight = 120,
+        ls_h = 22,
+        textheight = 14;;
 
     function hex_style(hexagons) {
 

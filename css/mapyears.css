@@ -4,6 +4,7 @@ body {
     margin: auto 0;
     width: 100%;
     height: 100%;
+    color: #333;
 }
 
 #map {
@@ -29,17 +30,23 @@ body {
     z-index: 100000;
 }
 
-#legend {
+.legend-holder {
     position: relative !important;
     z-index: 10000000;
     top: 300px;
     left: 20px;
     width: 70px;
+    background: rgba(255,255,255,0.6);
 }
 
+.legtitle {
+    font-size: 13px;
+    font-weight: 400px;
+}
 #layers {
     min-height: 36px;
 }
+
 #layers a {
     display: inline-block;
     margin: 5px 1px 1px 1px;

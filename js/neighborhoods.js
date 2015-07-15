@@ -14,10 +14,9 @@ var $legend = $('#legend');
 var legend_aspect_width = 1;
 var legend_aspect_height = 1.9;
 
-var colors = ["#001634", "#18507d", "#0096d2", "#82c2e7", "#d7e8f6", "#ffedcd", "#ffda91", "#fcb918"],
-    breaks = [-30, -20, -10, -1, 0, 1, 10],
-    legend_num = [1, 2, 3, 4, 5, 6, 7, 8],
-    labeltext = "temp";
+var colors = ["#18507d", "#0096d2", "#82c2e7", "#d7e8f6", "#ffedcd", "#ffda91", "#fcb918"],
+    breaks = [-20, -10, -1, 0, 1, 10],
+    legend_num = [1, 2, 3, 4, 5, 6, 7];
 //shared color ramp for both bar chart and map
 var color = d3.scale.threshold()
     .domain(breaks)
