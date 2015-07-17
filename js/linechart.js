@@ -108,6 +108,8 @@ function linedraw(div) {
     $linechart.empty();
 
     var formatAxis = d3.format('.0f');
+    var labcolor = d3.scale.ordinal()
+        .range(["#54b849","#fdbf11"])
     var labels = ["Robbery", "Aggravated Assault"];
 
     var x = d3.scale.linear()
@@ -119,8 +121,8 @@ function linedraw(div) {
         .range([height, 0]);
 
     var color = d3.scale.ordinal()
-        .range(["#54b849", "#fdbf11"])
-        .domain(labels);
+        .domain(["assaultrate","robrate"])
+        .range(["#fdbf11","#54b849"]);
 
     var xAxis = d3.svg.axis()
         .scale(x)
@@ -144,7 +146,7 @@ function linedraw(div) {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     color.domain(d3.keys(data[0]).filter(function (key) {
-        return key == "robrate" | key == "assaultrate";
+        return key =="assaultrate" | key == "robrate";
     }));
 
     var types = color.domain().map(function (name) {
@@ -215,7 +217,7 @@ function linedraw(div) {
         .attr("width", 15)
         .attr("height", l_h)
         .style("fill", function (d, i) {
-            return color(d);
+            return labcolor(d);
         });
 
     legend.append("text")
