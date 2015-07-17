@@ -7,11 +7,9 @@ body {
 
 h1,
 h2,
-h3,
-h1,
-h2,
 h3 {
     margin-top: 25px;
+    font-weight: 400;
 }
 
 p {
@@ -172,6 +170,11 @@ p {
     -webkit-transition: opacity .25s ease-in-out;
 }
 
+#mobsocials {
+    background-color: #1696d2;
+    border-top: 0px;
+}
+
 #share:hover #shareMaster {
     opacity: 0.5;
     transition: opacity .25s ease-in-out;
@@ -243,6 +246,9 @@ body {
     width: 40px;
     background-color: #ccc;
 }
+/*.carousel-control.right  {
+    margin-right: 15px;
+}*/
 
 .arrow-left {
     width: 30px;
@@ -395,7 +401,7 @@ body {
     margin-bottom: 2px;
 }
 
-.urban{
+.urban {
     color: #1696d2;
     float: right;
     padding-right: 15px;
@@ -466,12 +472,33 @@ body {
 -------------------------------------------------- */
 /* Custom, iPhone Retina */
 
-@media (max-width: 993px) and (min-width: 768px) {
-    #previousChapters {
+@media (min-width: 768px) {
+    #mobsocials,
+    ul {
         display: none;
         height: 0;
         width: 0;
-        width: 0;
+    }
+}
+
+@media (min-width: 476px) {
+    #mobtitle {
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 995px) and (min-width: 768px) {
+    #navTitle {
+        margin-left: 20px;
+    }
+    .navOCC {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 13px;
     }
 }
 
@@ -496,8 +523,17 @@ body {
     .col-sm-6 {
         padding: 0;
     }
+    .navbar {
+        margin-bottom: 0px;
+    }
     .section-heading {
         font-size: 1.2em;
+    }
+    .circle {
+        margin-top: 5px;
+    }
+    .social {
+        text-align: right;
     }
     #intro {
         display: block;
@@ -544,7 +580,8 @@ body {
     #robberymap,
     iframe,
     #barchart,
-    #closingpic {
+    #closingpic,
+    #share {
         display: none;
         height: 0;
         width: 0;
@@ -594,13 +631,26 @@ body {
         margin-left: 10px;
         margin-top: 7px;
     }
-    #navTitle {
-        display: none;
-        height: 0;
-        width: 0;
-        width: 0;
-    }
     #intro {
         padding-top: 55px;
+    }
+    #navTitle {
+        display: none !important;
+        height: 0 !important;
+        width: 0 !important;
+        padding: 0 !important;
+    }
+    #mobtitle,
+    .navOCC,
+    .navChap {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    #mobtitle {
+        padding-top: 55px;
+        padding-bottom: 15px !important;
+        color: #fff;
+        background-color: #1696d2;
+        border-bottom-width: 1px !important;
     }
 }
