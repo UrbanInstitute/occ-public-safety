@@ -227,6 +227,7 @@ function mapdraw(id) {
         bottom: 5,
         left: 5
     };
+
     var width = $clustermap.width() - margin.left - margin.right,
         height = Math.ceil((width * clustermap_aspect_height) / clustermap_aspect_width) - margin.top - margin.bottom;
 
@@ -270,6 +271,7 @@ function mapdraw(id) {
         .attr("d", path);
 
     //"tooltips" have opacity = 0 when not selected, = 1 when selected aka the corresponding polygon or bar is hovered - basically they're all sitting there just not visible
+
     var tooltip = svg.selectAll("text")
         .data(topojson.feature(dc, dc.objects.neighborhood_clusters).features)
         .enter()

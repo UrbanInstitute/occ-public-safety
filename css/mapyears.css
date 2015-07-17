@@ -31,18 +31,26 @@ body {
 }
 
 .legend-holder {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #ebebf0;
+    background-origin: padding-box;
+    background-position: 0 0;
+    box-shadow: 2px 2px 9px #e4e4e4;
     position: relative !important;
     z-index: 10000000;
-    top: 300px;
+    top: 310px;
     left: 20px;
-    width: 70px;
-    background: rgba(255,255,255,0.6);
+    width: 90px;
 }
 
-.legtitle {
+.legtitle { 
     font-size: 13px;
-    font-weight: 400px;
-}
+    padding-left: 15px;
+    padding-top: 10px;
+} 
+
+
 #layers {
     min-height: 36px;
 }

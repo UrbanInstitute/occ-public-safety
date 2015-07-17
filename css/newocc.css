@@ -113,8 +113,14 @@ p {
     z-index: 10000;
 }
 
+.dropdown-menu > li > a {
+    background-color: #fff;
+    padding-bottom: 4px;
+}
+
 #logo {
     float: left;
+    margin-top: 16px;
     margin-top: 16px;
     height: 100%;
 }
@@ -537,9 +543,9 @@ body {
     }
     #intro {
         display: block;
-        height: 100% !important;
         width: 100%;
         color: rgba(0, 0, 0, 0.65);
+        overflow-y: hidden;
     }
     .leftbox,
     .title {

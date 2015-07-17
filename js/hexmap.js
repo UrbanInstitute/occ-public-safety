@@ -118,10 +118,10 @@ var breaks,
 function legend() {
 
     var margin = {
-        top: 5,
-        right: 2,
+        top: 10,
+        right: 15,
         bottom: 5,
-        left: 2
+        left: 15
     };
 
     var width = 70 - margin.left - margin.right,
@@ -173,7 +173,7 @@ function assaultmap() {
     scheme = ["#fce49f", "#ffda71", "#ffcd3f", "#fbb317", "#f9a31a", "#f58720", "#e76424"],
         breaks = [5, 10, 15, 20, 25, 30],
         leg_breaks = breaks,
-        legheight = 160,
+        legheight = 170,
         ls_h = 22,
         textheight = ls_h + 3;
 
@@ -257,7 +257,7 @@ function robberymap() {
     scheme = ["#f9f4b3", "#eee976", "#cdda54", "#a6cc4a", "#67b844", "#059b49", "#007b3e"],
         breaks = [8, 16, 24, 32, 40, 48],
         leg_breaks = breaks,
-        legheight = 160,
+        legheight = 170,
         ls_h = 22,
         textheight = ls_h + 3;
 
@@ -339,7 +339,7 @@ function homicidemap() {
     scheme = ["#DB0984", "#AD137F", "#870D80", "#6B0062", "#460442"],
         breaks = [2, 3, 4, 5],
         leg_breaks = [1, 2, 3, 4, "5+"],
-        legheight = 120,
+        legheight = 130,
         ls_h = 22,
         textheight = 14;;
 
