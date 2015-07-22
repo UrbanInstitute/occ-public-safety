@@ -467,12 +467,14 @@ body {
 #clustermap {
     width: 65%;
     margin-top: -90px;
+    margin-bottom: 100px;
 }
 
 #legholder {
     max-width: 100px;
     margin-top: -320px;
     margin-left: 68%;
+    margin-bottom: 20px;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */

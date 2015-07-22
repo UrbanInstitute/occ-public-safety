@@ -1,4 +1,4 @@
-var mobile_threshold = 750;
+var mobile_threshold = 617;
 var data;
 var linechart_data_url = "data/linerates.csv";
 
@@ -20,6 +20,7 @@ function leftdraw_dc() {
     options = {
         years: [2000, 2013.5],
         max: 1000,
+        numticks: 13,
         axlabel: " per 100,000 residents"
     };
     data = data_cl.filter(function (d) {
@@ -32,6 +33,7 @@ function homdraw_dc() {
     $homchart = $('#homdc');
     options = {
         years: [2000, 2013.5],
+        numticks: 13,
         max: 50,
         axlabel: " per 100,000 residents"
     };
@@ -45,6 +47,7 @@ function leftdraw_l() {
     $linechart = $('#linel');
     options = {
         years: [2000, 2014.5],
+        numticks: 6,
         max: 40,
         axlabel: " per 1,000 residents"
     };
@@ -58,6 +61,7 @@ function homdraw_l() {
     $homchart = $('#homl');
     options = {
         years: [2000, 2014.5],
+        numticks: 6,
         max: 4,
         axlabel: " per 1,000 residents"
     };
@@ -71,6 +75,7 @@ function leftdraw_h() {
     $linechart = $('#lineh');
     options = {
         years: [2000, 2014.5],
+        numticks: 6,
         max: 40,
         axlabel: " per 1,000 residents"
     };
@@ -84,6 +89,7 @@ function homdraw_h() {
     $homchart = $('#homh');
     options = {
         years: [2000, 2014.5],
+        numticks: 6,
         max: 4,
         axlabel: " per 1,000 residents"
     };
@@ -95,22 +101,21 @@ function homdraw_h() {
 
 function linedraw(div) {
     var margin = {
-            top: 50,
-            right: 5,
-            bottom: 25,
-            left: 5
-        },
-        numticks = 6;
+        top: 50,
+        right: 5,
+        bottom: 25,
+        left: 5
+    };
     var width = $linechart.width() - margin.left - margin.right,
         height = Math.ceil((width * linechart_aspect_height) / linechart_aspect_width) - margin.top - margin.bottom,
         padding = 30;
 
     $linechart.empty();
 
-    var formatAxis = d3.format('.0f');
+    var formatAxis = d3.format(',0f');
     var labcolor = d3.scale.ordinal()
-        .range(["#54b849","#fdbf11"])
-    var labels = ["Robbery", "Aggravated Assault"];
+        .range(["#54b849", "#fdbf11"])
+    var labels = ["Robbery", "Aggravated assault"];
 
     var x = d3.scale.linear()
         .range([padding, width])
@@ -121,14 +126,14 @@ function linedraw(div) {
         .range([height, 0]);
 
     var color = d3.scale.ordinal()
-        .domain(["assaultrate","robrate"])
-        .range(["#fdbf11","#54b849"]);
+        .domain(["assaultrate", "robrate"])
+        .range(["#fdbf11", "#54b849"]);
 
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
         .tickFormat(formatYear)
-        .ticks(numticks);
+        .ticks(options.numticks);
 
     var line = d3.svg.line()
         //.interpolate("basis")
@@ -146,7 +151,7 @@ function linedraw(div) {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     color.domain(d3.keys(data[0]).filter(function (key) {
-        return key =="assaultrate" | key == "robrate";
+        return key == "assaultrate" | key == "robrate";
     }));
 
     var types = color.domain().map(function (name) {
@@ -241,12 +246,11 @@ function linedraw(div) {
 
 function homdraw(div) {
     var margin = {
-            top: 50,
-            right: 5,
-            bottom: 25,
-            left: 5
-        },
-        numticks = 6;
+        top: 50,
+        right: 5,
+        bottom: 25,
+        left: 5
+    };
     var width = $homchart.width() - margin.left - margin.right,
         height = Math.ceil((width * linechart_aspect_height) / linechart_aspect_width) - margin.top - margin.bottom,
         padding = 30;
@@ -272,7 +276,7 @@ function homdraw(div) {
         .scale(x)
         .orient("bottom")
         .tickFormat(formatYear)
-        .ticks(numticks);
+        .ticks(options.numticks);
 
     var line = d3.svg.line()
         //.interpolate("basis")
