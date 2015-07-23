@@ -280,7 +280,7 @@ function mapdraw(id) {
     tooltip.append("text")
         .attr("class", "tooltip-num")
         .text(function (d) {
-            return formatnum(d.properties.crimechange);
+            return formatLabel(d.properties.crimechange);
         })
         .attr("id", function (d) {
             return "v" + d.properties.cluster;
@@ -332,6 +332,22 @@ function mapdraw(id) {
             }
         });
     }
+
+    function formatLabel(d) {
+        var s = formatnum(d);
+        if (d <= -1.5) {
+            return d = -s + " fewer crimes per 1,000 residents";
+        } else if (d > -1.5 & d <= -0.5) {
+            return d = -s + " fewer crime per 1,000 residents";
+        } else if (d > -0.5 & d <= 0.5) {
+            return d = "No change in crime";
+        } else if (d > 0.5 & d <= 1.5) {
+            return d = s + " more crime per 1,000 residents";
+        } else if (d > 1.5) {
+            return d = s + " more crimes per 1,000 residents";
+        }
+    }
+
 }
 
 function clusterslide() {
