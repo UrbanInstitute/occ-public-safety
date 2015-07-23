@@ -254,12 +254,12 @@ body {
 
 .carousel-control.right {
     margin-right: 15px;
-    background-image: linear-gradient(to right, #e1e1e1 0px, rgba(225, 225, 225, 0.3) 100%);
+    background-image: none;
 }
 
 .carousel-control.left {
     margin-left: 15px;
-    background-image: linear-gradient(to left, #e1e1e1 0px, rgba(225, 225, 225, 0.3) 100%);
+    background-image: none;
 }
 
 .arrow-left {
