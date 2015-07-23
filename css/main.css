@@ -40,19 +40,23 @@
     font-size: 12px;
     color: #333;
 }
+
 .tooltip-num {
-    font-size: 26px;
+    font-size: 18px;
     font-weight: 700;
     opacity: 0;
-    text-align:left;
+    text-align: left;
 }
+
 .tooltip-name {
     font-size: 14px;
     font-weight: 700;
     color: #666666;
     opacity: 0;
-    text-align:left;
+    text-align: left;
 }
-.tooltip-num.selected, .tooltip-name.selected {
+
+.tooltip-num.selected,
+.tooltip-name.selected {
     opacity: 1;
 }
