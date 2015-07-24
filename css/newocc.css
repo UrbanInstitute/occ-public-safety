@@ -250,16 +250,17 @@ body {
 
 .carousel-control {
     width: 40px;
+    background-image: none;
 }
 
 .carousel-control.right {
+    background-image: none;
     margin-right: 15px;
-    background-image: linear-gradient(to right, #e1e1e1 0px, rgba(225, 225, 225, 0.3) 100%);
 }
 
 .carousel-control.left {
+    background-image: none;
     margin-left: 15px;
-    background-image: linear-gradient(to left, #e1e1e1 0px, rgba(225, 225, 225, 0.3) 100%);
 }
 
 .arrow-left {
@@ -642,7 +643,7 @@ body {
 
 @media (max-width: 475px) {
     .carousel .carousel-inner .bgCover {
-    background-image: url(../images/thumb.jpg);
+        background-image: url(../images/thumb.jpg);
     }
     .navbar {
         height: 55px;
