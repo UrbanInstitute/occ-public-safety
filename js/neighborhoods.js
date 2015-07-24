@@ -289,6 +289,17 @@ function mapdraw(id) {
         .attr("y", 40);
 
     tooltip.append("text")
+        .attr("class", "tooltip-label")
+        .text(function (d) {
+            return formatLabel2(d.properties.crimechange);
+        })
+        .attr("id", function (d) {
+            return "v" + d.properties.cluster;
+        })
+        .attr("x", width * 0.8)
+        .attr("y", 40);
+
+    tooltip.append("text")
         .attr("class", "tooltip-name")
         .text(function (d) {
             return d.properties.name;
@@ -335,18 +346,39 @@ function mapdraw(id) {
 
     function formatLabel(d) {
         var s = formatnum(d);
-        if (d <= -1.5) {
-            return d = -s + " fewer crimes per 1,000 residents";
-        } else if (d > -1.5 & d <= -0.5) {
-            return d = -s + " fewer crime per 1,000 residents";
+        if (d <= -0.5) {
+            return d = -s + " fewer";
         } else if (d > -0.5 & d <= 0.5) {
             return d = "No change in crime";
-        } else if (d > 0.5 & d <= 1.5) {
-            return d = s + " more crime per 1,000 residents";
-        } else if (d > 1.5) {
-            return d = s + " more crimes per 1,000 residents";
+        } else if (d > 0.5) {
+            return d = s + " more";
         }
     }
+
+    function formatLabel2(d) {
+        if (d <= -1.5 | d > 1.5) {
+            return d = " crimes per 1,000 residents";
+        } else if ((d > -1.5 & d <= -0.5)|(d > 0.5 & d <= 1.5)) {
+            return d = " crime per 1,000 residents";
+        } else if (d > -0.5 & d <= 0.5) {
+            return d = "";
+        }
+    }
+
+    //    function formatLabel(d) {
+    //        var s = formatnum(d);
+    //        if (d <= -1.5) {
+    //            return d = -s + " fewer crimes per 1,000 residents";
+    //        } else if (d > -1.5 & d <= -0.5) {
+    //            return d = -s + " fewer crime per 1,000 residents";
+    //        } else if (d > -0.5 & d <= 0.5) {
+    //            return d = "No change in crime";
+    //        } else if (d > 0.5 & d <= 1.5) {
+    //            return d = s + " more crime per 1,000 residents";
+    //        } else if (d > 1.5) {
+    //            return d = s + " more crimes per 1,000 residents";
+    //        }
+    //    }
 
 }
 
@@ -359,7 +391,7 @@ function clusterslide() {
         bardraw("#barchart");
         mapdraw("#clustermap");
 
-        var allbars = d3.selectAll("rect,path,.tooltip-num,.tooltip-name");
+        var allbars = d3.selectAll("rect,path,.tooltip-num,.tooltip-label,.tooltip-name");
         allbars.on("mouseover", function () {
             var moused_id = this.id;
             allbars.classed("selected", function () {

@@ -641,6 +641,9 @@ body {
 }
 
 @media (max-width: 475px) {
+    .carousel .carousel-inner .bgCover {
+    background-image: url(../images/thumb.jpg);
+    }
     .navbar {
         height: 55px;
     }
