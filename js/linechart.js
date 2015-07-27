@@ -129,6 +129,10 @@ function linedraw(div) {
         .domain(["assaultrate", "robrate"])
         .range(["#fdbf11", "#54b849"]);
 
+    if ($linechart.width() < 330) {
+        options.numticks = 6;
+    }
+
     var xAxis = d3.svg.axis()
         .scale(x)
         .orient("bottom")
@@ -271,6 +275,10 @@ function homdraw(div) {
     var color = d3.scale.ordinal()
         .range(["#ec008b"])
         .domain(labels);
+
+    if ($linechart.width() < 330) {
+        options.numticks = 6;
+    }
 
     var xAxis = d3.svg.axis()
         .scale(x)

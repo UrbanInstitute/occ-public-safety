@@ -236,16 +236,8 @@ function mapdraw(id) {
         clustermap_aspect_height = 0.7;
         padding = 300;
     }
-
-    //mw = map width - padding on the side is for tooltip
-    var width = $clustermap.width() - margin.left - margin.right,
-        height = Math.ceil((width * clustermap_aspect_height) / clustermap_aspect_width) - margin.top - margin.bottom;
-
-
-    $clustermap.empty();
-
-    //small desktop
-    if ($clustergraphs.width() ==617) {
+        //small desktop
+    else if ($clustergraphs.width() ==617) {
         clustermap_aspect_height = 0.8;
         padding = 200;
     }
@@ -253,6 +245,14 @@ function mapdraw(id) {
         padding = 1;
         clustermap_aspect_height = 1.1;
     }
+
+
+    //mw = map width - padding on the side is for tooltip
+    var width = $clustermap.width() - margin.left - margin.right,
+        height = Math.ceil((width * clustermap_aspect_height) / clustermap_aspect_width) - margin.top - margin.bottom;
+
+
+    $clustermap.empty();
 
     var mw = width - padding;
     var projection = d3.geo.mercator();
