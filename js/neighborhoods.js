@@ -8,7 +8,7 @@ var barchart_aspect_height = 1;
 var clustermap_data_url = "data/neighborhoods.json";
 var $clustermap = $('#clustermap');
 var clustermap_aspect_width = 1;
-var clustermap_aspect_height = 1.1;
+var clustermap_aspect_height = 0.7;
 
 var $legend = $('#legend');
 var legend_aspect_width = 1;
@@ -22,6 +22,8 @@ var color = d3.scale.threshold()
     .domain(breaks)
     .range(colors);
 
+//small desktop #clustermaps width = 617
+
 function legenddraw() {
     var margin = {
         top: 5,
@@ -33,7 +35,7 @@ function legenddraw() {
     var width = $legend.width() - margin.left - margin.right,
         height = 180;
 
-    if ($clustergraphs.width() < mobile_threshold) {
+    if ($clustergraphs.width() < mobile_threshold & $clustergraphs.width() !=617 & $clustergraphs.width() !=720) {
         height = 30;
     }
 
@@ -45,7 +47,7 @@ function legenddraw() {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    if ($clustergraphs.width() < mobile_threshold) {
+    if ($clustergraphs.width() < mobile_threshold & $clustergraphs.width() !=617& $clustergraphs.width() !=720) {
 
         var lp_h = 18,
             ls_w = width / 7;
@@ -222,16 +224,38 @@ function mapdraw(id) {
     var formatnum = d3.format('.0f');
 
     var margin = {
-        top: 5,
-        right: 5,
-        bottom: 5,
-        left: 5
-    };
+            top: 5,
+            right: 5,
+            bottom: 5,
+            left: 5
+        },
+        padding = 300;
+    
+    //desktops
+    if ($clustergraphs.width() >= mobile_threshold | $clustergraphs.width() ==720) {
+        clustermap_aspect_height = 0.7;
+        padding = 300;
+    }
 
+    //mw = map width - padding on the side is for tooltip
     var width = $clustermap.width() - margin.left - margin.right,
         height = Math.ceil((width * clustermap_aspect_height) / clustermap_aspect_width) - margin.top - margin.bottom;
 
+
     $clustermap.empty();
+
+    //small desktop
+    if ($clustergraphs.width() ==617) {
+        clustermap_aspect_height = 0.8;
+        padding = 200;
+    }
+    else if ($clustergraphs.width() < mobile_threshold & $clustergraphs.width() !=617 & $clustergraphs.width() !=720) {
+        padding = 1;
+        clustermap_aspect_height = 1.1;
+    }
+
+    var mw = width - padding;
+    console.log($clustermap.width(), padding, clustermap_aspect_height);
 
     var projection = d3.geo.mercator();
 
@@ -248,8 +272,8 @@ function mapdraw(id) {
         .translate([0, 0]);
 
     var b = path.bounds(neighborhoods),
-        s = .95 / Math.max((b[1][0] - b[0][0]) / width, (b[1][1] - b[0][1]) / height),
-        t = [(width - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
+        s = .95 / Math.max((b[1][0] - b[0][0]) / mw, (b[1][1] - b[0][1]) / height),
+        t = [(mw - s * (b[1][0] + b[0][0])) / 2, (height - s * (b[1][1] + b[0][1])) / 2];
 
     projection
         .scale(s)
@@ -285,7 +309,7 @@ function mapdraw(id) {
         .attr("id", function (d) {
             return "v" + d.properties.cluster;
         })
-        .attr("x", width * 0.6)
+        .attr("x", width * 0.4)
         .attr("y", 40);
 
     tooltip.append("text")
@@ -296,8 +320,8 @@ function mapdraw(id) {
         .attr("id", function (d) {
             return "v" + d.properties.cluster;
         })
-        .attr("x", width * 0.83)
-        .attr("y", 40);
+        .attr("x", width * 0.4)
+        .attr("y", 63);
 
     tooltip.append("text")
         .attr("class", "tooltip-name")
@@ -308,9 +332,9 @@ function mapdraw(id) {
             return "v" + d.properties.cluster;
         })
         .attr("fill", "#666")
-        .attr("x", width * 0.6)
-        .attr("y", 60)
-        .call(wrap, width * 0.4);
+        .attr("x", width * 0.4)
+        .attr("y", 90)
+        .call(wrap, width * 0.35);
 
     function wrap(text, lwidth) {
         text.each(function () {
@@ -324,7 +348,7 @@ function mapdraw(id) {
                 dy = parseFloat(text.attr("dy"));
             var tspan = text.text(null)
                 .append("tspan")
-                .attr("x", width * 0.6)
+                .attr("x", width * 0.4)
                 .attr("y", y)
                 .attr("dy", dy + "em");
             while (word = words.pop()) {
@@ -335,7 +359,7 @@ function mapdraw(id) {
                     tspan.text(line.join(" "));
                     line = [word];
                     tspan = text.append("tspan")
-                        .attr("x", width * 0.6)
+                        .attr("x", width * 0.4)
                         .attr("y", y)
                         .attr("dy", ++lineNumber * 16)
                         .text(word);
@@ -357,9 +381,9 @@ function mapdraw(id) {
 
     function formatLabel2(d) {
         if (d <= -1.5 | d > 1.5) {
-            return d = " crimes per 1,000 residents";
-        } else if ((d > -1.5 & d <= -0.5)|(d > 0.5 & d <= 1.5)) {
-            return d = " crime per 1,000 residents";
+            return d = " violent crimes per 1,000 residents";
+        } else if ((d > -1.5 & d <= -0.5) | (d > 0.5 & d <= 1.5)) {
+            return d = " violent crime per 1,000 residents";
         } else if (d > -0.5 & d <= 0.5) {
             return d = "";
         }
@@ -368,7 +392,7 @@ function mapdraw(id) {
 }
 
 function clusterslide() {
-    if ($clustergraphs.width() < mobile_threshold) {
+    if ($clustergraphs.width() < mobile_threshold & $clustergraphs.width() !=617 & $clustergraphs.width() !=720) {
         legenddraw();
         mapdraw("#clustermap");
     } else {
