@@ -252,7 +252,7 @@ body {
     width: 40px;
     background-image: none;
     text-shadow: none;
-    opacity: 0.8;
+    opacity: 1;
 }
 .carousel-control:hover {
     color: none;
