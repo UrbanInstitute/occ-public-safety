@@ -255,8 +255,6 @@ function mapdraw(id) {
     }
 
     var mw = width - padding;
-    console.log($clustermap.width(), padding, clustermap_aspect_height);
-
     var projection = d3.geo.mercator();
 
     var path = d3.geo.path()

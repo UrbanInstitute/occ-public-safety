@@ -422,14 +422,10 @@
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
             <div class="arrow-left">
-                <img src="images/leftArrow.png"></img>
-         
             </div>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next" id="rightlink">
             <div class="arrow-right">
-                <img src="images/rightArrow.png"></img>
-           
             </div>
         </a>
     </div>
@@ -440,19 +436,29 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="lib/jquery.min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/d3.min.js"></script>
 
     <script>
         $('#myCarousel').on('slid.bs.carousel', function () {
+            //resize for d3 responsive graphics - otherwise height/width are tiny
             var handler = window.onresize;
             handler();
-            //var divID = d3.select("div.active").attr("id");
+            //hide arrows on first & last slides
+            $('.left.carousel-control').show();
+            $('.right.carousel-control').show();
+            var divID = d3.select("div.active").attr("id");
+            if (divID == "intro") {
+                $('.left.carousel-control').hide();
+            }
+            if (divID == "conclusion") {
+                $('.right.carousel-control').hide();
+            }
             //var oldURL = window.location + '';
             //var newURL = oldURL + "#" + divID;
             //window.location = newURL
         })
     </script>
 
-    <script src="lib/d3.min.js"></script>
     <script src="lib/topojson.min.js"></script>
     <script src="lib/modernizr.svg.min.js"></script>
     <script src="js/linechart.js"></script>
