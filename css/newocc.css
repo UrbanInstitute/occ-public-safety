@@ -100,6 +100,19 @@ p {
     line-height: 0.8em;
 }
 
+.btn-start {
+    margin-top: 1em;
+    background-color: #1696d2;
+    border-radius: 1px;
+    border-color: none;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+#startbtn {
+    color: #fff
+}
+
 .btn .active {
     background-color: #1696d2;
 }
@@ -609,6 +622,7 @@ body {
         max-width: 100%;
     }
     .carousel-control,
+    #startbtn,
     #previousChapters,
     #assaultmap,
     #homicidemap,
