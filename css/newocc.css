@@ -254,9 +254,10 @@ body {
     text-shadow: none;
     opacity: 1;
 }
+
 .carousel-control:hover {
     color: none;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .carousel-control.right {
@@ -279,7 +280,7 @@ body {
     position: absolute;
     margin-top: -15px;
     margin-left: -15px;
-    background-image: url(../images/leftArrow.png)
+    background-image: url(../images/leftArrowBlue.png)
 }
 
 .carousel-control:hover >.arrow-left {
@@ -296,13 +297,12 @@ body {
     position: absolute;
     margin-top: -15px;
     margin-left: -15px;
-    background-image: url(../images/rightArrow.png)
-}
-
-.carousel-control:hover >.arrow-right{
     background-image: url(../images/rightArrowBlue.png)
 }
 
+.carousel-control:hover >.arrow-right {
+    background-image: url(../images/rightArrowBlue.png)
+}
 /*carousel indicators - follow container width*/
 
 .indic-container {
