@@ -1,3 +1,6 @@
+//mobile screen threshold = 500, but div has 15px padding on either side
+var mobile_threshold = 570;
+
 var $clustergraphs = $('#clustergraphs');
 
 var barchart_data_url = "data/clusters_violentcrime.csv";
@@ -35,7 +38,7 @@ function legenddraw() {
     var width = $legend.width() - margin.left - margin.right,
         height = 180;
 
-    if ($clustergraphs.width() < mobile_threshold & $clustergraphs.width() !=617 & $clustergraphs.width() !=720) {
+    if ($clustergraphs.width() < mobile_threshold) {
         height = 30;
     }
 
@@ -47,7 +50,7 @@ function legenddraw() {
         .append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    if ($clustergraphs.width() < mobile_threshold & $clustergraphs.width() !=617& $clustergraphs.width() !=720) {
+    if ($clustergraphs.width() < mobile_threshold) {
 
         var lp_h = 18,
             ls_w = width / 7;
@@ -119,7 +122,7 @@ function bardraw(id) {
 
     var margin = {
         top: 5,
-        right: 35,
+        right: 45,
         bottom: 5,
         left: 15
     };
@@ -232,7 +235,7 @@ function mapdraw(id) {
         padding = 300;
     
     //desktops
-    if ($clustergraphs.width() >= mobile_threshold | $clustergraphs.width() ==720) {
+    if ($clustergraphs.width() >= mobile_threshold) {
         clustermap_aspect_height = 0.7;
         padding = 300;
     }
@@ -241,7 +244,7 @@ function mapdraw(id) {
         clustermap_aspect_height = 0.8;
         padding = 200;
     }
-    else if ($clustergraphs.width() < mobile_threshold & $clustergraphs.width() !=617 & $clustergraphs.width() !=720) {
+    else if ($clustergraphs.width() < mobile_threshold) {
         padding = 1;
         clustermap_aspect_height = 1.1;
     }
@@ -390,7 +393,7 @@ function mapdraw(id) {
 }
 
 function clusterslide() {
-    if ($clustergraphs.width() < mobile_threshold & $clustergraphs.width() !=617 & $clustergraphs.width() !=720) {
+    if ($clustergraphs.width() < mobile_threshold) {
         legenddraw();
         mapdraw("#clustermap");
     } else {

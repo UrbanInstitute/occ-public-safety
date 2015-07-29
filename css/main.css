@@ -67,4 +67,5 @@
 .tooltip-label.selected,
 .tooltip-name.selected {
     opacity: 1;
+    z-index: 1000;
 }

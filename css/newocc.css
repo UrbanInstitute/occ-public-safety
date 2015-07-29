@@ -499,6 +499,7 @@ body {
     width: 100%;
     margin-top: 10px;
     margin-left: 10px;
+    padding-right: 10px;
 }
 
 #clustermap {
@@ -544,15 +545,6 @@ body {
     }
     .btn {
         font-size: 13px;
-    }
-}
-
-@media (min-width: 769px) {
-    .mapgif {
-        display: none;
-        height: 0;
-        width: 0;
-        width: 0;
     }
 }
 
@@ -627,13 +619,31 @@ body {
     .carousel-control,
     #startbtn,
     #previousChapters,
+    #closingpic,
+    #share {
+        display: none;
+        height: 0;
+        width: 0;
+        width: 0;
+    }
+    .closing {
+        font-size: 13px;
+    }
+}
+
+/*slide 6 and maps - full experience on tablets*/
+@media (max-width: 599px) {
+    #legholder {
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #barchart,
     #assaultmap,
     #homicidemap,
     #robberymap,
-    iframe,
-    #barchart,
-    #closingpic,
-    #share {
+    iframe {
         display: none;
         height: 0;
         width: 0;
@@ -643,13 +653,13 @@ body {
         width: 100%;
         margin: auto;
     }
-    #legholder {
-        width: 100%;
-        max-width: 100%;
-        margin: auto;
-    }
-    .closing {
-        font-size: 13px;
+}
+@media (min-width: 600px) {
+    .mapgif {
+        display: none;
+        height: 0;
+        width: 0;
+        width: 0;
     }
 }
 

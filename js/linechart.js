@@ -1,4 +1,3 @@
-var mobile_threshold = 750;
 var data;
 var linechart_data_url = "data/linerates.csv";
 
