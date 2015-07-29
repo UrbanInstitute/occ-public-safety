@@ -568,6 +568,9 @@ body {
     .col-sm-6 {
         padding: 0;
     }
+    .carousel .carousel-inner .bgCover {
+        background-image: url(../images/mobileThumb.jpg);
+    }
     .navbar {
         margin-bottom: 0px;
     }
@@ -673,9 +676,6 @@ body {
 }
 
 @media (max-width: 475px) {
-    .carousel .carousel-inner .bgCover {
-        background-image: url(../images/thumb.jpg);
-    }
     .navbar {
         height: 55px;
     }

@@ -155,7 +155,9 @@
                             <h1>Public Safety</h1>
                             <p class="lead">Violent crime has fallen dramatically both nationwide and in DC over the past 20 years. DC’s homicide rate has plunged, taking the city far from its days as the nation’s “murder capital.” And, despite some ups and downs, aggravated assaults and robberies—two major categories of violent crime—are also on the decline.</p>
                             <p class="lead">However, these improvements have been uneven across the city. Stubborn pockets of violent crime remain unchanged in some neighborhoods, particularly in Northeast and Southeast DC. Tackling this persistent violent crime will require a more holistic public safety approach—one that goes beyond policing to include social services and that <a href="http://www.urban.org/research/publication/creating-partners-public-safety" target="_blank">emphasizes prevention</a> instead of reaction. </p>
-                            <a id="startbtn" data-target="#myCarousel" data-slide-to="1"><button type="button" class="btn btn-start">Start exploring</button></a>
+                            <a id="startbtn" data-target="#myCarousel" data-slide-to="1">
+                                <button type="button" class="btn btn-start">Start exploring</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -406,7 +408,7 @@
                                 <p class="credits">Research by Elizabeth Pelletier, Samuel Bieler, and Nancy La Vigne</br>Written by Samuel Bieler, Elizabeth Pelletier, and Serena Lei</br>Design and photography by Christina Baird</br>Web development by Hannah Recht</p>
                                 <p class="credits">Copyright © August 2015. Urban Institute.</p>
                                 <p class="credits">The views expressed are those of the authors and should not be attributed to the Urban Institute, its trustees, or its funders.</p>
-                                <p class="credits"><a href="https://github.com/UI-Research/occ-crime">View source on Github</a>
+                                <p class="credits"><a href="https://github.com/urbaninstitute/occ-public-safety">View source on Github</a>
                                 </p>
                             </div>
                         </div>
@@ -441,14 +443,17 @@
     <script src="lib/d3.min.js"></script>
 
     <script>
+        $('.left.carousel-control').hide();
         $('#myCarousel').on('slid.bs.carousel', function () {
             //resize for d3 responsive graphics - otherwise height/width are tiny
             var handler = window.onresize;
             handler();
             //hide arrows on first & last slides
-            $('.left.carousel-control').show();
             $('.right.carousel-control').show();
             var divID = d3.select("div.active").attr("id");
+            if (divID != "intro") {
+                $('.left.carousel-control').show();
+            }
             if (divID == "intro") {
                 $('.left.carousel-control').hide();
             }
