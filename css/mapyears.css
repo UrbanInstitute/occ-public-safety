@@ -19,7 +19,12 @@ body {
     opacity: 0.7
 }
 
+.layer-holder {
+    width: 100%;
+}
+
 #layers {
+    margin: auto;
     position: relative !important;
     top: 12px;
     height: auto;
@@ -28,6 +33,7 @@ body {
     border-radius: 5px;
     text-align: center;
     z-index: 100000;
+
 }
 
 .legend-holder {
@@ -44,12 +50,17 @@ body {
     width: 90px;
 }
 
-.legtitle { 
+@media (max-width: 710px) {
+    .legend-holder {
+        top: 280px;
+    }
+}
+
+.legtitle {
     font-size: 13px;
     padding-left: 15px;
     padding-top: 10px;
-} 
-
+}
 
 #layers {
     min-height: 36px;
