@@ -140,9 +140,11 @@ p {
 
 #share {
     position: relative;
+    float: right;
     top: 0;
     right: 0;
     height: 70px;
+    max-width: 400px;
 }
 
 #shareMaster {
