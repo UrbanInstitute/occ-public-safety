@@ -1,6 +1,6 @@
 #Our Changing City chapter 4 - crime in DC
 ###Data sources
-* [Neighborhood clusters - shp](http://opendata.dc.gov/datasets/f6c703ebe2534fc3800609a07bad8f5b_17)
+* Neighborhood clusters - shp: [DC Office of Planning](http://opendata.dc.gov/datasets/f6c703ebe2534fc3800609a07bad8f5b_17)
 * Citywide population, aggravated assault and robbery data 2000 through 2012: [FBI UCR statistics](http://www.ucrdatatool.gov/Search/Crime/Local/JurisbyJurisLarge.cfm)
 * Citywide population, aggravated assault and robbery numbers for 2013: [FBI Crime in the United States 2013 report](https://www.fbi.gov/about-us/cjis/ucr/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/tables/table-8/table-8-state-cuts/table_8_offenses_known_to_law_enforcement_district_of_columbia_by_city_2013.xls)
 * Citywide homicide numbers: [DC MPD District Crime Data at a Glance](http://mpdc.dc.gov/page/district-crime-data-glance)
